@@ -1,0 +1,204 @@
+.calendar-block {
+
+  .datepicker .picker {
+    display: block;
+    width: 479px;
+    padding: 0;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background: #ffffff;
+    border: none;
+  }
+
+  .vue-popper {
+    border: 1px solid #c2ccdc;
+    border-radius: .2em;
+    background: #fff;
+  }
+
+  .vue-popper[x-placement^=bottom] .arrow {
+    display: none;
+  }
+
+  .arrow-extend,
+  .vue-popper[x-placement^=top] .arrow,
+  .vue-popper[x-placement^=top] .arrow:before,
+  .vue-popper[x-placement^=bottom] .arrow,
+  .vue-popper[x-placement^=bottom] .arrow:before,
+  .vue-popper[x-placement^=left] .arrow,
+  .vue-popper[x-placement^=left] .arrow:before,
+  .vue-popper[x-placement^=right] .arrow,
+  .vue-popper[x-placement^=right] .arrow:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .datepicker *, .timepicker *, .datetime-picker * {
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #444;
+    outline: none !important;
+  }
+
+  .datepicker .picker .picker-head .prev.disabled,
+  .datepicker .picker .picker-head .next.disabled,
+  .timepicker .picker .picker-head .prev.disabled,
+  .timepicker .picker .picker-head .next.disabled,
+  .datetime-picker .picker .picker-head .prev.disabled,
+  .datetime-picker .picker .picker-head .next.disabled {
+    color: #ccc;
+    cursor: default;
+  }
+
+  .datepicker .picker .picker-head .prev,
+  .timepicker .picker .picker-head .prev,
+  .datetime-picker .picker .picker-head .prev {
+    float: left;
+  }
+
+  .datepicker .picker .picker-head .next,
+  .timepicker .picker .picker-head .next,
+  .datetime-picker .picker .picker-head .next {
+    float: right;
+  }
+
+  .datepicker .picker .picker-head .prev,
+  .datepicker .picker .picker-head .next,
+  .timepicker .picker .picker-head .prev,
+  .timepicker .picker .picker-head .next,
+  .datetime-picker .picker .picker-head .prev,
+  .datetime-picker .picker .picker-head .next {
+    padding: 0 .05rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .datepicker .picker .picker-head .picker-h .year,
+  .datepicker .picker .picker-head .picker-h .month,
+  .datepicker .picker .picker-head .picker-h .date,
+  .timepicker .picker .picker-head .picker-h .year,
+  .timepicker .picker .picker-head .picker-h .month,
+  .timepicker .picker .picker-head .picker-h .date,
+  .datetime-picker .picker .picker-head .picker-h .year,
+  .datetime-picker .picker .picker-head .picker-h .month,
+  .datetime-picker .picker .picker-head .picker-h .date {
+    cursor: pointer;
+  }
+
+  .datepicker .picker .picker-head .picker-h span,
+  .timepicker .picker .picker-head .picker-h span,
+  .datetime-picker .picker .picker-head .picker-h span {
+    font-size: 16px;
+  }
+
+  .datepicker .picker .picker-items,
+  .timepicker .picker .picker-items,
+  .datetime-picker .picker .picker-items {
+    overflow: hidden;
+  }
+
+  .datepicker .picker .picker-items .row-item.h,
+  .timepicker .picker .picker-items .row-item.h,
+  .datetime-picker .picker .picker-items .row-item.h {
+    border-bottom: 1px solid #f3f5f8;
+  }
+
+  .datepicker .picker .picker-items .row-item,
+  .timepicker .picker .picker-items .row-item,
+  .datetime-picker .picker .picker-items .row-item {
+    line-height: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .datepicker .picker .picker-items .row-item .item.date,
+  .timepicker .picker .picker-items .row-item .item.date,
+  .datetime-picker .picker .picker-items .row-item .item.date {
+    width: 100%;
+    flex: 1;
+    padding-top: 11px;
+    padding-left: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .datepicker .picker .picker-items .row-item.h .item,
+  .timepicker .picker .picker-items .row-item.h .item,
+  .datetime-picker .picker .picker-items .row-item.h .item {
+    font-size: 12px;
+    color: #999 !important;
+  }
+
+  .datepicker .picker .picker-items .row-item .item,
+  .timepicker .picker .picker-items .row-item .item,
+  .datetime-picker .picker .picker-items .row-item .item {
+    display: inline-block;
+    line-height: inherit;
+    padding: 0 .08rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .datepicker .picker .picker-items .row-item .item.not-in-month,
+  .datepicker .picker .picker-items .row-item .item.disabled,
+  .timepicker .picker .picker-items .row-item .item.not-in-month,
+  .timepicker .picker .picker-items .row-item .item.disabled,
+  .datetime-picker .picker .picker-items .row-item .item.not-in-month,
+  .datetime-picker .picker .picker-items .row-item .item.disabled {
+    color: #ccc !important;
+  }
+
+  .datepicker .picker .picker-items .row-item .item.disabled,
+  .timepicker .picker .picker-items .row-item .item.disabled,
+  .datetime-picker .picker .picker-items .row-item .item.disabled {
+    cursor: no-drop !important;
+  }
+
+  .datepicker .picker .picker-items .row-item .item.selected,
+  .timepicker .picker .picker-items .row-item .item.selected,
+  .datetime-picker .picker .picker-items .row-item .item.selected {
+    position: relative;
+    color: #fff;
+  }
+
+  .datepicker .picker .picker-items .row-item .item.selected:before,
+  .timepicker .picker .picker-items .row-item .item.selected:before,
+  .datetime-picker .picker .picker-items .row-item .item.selected:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 60px;
+    background: #84D444;
+  }
+
+
+
+  .row-item {
+    border-bottom: 1px solid #DFDFDF;
+
+    &:first-child {
+      border-top: 1px solid #DFDFDF;
+    }
+  }
+
+  .item.date {
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #333333;
+    border-right: 1px solid #DFDFDF;
+
+    &:first-child {
+      border-left: 1px solid #DFDFDF;
+    }
+  }
+}

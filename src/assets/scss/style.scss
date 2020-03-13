@@ -1,0 +1,28 @@
+//LIBRARY
+@import "library.styles/bootstrap/bootstrap-grid";
+
+//TEXT
+
+
+//FONTS
+@import "common.blocks/fonts";
+
+//ANIMATIONS
+
+
+//PAGES
+
+
+//BLOCKS
+@import "common.blocks/blocks/header/header";
+@import "common.blocks/blocks/footer/footer";
+@import "common.blocks/blocks/status-order/status-order";
+
+
+//ELEMENTS
+@import "common.blocks/elements/burger/burger";
+@import "common.blocks/elements/calendar/calendar";
+
+//main styles
+@import "common.blocks/common";
+@import "common.blocks/text";

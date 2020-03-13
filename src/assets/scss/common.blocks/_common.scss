@@ -1,0 +1,74 @@
+html, body {
+  * {
+    font-family: 'Proxima Nova', sans-serif !important;
+  }
+
+  font-weight: normal;
+}
+
+.main-logo {
+  background: url("../img/header-logo.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 142px;
+  height: 57px;
+  display: block;
+}
+
+.icon-telegram {
+  background: url("../img/telegram-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.icon-viber {
+  background: url("../img/viber-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.calendar-icon {
+  background: url("../img/calendar-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.icon-facebook {
+  background: url("../img/facebook-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-instagram {
+  background: url("../img/instagram-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-tripadvisor {
+  background: url("../img/tripadvisor-logotype-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-vk {
+  background: url("../img/vk-social-logotype-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.icon-youtube {
+  background: url("../img/youtube-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.main {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+  }
+}
