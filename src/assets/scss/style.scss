@@ -1,8 +1,8 @@
 //LIBRARY
-@import "library.styles/bootstrap/bootstrap-grid";
+@import "library.styles/bootstrap/bootstrap";
 
 //TEXT
-
+@import "common.blocks/text";
 
 //FONTS
 @import "common.blocks/fonts";
@@ -11,18 +11,27 @@
 
 
 //PAGES
-
+@import "common.blocks/pages/jump-booking/jump-booking";
 
 //BLOCKS
 @import "common.blocks/blocks/header/header";
 @import "common.blocks/blocks/footer/footer";
 @import "common.blocks/blocks/status-order/status-order";
+@import "common.blocks/blocks/quantity-regulator/quantity-regulator";
+@import "common.blocks/blocks/service-block/service-block";
+@import "common.blocks/blocks/number-entry-unit/number-entry-unit";
+@import "common.blocks/blocks/personal-data/personal-data";
 
 
 //ELEMENTS
 @import "common.blocks/elements/burger/burger";
 @import "common.blocks/elements/calendar/calendar";
+@import "common.blocks/elements/status-order-string/status-order-string";
+@import "common.blocks/elements/jump-time-block/jump-time-block";
+@import "common.blocks/elements/container-calc/container-calc";
 
 //main styles
 @import "common.blocks/common";
-@import "common.blocks/text";
+
+//other styles
+@import "common.blocks/checkbox";

@@ -1,0 +1,21 @@
+.status-order-string {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-order-string__title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+}
+
+.status-order-string__value {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #555555;
+  display: block;
+  margin-bottom: 0;
+}

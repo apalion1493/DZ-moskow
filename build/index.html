@@ -27,7 +27,7 @@
                         </a>
                     </div>
                     <div class="header__calendar">
-                        <button type="button" class="btn header__calendar-icon calendar-icon"></button>
+                        <button type="button" class="header__calendar-icon calendar-icon"></button>
                         <span class="header__calendar-alertCircle"></span>
                     </div>
                 </div>
@@ -64,89 +64,408 @@
 </header>
 
 <main id="main" class="main">
-    <section class="section">
+    <section class="section jump-booking">
         <div class="container">
             <div class="row">
                 <div class="col-9">
-                    <div>
-                        <div class="calendar-block">
-                            <div class="datepicker">
-                                <div class="vue-popper picker" x-placement="bottom-start" style="position: relative; will-change: transform;">
+                    <div class="jump-booking__wrapper">
+                        <h2 class="h2 jump-booking__h2">Бронирование прыжка</h2>
+                        <div class="row jump-booking__step pb-5 inactive">
+                            <div class="col-12">
+                                <div class="jump-booking__step-header">
+                                    <span class="jump-booking__step-title">01. дата и время</span>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="calendar-block">
+                                    <div class="datepicker">
+                                        <div class="vue-popper picker" x-placement="bottom-start" style="position: relative; will-change: transform;">
 
-                                    <div x-arrow="" class="arrow" style="left: 10px;"></div>
-                                    <div class="picker-head">
-                                        <span class="prev disabled">&lt;</span>
-                                        <span class="picker-h">
+                                            <div x-arrow="" class="arrow" style="left: 10px;"></div>
+                                            <div class="picker-head">
+                                                <span class="prev disabled">&lt;</span>
+                                                <span class="picker-h">
                                 <span class="year">2018</span>
                                 &nbsp;-&nbsp;
                                 <span class="month">06</span>
                             </span>
-                                        <span class="next">&gt;</span>
+                                                <span class="next">&gt;</span>
+                                            </div>
+                                            <div class="picker-items dates">
+                                                <div class="row-item h">
+                                                    <span class="item date">Пн</span>
+                                                    <span class="item date">Вт</span>
+                                                    <span class="item date">Ср</span>
+                                                    <span class="item date">Чт</span>
+                                                    <span class="item date">Пт</span>
+                                                    <span class="item date">Сб</span>
+                                                    <span class="item date">Вс</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item not-in-month disabled date">27</span>
+                                                    <span class="item not-in-month disabled date">28</span>
+                                                    <span class="item not-in-month disabled date">29</span>
+                                                    <span class="item not-in-month disabled date">30</span>
+                                                    <span class="item not-in-month disabled date">31</span>
+                                                    <span class="item date">01</span>
+                                                    <span class="item date">02</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item date">03</span>
+                                                    <span class="item date">04</span>
+                                                    <span class="item date">05</span>
+                                                    <span class="item date">06</span>
+                                                    <span class="item date">07</span>
+                                                    <span class="item date">08</span>
+                                                    <span class="item date">09</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item date">10</span>
+                                                    <span class="item date">11</span>
+                                                    <span class="item date">12</span>
+                                                    <span class="item date">13</span>
+                                                    <span class="item date">14</span>
+                                                    <span class="item date">15</span>
+                                                    <span class="item date">16</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item date">17</span>
+                                                    <span class="item date">18</span>
+                                                    <span class="item date">19</span>
+                                                    <span class="item date">20</span>
+                                                    <span class="item date selected">21</span>
+                                                    <span class="item date">22</span>
+                                                    <span class="item date">23</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item date">24</span>
+                                                    <span class="item date">25</span>
+                                                    <span class="item date">26</span>
+                                                    <span class="item date">27</span>
+                                                    <span class="item date">28</span>
+                                                    <span class="item date">29</span>
+                                                    <span class="item date">30</span>
+                                                </div>
+                                                <div class="row-item">
+                                                    <span class="item not-in-month date">01</span>
+                                                    <span class="item not-in-month date">02</span>
+                                                    <span class="item not-in-month date">03</span>
+                                                    <span class="item not-in-month date">04</span>
+                                                    <span class="item not-in-month date">05</span>
+                                                    <span class="item not-in-month date">06</span>
+                                                    <span class="item not-in-month date">07</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="picker-items dates">
-                                        <div class="row-item h">
-                                            <span class="item date">Пн</span>
-                                            <span class="item date">Вт</span>
-                                            <span class="item date">Ср</span>
-                                            <span class="item date">Чт</span>
-                                            <span class="item date">Пт</span>
-                                            <span class="item date">Сб</span>
-                                            <span class="item date">Вс</span>
+                                </div>
+                            </div>
+                            <div class="col-5 pl-0">
+                                <div class="jump-time jump-time-section">
+                                    <span class="jump-time__title">Время прыжка</span>
+                                    <div class="jump-time__container">
+                                        <div class="jump-time__header">
+                                            <div class="jump-time__header-block">
+                                                <span class="jump-time__header-item jump-time__header-time">Время</span>
+                                                <span class="jump-time__header-item jump-time__header-type">Тип услуги</span>
+                                                <span class="jump-time__header-item jump-time__header-places">Кол-во мест</span>
+                                            </div>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item not-in-month disabled date">27</span>
-                                            <span class="item not-in-month disabled date">28</span>
-                                            <span class="item not-in-month disabled date">29</span>
-                                            <span class="item not-in-month disabled date">30</span>
-                                            <span class="item not-in-month disabled date">31</span>
-                                            <span class="item date">01</span>
-                                            <span class="item date">02</span>
+                                        <div class="jump-time__body">
+                                            <div class="jump-time-block inactive">
+                                                <span class="jump-time-block__item jump-time-block__time">11:00</span>
+                                                <span class="jump-time-block__item jump-time-block__type">Прыжок в тандеме</span>
+                                                <span class="jump-time-block__item jump-time-block__places"><span>10 из 12</span> <i></i></span>
+                                            </div>
+                                            <div class="jump-time-block">
+                                                <span class="jump-time-block__item jump-time-block__time">11:00</span>
+                                                <span class="jump-time-block__item jump-time-block__type">Прыжок в тандеме</span>
+                                                <span class="jump-time-block__item jump-time-block__places"><span>10 из 12</span> <i></i></span>
+                                            </div>
+                                            <div class="jump-time-block unassembled">
+                                                <span class="jump-time-block__item jump-time-block__time">11:00</span>
+                                                <span class="jump-time-block__item jump-time-block__type">Прыжок в тандеме</span>
+                                                <span class="jump-time-block__item jump-time-block__places"><span>4 из 12</span> <i></i></span>
+                                            </div>
+                                            <div class="jump-time-block hollow">
+                                                <span class="jump-time-block__item jump-time-block__time">11:00</span>
+                                                <span class="jump-time-block__item jump-time-block__type">Прыжок в тандеме</span>
+                                                <span class="jump-time-block__item jump-time-block__places"><span>0 из 12</span> <i></i></span>
+                                            </div>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item date">03</span>
-                                            <span class="item date">04</span>
-                                            <span class="item date">05</span>
-                                            <span class="item date">06</span>
-                                            <span class="item date">07</span>
-                                            <span class="item date">08</span>
-                                            <span class="item date">09</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="jump-booking__next-step-wrapper">
+                                    <button class="btn btn-secondary btn-orange jump-booking__step-btn">Далее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row jump-booking__step pb-5 inactive">
+                            <div class="col-12">
+                                <div class="jump-booking__step-header">
+                                    <span class="jump-booking__step-title">02. Количество человек и доп. услуги</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h4 class="h4 jump-booking__h4">Количество человек</h4>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <div class="quantity-regulator">
+                                        <div class="quantity-regulator__left-block">
+                                            <span class="quantity-regulator__icon human-icon"></span>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item date">10</span>
-                                            <span class="item date">11</span>
-                                            <span class="item date">12</span>
-                                            <span class="item date">13</span>
-                                            <span class="item date">14</span>
-                                            <span class="item date">15</span>
-                                            <span class="item date">16</span>
+                                        <div class="quantity-regulator__body">
+                                            <div class="container-calc">
+                                                <button class="container-calc__btn button-minus">&minus;</button>
+                                                <div class="container-calc__form">
+                                                    <span>2</span>
+                                                </div>
+                                                <button class="container-calc__btn button-plus">+</button>
+                                            </div>
+                                            <span class="quantity-regulator__total">25 000 ₽</span>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item date">17</span>
-                                            <span class="item date">18</span>
-                                            <span class="item date">19</span>
-                                            <span class="item date">20</span>
-                                            <span class="item date selected">21</span>
-                                            <span class="item date">22</span>
-                                            <span class="item date">23</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-12 mt-5">
+                                <h4 class="h4 jump-booking__h4">Дополнительные услуги</h4>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <div class="service-block active">
+                                        <div class="service-block__img">
+                                            <i class="gopro-icon"></i>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item date">24</span>
-                                            <span class="item date">25</span>
-                                            <span class="item date">26</span>
-                                            <span class="item date">27</span>
-                                            <span class="item date">28</span>
-                                            <span class="item date">29</span>
-                                            <span class="item date">30</span>
+                                        <div class="service-block__wrapper">
+                                            <span class="service-block__title">Операторская съемка</span>
+                                            <div class="service-block__container">
+                                                <div class="service-block__section">
+                                                    <div class="service-block__section-first">
+                                                        <span class="service-block__section-first-title">Количество</span>
+                                                        <div class="container-calc service-block__section-first-calc">
+                                                            <button class="container-calc__btn button-minus">&minus;</button>
+                                                            <div class="container-calc__form">
+                                                                <span>2</span>
+                                                            </div>
+                                                            <button class="container-calc__btn button-plus">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-block__section-second">
+                                                        <button class="btn btn-outline-secondary">Добавить</button>
+                                                    </div>
+                                                </div>
+                                                <span class="service-block__price">+ 3 500 ₽</span>
+                                            </div>
+                                            <div class="service-block__btnGroup">
+                                                <button class="btn btn-secondary">Заказать</button>
+                                                <button class="btn btn-outline-secondary">Отменить</button>
+                                            </div>
                                         </div>
-                                        <div class="row-item">
-                                            <span class="item not-in-month date">01</span>
-                                            <span class="item not-in-month date">02</span>
-                                            <span class="item not-in-month date">03</span>
-                                            <span class="item not-in-month date">04</span>
-                                            <span class="item not-in-month date">05</span>
-                                            <span class="item not-in-month date">06</span>
-                                            <span class="item not-in-month date">07</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <div class="service-block">
+                                        <div class="service-block__img">
+                                            <i class="gopro-icon"></i>
                                         </div>
+                                        <div class="service-block__wrapper">
+                                            <span class="service-block__title">Съемка камерой Handycam</span>
+                                            <div class="service-block__container">
+                                                <div class="service-block__section">
+                                                    <div class="service-block__section-first">
+                                                        <span class="service-block__section-first-title">Количество</span>
+                                                        <div class="container-calc service-block__section-first-calc">
+                                                            <button class="container-calc__btn button-minus">&minus;</button>
+                                                            <div class="container-calc__form">
+                                                                <span>2</span>
+                                                            </div>
+                                                            <button class="container-calc__btn button-plus">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-block__section-second">
+                                                        <button class="btn btn-outline-secondary">Добавить</button>
+                                                    </div>
+                                                </div>
+                                                <span class="service-block__price">+ 3 500 ₽</span>
+                                            </div>
+                                            <div class="service-block__btnGroup">
+                                                <button class="btn btn-secondary">Заказать</button>
+                                                <button class="btn btn-outline-secondary">Отменить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="jump-booking__next-step-wrapper">
+                                    <button class="btn btn-secondary btn-orange jump-booking__step-btn">Далее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row jump-booking__step pb-5">
+                            <div class="col-12">
+                                <div class="jump-booking__step-header">
+                                    <span class="jump-booking__step-title">03. Сертификаты и оплата</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <h4 class="h4 jump-booking__h4">Номер сертификата</h4>
+                                    <div class="number-entry-unit">
+                                        <div class="number-entry-unit__img">
+                                            <i class="card-icon"></i>
+                                        </div>
+                                        <div class="number-entry-unit__main">
+                                            <div class="number-entry-unit__input">
+                                                <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Сертификат верный</span>
+                                                <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Сертификат не верный</span>
+                                                <input type="text" placeholder="405 758">
+                                            </div>
+                                            <div class="number-entry-unit__group">
+                                                <button class="btn btn-outline-secondary">Применить</button>
+                                                <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <h4 class="h4 jump-booking__h4">Промокод</h4>
+                                    <div class="number-entry-unit">
+                                        <div class="number-entry-unit__img">
+                                            <i class="coupon-icon"></i>
+                                        </div>
+                                        <div class="number-entry-unit__main">
+                                            <div class="number-entry-unit__input">
+                                                <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Промокод верный</span>
+                                                <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Промокод не верный</span>
+                                                <input type="text" placeholder="405 758">
+                                            </div>
+                                            <div class="number-entry-unit__group">
+                                                <button class="btn btn-outline-secondary">Применить</button>
+                                                <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mt-5">
+                                <div class="number-entry-unit success">
+                                    <div class="number-entry-unit__img">
+                                        <i class="card-icon"></i>
+                                    </div>
+                                    <div class="number-entry-unit__main">
+                                        <div class="number-entry-unit__input">
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Сертификат верный</span>
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Сертификат не верный</span>
+                                            <input type="text" placeholder="405 758">
+                                        </div>
+                                        <div class="number-entry-unit__group">
+                                            <button class="btn btn-outline-secondary">Применить</button>
+                                            <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="number-entry-unit error">
+                                    <div class="number-entry-unit__img">
+                                        <i class="card-icon"></i>
+                                    </div>
+                                    <div class="number-entry-unit__main">
+                                        <div class="number-entry-unit__input">
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Сертификат верный</span>
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Сертификат не верный</span>
+                                            <input type="text" placeholder="405 758">
+                                        </div>
+                                        <div class="number-entry-unit__group">
+                                            <button class="btn btn-outline-secondary">Применить</button>
+                                            <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="number-entry-unit success">
+                                    <div class="number-entry-unit__img">
+                                        <i class="coupon-icon"></i>
+                                    </div>
+                                    <div class="number-entry-unit__main">
+                                        <div class="number-entry-unit__input">
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Промокод верный</span>
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Промокод не верный</span>
+                                            <input type="text" placeholder="405 758">
+                                        </div>
+                                        <div class="number-entry-unit__group">
+                                            <button class="btn btn-outline-secondary">Применить</button>
+                                            <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="number-entry-unit error">
+                                    <div class="number-entry-unit__img">
+                                        <i class="coupon-icon"></i>
+                                    </div>
+                                    <div class="number-entry-unit__main">
+                                        <div class="number-entry-unit__input">
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-true">Промокод верный</span>
+                                            <span class="number-entry-unit__input-text number-entry-unit__input-text-false">Промокод не верный</span>
+                                            <input type="text" placeholder="405 758">
+                                        </div>
+                                        <div class="number-entry-unit__group">
+                                            <button class="btn btn-outline-secondary">Применить</button>
+                                            <span class="number-entry-unit__group-discount">- 12 500 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="personal-data personal-data__old">
+                                    <form class="d-flex flex-column" action="">
+                                        <div class="personal-data__wrapper">
+                                            <h4 class="h4 jump-booking__h4">Личные данные</h4>
+                                            <div class="personal-data__checkBox">
+                                                <input id="checkbox-1" type="checkbox">
+                                                <label for="checkbox-1">Я уже заказывал на этом сайте</label>
+                                            </div>
+                                        </div>
+                                        <input class="personal-data-input" type="email" placeholder="Email">
+                                        <button class="btn btn-secondary btn-orange jump-booking__step-btn">Оплатить</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="d-flex flex-column">
+                                    <h4 class="h4 jump-booking__h4">У вас есть подарочный сертификат или промокод? </h4>
+                                    <button class="btn btn-outline-secondary button-number-certificate">Указать номер сертификата</button>
+                                    <div class="personal-data personal-data__new">
+                                        <form class="d-flex flex-column" action="">
+                                            <div class="personal-data__wrapper">
+                                                <h4 class="h4 jump-booking__h4">Личные данные</h4>
+                                                <div class="personal-data__checkBox">
+                                                    <input id="checkbox-2" type="checkbox">
+                                                    <label for="checkbox-2">Я уже заказывал на этом сайте</label>
+                                                </div>
+                                            </div>
+                                            <div class="personal-data-form">
+                                                <input class="personal-data-input" type="text" placeholder="Имя">
+                                                <input class="personal-data-input" type="text" placeholder="Фамилия">
+                                                <input class="personal-data-input" type="email" placeholder="Email">
+                                                <input class="personal-data-input" type="text" placeholder="Телефон">
+                                            </div>
+
+                                            <button class="btn btn-secondary btn-orange jump-booking__step-btn">Оплатить</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -156,31 +475,33 @@
             </div>
         </div>
     </section>
+
     <div class="status-order">
         <div class="status-order__img"></div>
-        <span>Статус заказа</span>
-        <div class="status-order__ul">
-            <div class="status-order-string">
-                <span class="status-order-string__title">Дата прыжка</span>
-                <p class="status-order-string__value">11.03.2020</p>
+        <div class="status-order__container">
+            <span class="status-order__title">Статус заказа</span>
+            <div class="status-order__list">
+                <div class="status-order-string status-order__item">
+                    <span class="status-order-string__title">Дата прыжка</span>
+                    <p class="status-order-string__value">11.03.2020</p>
+                </div>
+                <div class="status-order-string status-order__item">
+                    <span class="status-order-string__title">Время прыжка</span>
+                    <p class="status-order-string__value">11:30</p>
+                </div>
+                <div class="status-order-string status-order__item">
+                    <span class="status-order-string__title">Количество прыгающих</span>
+                    <p class="status-order-string__value">1</p>
+                </div>
+                <div class="status-order-string status-order__item">
+                    <span class="status-order-string__title">Стоимость прыжка</span>
+                    <p class="status-order-string__value">12 500 ₽ </p>
+                </div>
             </div>
-            <div class="status-order-string">
-                <span class="status-order-string__title">Время прыжка</span>
-                <p class="status-order-string__value">11:30</p>
+            <div class="status-order__footer">
+                <span class="status-order__footer-title">Итого</span>
+                <p class="status-order__footer-price">12 500 ₽</p>
             </div>
-            <div class="status-order-string">
-                <span class="status-order-string__title">Количество прыгающих</span>
-                <p class="status-order-string__value">1</p>
-            </div>
-            <div class="status-order-string">
-                <span class="status-order-string__title">Стоимость прыжка</span>
-                <p class="status-order-string__value">12 500 ₽ </p>
-            </div>
-        </div>
-
-        <div class="status-order__footer">
-            <span class="status-order__footer-title">Итого</span>
-            <p class="status-order__footer-price">12 500 ₽</p>
         </div>
     </div>
 </main>

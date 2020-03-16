@@ -1,0 +1,125 @@
+.service-block {
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 109px;
+}
+
+.service-block__img {
+  background: #E9F9DD;
+  min-width: 73px;
+  width: 73px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: normal;
+
+  i {
+    margin-top: 41px;
+  }
+}
+
+.service-block__wrapper {
+  padding: 14px 20px 17px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.service-block__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.service-block__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.service-block__section {
+  width: 100%;
+}
+
+.service-block__section-first {
+  display: none;
+  flex-direction: column;
+}
+
+.service-block__section-first-calc {
+  display: flex;
+  align-items: center;
+}
+
+.service-block__section-first-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.service-block__btnGroup {
+  display: none;
+}
+
+.service-block__price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  min-width: 100px;
+  display: block;
+  text-align: right;
+}
+
+.service-block__btnGroup {
+  button {
+    max-width: 125px;
+    width: 100%;
+    height: 37px;
+
+    &:first-child {
+      margin-right: 5px;
+    }
+  }
+}
+
+.service-block__section-second {
+  button {
+    max-width: 126px;
+    width: 100%;
+  }
+}
+
+.service-block.active {
+  .service-block__wrapper {
+    background: #E9F9DD;
+  }
+
+  .service-block__section-first {
+    display: flex;
+  }
+
+  .service-block__section-second {
+    display: none;
+  }
+
+  .service-block__container {
+    margin-bottom: 31px;
+  }
+
+  .service-block__btnGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 265px;
+  }
+}

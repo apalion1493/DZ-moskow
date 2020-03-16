@@ -1,0 +1,59 @@
+.personal-data {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-data__checkBox {
+  margin-left: 22px;
+}
+
+.personal-data__wrapper {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.personal-data-input {
+  background: #F7F7F7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+  height: 49px;
+  padding-left: 22px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.personal-data.personal-data__old {
+  .personal-data-input {
+    max-width: 582px;
+    width: 100%;
+    margin-bottom: 97px;
+  }
+}
+
+.personal-data-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 582px;
+  margin-bottom: 48px;
+
+  .personal-data-input {
+    width: 100%;
+    margin-bottom: 14px;
+
+    &:nth-child(1),
+    &:nth-child(2){
+      width: 48.5%;
+    }
+  }
+
+}

@@ -1,0 +1,130 @@
+.number-entry-unit {
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.number-entry-unit__img {
+  background: #e9f9dd;
+  min-width: 73px;
+  width: 73px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: normal;
+  border-radius: 5px;
+}
+
+.number-entry-unit__main {
+  padding: 32px 17px 28px 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.number-entry-unit__input {
+  margin-right: 15px;
+  max-width: 174px;
+  position: relative;
+
+  input {
+    width: 100%;
+    background: #F7F7F7;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: none;
+    height: 49px;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 36px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+}
+
+.number-entry-unit__input-text {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  display: none;
+}
+
+.number-entry-unit__input-text-false {
+  color: #D45544;
+}
+
+.number-entry-unit__input-text-true {
+  color: #84D444;
+}
+
+.number-entry-unit__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.number-entry-unit__group-discount {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  text-align: right;
+  display: none;
+}
+
+.number-entry-unit.success {
+  .number-entry-unit__input {
+    input {
+      background-image: url("../img/success-icon.svg");
+      background-size: 25px 25px;
+      background-position: 90% center;
+      background-repeat: no-repeat;
+
+    }
+  }
+  
+  .number-entry-unit__group {
+    button {
+      display: none;
+    }
+  }
+
+  .number-entry-unit__group-discount {
+    display: block;
+  }
+
+  .number-entry-unit__input-text-true {
+    display: block;
+  }
+}
+
+.number-entry-unit.error {
+  .number-entry-unit__img {
+    background: #F9DDDD;
+  }
+
+  .number-entry-unit__input-text-false {
+    display: block;
+  }
+
+  .number-entry-unit__input {
+
+    input {
+      background-image: url("../img/error-icon.svg");
+      background-size: 25px 25px;
+      background-position: 90% center;
+      background-repeat: no-repeat;
+
+    }
+  }
+}

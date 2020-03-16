@@ -67,6 +67,71 @@ html, body {
   position: relative;
 }
 
+.btn-orange {
+  min-height: 55px;
+  box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
+  font-size: 16px;
+}
+
+.human-icon {
+  background: url("../img/human-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 30px;
+  display: block;
+}
+
+.gopro-icon {
+  background: url("../img/gopro-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.card-icon {
+  background: url("../img/card-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 32px;
+  height: 23px;
+  display: block;
+}
+
+.coupon-icon {
+  background: url("../img/coupon-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 37px;
+  display: block;
+}
+
+.button-minus,
+.button-plus {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #555555;
+
+  background: #FFFFFF;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  width: 33px;
+  height: 33px;
+}
+
+.btn-outline-secondary {
+  color: #333333;
+}
+
+.button-number-certificate {
+  height: 37px;
+  max-width: 231px;
+}
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1200px;
