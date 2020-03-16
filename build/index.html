@@ -64,7 +64,7 @@
 </header>
 
 <main id="main" class="main">
-    <section class="section jump-booking">
+    <section id="jump-booking" class="section jump-booking">
         <div class="container">
             <div class="row">
                 <div class="col-9">
@@ -475,8 +475,7 @@
             </div>
         </div>
     </section>
-
-    <div class="status-order">
+    <div id="status-order" class="status-order">
         <div class="status-order__img"></div>
         <div class="status-order__container">
             <span class="status-order__title">Статус заказа</span>
@@ -507,7 +506,7 @@
 </main>
 
 <footer id="footer" class="footer">
-    <div class="container">
+    <div class="container pb-5">
         <div class="row">
             <div class="col-5">
                 <div class="footer__first-container">
@@ -622,7 +621,9 @@
 
     burger.addEventListener('click', function () {
         burger.classList.toggle('active');
-    })
+    });
+
+
 </script>
 </body>
 </html>

@@ -12,6 +12,11 @@
 .footer__info-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 6px;
+
+  & > span:last-child {
+    margin-left: 60px;
+  }
 }
 
 .footer__info-text {
@@ -27,6 +32,7 @@
   justify-content: flex-end;
   padding-left: 0;
   margin-bottom: 0;
+  height: 100%;
 }
 
 .footer__socialNetwork-item {

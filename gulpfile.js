@@ -36,6 +36,7 @@ function styles() {
 function scripts() {
 
     return gulp.src([
+        // 'src/assets/js/libs/float-sidebar/**/*.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))
