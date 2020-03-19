@@ -107,3 +107,9 @@
     text-decoration: none;
   }
 }
+
+@-moz-document url-prefix() {
+  .header__nav-link {
+    font-size: 11px;
+  }
+}

@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: space-between;
   background: #F7FEF1;
+  cursor: pointer;
+
+  &:hover {
+    background: #e9f9dd;
+  }
 }
 
 .jump-time-block__time {
@@ -87,6 +92,11 @@
 }
 
 .jump-time-block.unassembled {
+
+  &:hover {
+    background: #e9f9dd;
+  }
+
   .jump-time-block__places {
     i {
       background: #84D444;
@@ -100,6 +110,12 @@
 }
 
 .jump-time-block.hollow {
+  background: #ffffff;
+
+  &:hover {
+    background: #e9f9dd;
+  }
+
   .jump-time-block__places {
     i {
       background: #D9D9D9;
