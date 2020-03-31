@@ -409,6 +409,11 @@
     height: 60px;
     vertical-align: baseline;
 
+    &:hover {
+      background: #84D444;
+      color: #ffffff;
+    }
+
     &.selected {
       background: #84D444;
     }
