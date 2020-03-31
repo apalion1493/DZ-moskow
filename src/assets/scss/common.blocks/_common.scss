@@ -4,6 +4,7 @@ html, body {
   }
 
   font-weight: normal;
+  font-size: 16px;
 }
 
 .main-logo {
@@ -70,7 +71,7 @@ html, body {
 .btn-orange {
   min-height: 55px;
   box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .human-icon {
@@ -108,7 +109,7 @@ html, body {
 .button-minus,
 .button-plus {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
