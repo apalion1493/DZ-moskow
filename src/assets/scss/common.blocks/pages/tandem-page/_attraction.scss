@@ -1,0 +1,30 @@
+.attraction {
+  padding-top: 75px;
+}
+
+.attraction__title {
+  color: #333333;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+.attraction__subTitle {
+  font-size: 1.5rem;
+  line-height: 2.44rem;
+  color: #333333;
+  margin-bottom: 57px;
+  display: block;
+}
+
+.attraction__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.attraction__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

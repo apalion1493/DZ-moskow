@@ -11,72 +11,75 @@
 </head>
 <body>
 
-<header id="header" class="header section">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="header__wrapper">
-                    <a class="main-logo header__logo" href="#"></a>
-                    <div class="header__feedback">
-                        <a class="header__feedback-phone" href="tel:+79381555550">+7 938-1-55555-0</a>
-                        <a href="#" class="header__feedback-messenger">
-                            <i class="icon-telegram"></i>
-                        </a>
-                        <a href="#" class="header__feedback-messenger">
-                            <i class="icon-viber"></i>
-                        </a>
-                    </div>
-                    <div class="header__calendar">
-                        <button type="button" class="header__calendar-icon calendar-icon"></button>
-                        <span class="header__calendar-alertCircle"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">ЦЕНЫ</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">ВИРТУАЛЬНЫЙ ТУР</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">АЭРОДРОМЫ</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">О НАС</a>
-                        </li>
-                    </ul>
 
-                    <div id="burger" class="burger">
-                        <span class="burger__line burger__line-1"></span>
-                        <span class="burger__line burger__line-2"></span>
-                        <span class="burger__line burger__line-3"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 
 <main id="main" class="main tandem-page">
-    <section id="tandem-first-screen" class="section tandem-first_screen">
+    <section id="tandem-first-screen" class="section tandem-first-screen tandem-first-screen_section">
+        <header id="header" class="header section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="header__wrapper">
+                            <a class="main-logo header__logo" href="#"></a>
+                            <div class="header__feedback">
+                                <a class="header__feedback-phone" href="tel:+79381555550">+7 938-1-55555-0</a>
+                                <a href="#" class="header__feedback-messenger">
+                                    <i class="icon-telegram"></i>
+                                </a>
+                                <a href="#" class="header__feedback-messenger">
+                                    <i class="icon-viber"></i>
+                                </a>
+                            </div>
+                            <div class="header__calendar">
+                                <button type="button" class="header__calendar-icon calendar-icon"></button>
+                                <span class="header__calendar-alertCircle"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">ЦЕНЫ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">ВИРТУАЛЬНЫЙ ТУР</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">АЭРОДРОМЫ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">О НАС</a>
+                                </li>
+                            </ul>
+
+                            <div id="burger" class="burger">
+                                <span class="burger__line burger__line-1"></span>
+                                <span class="burger__line burger__line-2"></span>
+                                <span class="burger__line burger__line-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <div>
-                        <h1 class="display-3">Прыжок с парашютом </h1>
-                        <span>в тандеме с инструктором</span>
+                    <div class="tandem-first-screen__block">
+                        <h1 class="display-3 tandem-first-screen__title">Прыжок с парашютом </h1>
+                        <span class="tandem-first-screen__subtitle">в тандеме с инструктором</span>
 
-                        <div>
-                            <span></span>
-                            <div>
-                                <span>20 км</span>
-                                <p>от МКАД</p>
+                        <div class="tandem-first-screen__location">
+                            <span class="tandem-first-screen__location-icon">
+                                <i></i>
+                            </span>
+                            <div class="tandem-first-screen__location-block">
+                                <span class="tandem-first-screen__location-num">20 км</span>
+                                <p class="tandem-first-screen__location-text">от МКАД</p>
                             </div>
                         </div>
                     </div>
@@ -84,49 +87,49 @@
             </div>
         </div>
         <div class="tandem-first-screen__pop-up">
-            <span></span>
-            <div>
-                <span>Обучение по программе AFF</span>
-                <a href="#">Подробнее</a>
+            <span class="tandem-first-screen__pop-up-img"></span>
+            <div class="tandem-first-screen__pop-up-block">
+                <span class="tandem-first-screen__pop-up-text">Обучение по <br> программе AFF</span>
+                <a class="tandem-first-screen__pop-up-link" href="#">Подробнее</a>
             </div>
         </div>
-        <div class="tandem-first-screen__videoBtn"></div>
+<!--<div class="videoBtn videoBtn_tandem-first-screen"></div>-->
     </section>
-    <section id="attraction-section" class="section attraction_section">
+    <section id="attraction-section" class="section attraction attraction_section">
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <div>
-                        <h2 class="h2">Атракцион</h2>
-                        <span>который вы не забудете завтра</span>
-                        <ul class="attraction-section__list">
-                            <li class="attraction-section__item">
+                    <div class="attraction__wrapper">
+                        <h2 class="h2 attraction__title">Атракцион</h2>
+                        <span class="attraction__subTitle">который вы не забудете завтра</span>
+                        <ul class="attraction__list">
+                            <li class="attraction__item">
                                 <div class="media">
-                                    <img src="..." class="mr-3" alt="...">
+                                    <img src="assets/img/vector-icon/plane-icon.svg" class="mr-3" alt="...">
                                     <div class="media-body">
                                         Вы взлетаете на высоту <span>4 000</span> км на самолете L-140 "Star Trek"
                                     </div>
                                 </div>
                             </li>
-                            <li class="attraction-section__item">
+                            <li class="attraction__item">
                                 <div class="media">
-                                    <img src="..." class="mr-3" alt="...">
+                                    <img src="assets/img/vector-icon/skydiving.svg" class="mr-3" alt="...">
                                     <div class="media-body">
                                         Вы летите со скоростью свободного падения, а это <span>200 км/час</span>
                                     </div>
                                 </div>
                             </li>
-                            <li class="attraction-section__item">
+                            <li class="attraction__item">
                                 <div class="media">
-                                    <img src="..." class="mr-3" alt="...">
+                                    <img src="assets/img/vector-icon/skydiver-icon.svg" class="mr-3" alt="...">
                                     <div class="media-body">
                                         <span>5 минут</span> полета под куполом. У вас будет достаточно времени все расмотреть
                                     </div>
                                 </div>
                             </li>
-                            <li class="attraction-section__item">
+                            <li class="attraction__item">
                                 <div class="media">
-                                    <img src="..." class="mr-3" alt="...">
+                                    <img src="assets/img/vector-icon/city-icon.svg" class="mr-3" alt="...">
                                     <div class="media-body">
                                         Vы рядом с <span>Москва Сити</span>, поэтому при прыжке будет отличный вид
                                     </div>

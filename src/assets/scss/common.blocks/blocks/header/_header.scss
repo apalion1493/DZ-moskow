@@ -113,3 +113,24 @@
     font-size: 11px;
   }
 }
+
+.main {
+  .header {
+    box-shadow: none;
+    background: initial;
+
+    .header__feedback-phone {
+      color: #ffffff;
+    }
+
+    .header__feedback-messenger,
+    .header__calendar {
+      background: #ffffff;
+    }
+
+    .header__nav-link {
+      color: #ffffff;
+      font-weight: normal;
+    }
+  }
+}

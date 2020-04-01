@@ -18,8 +18,8 @@ html, body {
 .icon-telegram {
   background: url("../img/telegram-icon.svg") no-repeat center;
   background-size: 100% auto;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   display: block;
 }
 
@@ -133,8 +133,16 @@ html, body {
   max-width: 231px;
 }
 
+.videoBtn {
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url("../img/videoBtn.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1200px;
+    max-width: 1224px;
   }
 }

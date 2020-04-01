@@ -9,7 +9,8 @@
     "del": "^3.0.0",
     "donutty": "^2.0.0",
     "jquery-appear-original": "^0.6.2",
-    "typed.js": "^2.0.11"
+    "typed.js": "^2.0.11",
+    "vue-date-pick": "^1.3.0"
   },
   "devDependencies": {
     "bootstrap": "^4.4.1",
