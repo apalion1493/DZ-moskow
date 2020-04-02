@@ -1,0 +1,109 @@
+.make-gift {
+  padding-top: 62px;
+  padding-bottom: 78px;
+}
+
+.make-gift__header {
+  max-width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.make-gift__title {
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.make-gift__subTitle {
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+.make-gift__card {
+  background: #FFFFFF;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 27px 27px 33px 35px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  min-height: 325px;
+  width: 100%;
+}
+
+.make-gift__card-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.make-gift__card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.make-gift__card-info-code {
+  font-size: 30px;
+  line-height: normal;
+  color: #979695;
+  margin-bottom: 20px;
+}
+
+.make-gift__card-info-text {
+  font-size: 0.875rem;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #333333;
+
+  a {
+    color: #333333;
+  }
+}
+
+.make-gift__card-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.make-gift__card-logo-icon {
+  background: url("../img/tandem/dzk-logo.png") no-repeat center;
+  background-size: 100% auto;
+  width: 236px;
+  height: 116px;
+  display: block;
+  margin-right: -3px;
+}
+
+.make-gift__card-logo-text {
+  font-size: 1.5rem;
+  line-height: 29px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.make-gift__card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: auto;
+}
+
+.make-gift__card-btn {
+  width: 173px;
+  height: 43px;
+  box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
+  margin-top: auto;
+}

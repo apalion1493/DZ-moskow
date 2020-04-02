@@ -4,6 +4,7 @@
   "description": "Assembly for projects whis SASS. Start in project's folder 1. npm -i gulp, 2.npm init -y",
   "main": "index.js",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "browserslist": "^4.8.3",
     "caniuse-lite": "^1.0.30001035",
     "del": "^3.0.0",
@@ -13,6 +14,7 @@
     "vue-date-pick": "^1.3.0"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
@@ -28,7 +30,8 @@
     "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

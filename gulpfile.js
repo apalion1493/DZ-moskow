@@ -37,6 +37,9 @@ function scripts() {
 
     return gulp.src([
         // 'src/assets/js/libs/float-sidebar/**/*.js',
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))

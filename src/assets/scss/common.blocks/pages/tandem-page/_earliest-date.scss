@@ -1,0 +1,145 @@
+.earliest-date {
+  padding-top: 131px;
+}
+
+.earliest-date__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.earliest-date__title {
+  margin-bottom: 0;
+}
+
+.earliest-date__subTitle {
+  font-size: 1.5rem;
+  line-height: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.earliest-date__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 43px 28px 37px 28px;
+  background: rgba(255, 255, 255, .9);
+  opacity: 0.9;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.earliest-date__column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.earliest-date__column-description-list {
+  max-width: 330px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: auto;
+}
+
+.earliest-date__column-description-item {
+  margin-bottom: 35px;
+
+  img {
+    margin-right: 35px;
+  }
+
+  .media-body {
+    font-size: 1rem;
+    line-height: 19px;
+    color: #333333;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.earliest-date__column-calc-list {
+  list-style-type: none;
+  padding-left: 0;
+  background: linear-gradient(180deg, #6ACA1E 0%, #E2D299 116.59%), #6ACA1E;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 292px;
+  height: 292px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.earliest-date__column-calc-item {
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  width: 257px;
+  max-width: 257px;
+  height: 257px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 20px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.earliest-date__column-calc-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.earliest-date__column-calc-block-data {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 34px;
+  text-align: center;
+  color: #333333;
+}
+
+.earliest-date__column-calc-block-week {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 162.8%;
+  text-align: center;
+  color: #555555;
+  margin-bottom: 22px;
+}
+
+.earliest-date__column-calc-block-time {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 162.8%;
+  text-align: center;
+  color: #555555;
+}
+
+.earliest-date__column-btnGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.earliest-date__column-btn {
+  width: 229px;
+  height: 55px;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 15px rgba(216, 58, 58, 0.3);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

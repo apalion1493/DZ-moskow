@@ -19,10 +19,33 @@
 .attraction__list {
   list-style-type: none;
   padding-left: 0;
+  max-width: 470px;
+  margin-bottom: 0;
 }
 
 .attraction__item {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+
+  .media {
+    align-items: center;
+
+    img {
+      margin-right: 30px;
+    }
+  }
+
+  .media-body {
+    font-size: 1rem;
+    line-height: 19px;
+    color: #333333;
+
+    span {
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-top: 5px;
+      display: inline-flex;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;

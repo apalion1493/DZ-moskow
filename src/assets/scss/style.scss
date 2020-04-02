@@ -1,5 +1,8 @@
 //LIBRARY
 @import "library.styles/bootstrap/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "library.styles/fancyBox/jquery.fancybox.css";
 
 //TEXT
 @import "common.blocks/text";
@@ -15,6 +18,17 @@
 @import "common.blocks/pages/tandem-page/common";
 @import "common.blocks/pages/tandem-page/tandem-first-screen";
 @import "common.blocks/pages/tandem-page/attraction";
+@import "common.blocks/pages/tandem-page/earliest-date";
+@import "common.blocks/pages/tandem-page/jump-price_section";
+@import "common.blocks/pages/tandem-page/shares-company";
+@import "common.blocks/pages/tandem-page/make-gift";
+@import "common.blocks/pages/tandem-page/tandem-questions";
+@import "common.blocks/pages/tandem-page/positive-reviews";
+@import "common.blocks/pages/tandem-page/video-jumps";
+@import "common.blocks/pages/tandem-page/photo-jumping-instagram";
+@import "common.blocks/pages/tandem-page/our-team";
+@import "common.blocks/pages/tandem-page/training-program";
+@import "common.blocks/pages/tandem-page/find-us";
 
 //BLOCKS
 @import "common.blocks/blocks/header/header";

@@ -139,6 +139,15 @@ html, body {
   display: block;
   background: url("../img/videoBtn.svg") no-repeat center;
   background-size: 100% auto;
+  cursor: pointer;
+}
+
+.inst-svg-icon {
+  background: url("../img/vector-icon/gopro-svg-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 @media (min-width: 1200px) {

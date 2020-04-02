@@ -1,0 +1,133 @@
+.jump-price_section {
+  padding-top: 72px;
+}
+
+.jump-price__title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.jump-price__wrapper {
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.jump-price__main {
+  display: flex;
+}
+
+.jump-price__main-container {
+  padding: 58px 32px 115px;
+  display: flex;
+  flex-direction: column;
+}
+
+.jump-price__main-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 21px;
+}
+
+.jump-price__price {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 21px;
+}
+
+.jump-price__main-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 65px;
+}
+
+.jump-price__main-item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 19px;
+    color: #777777;
+  }
+}
+
+.jump-price__additionally {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  margin-right: 32px;
+}
+
+.jump-price__additionally-block {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px 40px 19px 60px;
+  max-width: 406px;
+  margin-left: auto;
+}
+
+.jump-price__additionally-block-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.jump-price__additionally-block-icon {
+  background: #F4F4F4;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: -28px;
+  width: 55px;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jump-price__additionally-block-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.jump-price__additionally-block-price {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 34px;
+  color: #333333;
+  margin-bottom: 13px;
+}
+
+.jump-price__additionally-block-text {
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: #777777;
+  margin-bottom: 21px;
+}
+
+.jump-price__additionally-btn {
+  width: 176px;
+  height: 49px;
+  box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
+}
+
+.jump-price__main-btn {
+  width: 205px;
+  height: 55px;
+  box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
+}

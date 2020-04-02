@@ -1,0 +1,76 @@
+.positive-reviews {
+  padding-top: 76px;
+  background: #F3F3F3;
+  padding-bottom: 113px;
+}
+
+.positive-reviews__title {
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.positive-reviews__block {
+  display: flex;
+  position: relative;
+  padding-left: 378px;
+  padding-right: 102px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  min-height: 346px;
+
+  .slick-list {
+    //overflow: inherit;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 102px;
+    height: 100%;
+    background: #E9F9DD;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 102px;
+    height: 100%;
+    background: #E9F9DD;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.positive-reviews__image {
+  min-height: 422px;
+  position: absolute;
+  left: 102px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.positive-reviews__wrapper {
+  position: relative;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.positive-reviews__body {
+  padding: 49px 100px 118px 47px;
+}
