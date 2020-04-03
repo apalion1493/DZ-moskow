@@ -37,9 +37,18 @@ function scripts() {
 
     return gulp.src([
         // 'src/assets/js/libs/float-sidebar/**/*.js',
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js',
-        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+        // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        // 'src/assets/js/libs/jquery/jquery.min.js',
+        // 'src/assets/js/libs/bootstrap/bootstrap.min.js',
+        // 'src/assets/js/libs/slick-carousel/slick.min.js',
+        // 'src/assets/js/libs/fancybox/jquery.fancybox.min.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/highlight.pack.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/js/examples.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/modernizr.custom.min.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/greensock/TweenMax.min.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+        // 'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))
@@ -49,6 +58,12 @@ function scripts() {
         .pipe(terser())
         .pipe(gulp.dest('build/assets/js'))
         .pipe(browserSync.stream());
+}
+
+function script() {
+    return gulp.src('src/assets/js/libs/**/*.js')
+        .pipe(gulp.dest('build/assets/js/libs'))
+
 }
 
 function html() {
@@ -105,6 +120,7 @@ function watch() {
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
+gulp.task('script', script);
 gulp.task('html', html);
 gulp.task('img', img);
 gulp.task('fonts', fonts);
@@ -112,5 +128,5 @@ gulp.task('og', og);
 gulp.task('og', favicons);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,scripts,html,img,fonts,og,favicons)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles,scripts,script,html,img,fonts,og,favicons)));
 gulp.task('dev', gulp.series('build','watch'));

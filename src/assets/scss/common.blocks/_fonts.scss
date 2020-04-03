@@ -1,45 +1,51 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('../../fonts/Proxima-Nova-Regular.otf');
+  src: url('../fonts/Proxima-Nova-Regular.otf'),
+  url('../fonts/Proxima-Nova-Regular.eot'),
+  url('../fonts/Proxima-Nova-Regular.ttf') format('truetype'),
+  url('../fonts/Proxima-Nova-Regular.eot?iefix') format('embedded-opentype'),
+  url('../fonts/Proxima-Nova-Regular.woff') format('woff'),
+  url('../fonts/Proxima-Nova-Regular.woff2') format('woff2'),
+  url('../fonts/Proxima-Nova-Regular.svg#webfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-//@font-face {
-//  font-family: 'Proxima Nova';
-//  src: url('../fonts/Circle/Circe-ExtraLight.eot');
-//  font-weight: 200;
-//  font-style: normal;
-//}
-
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('../../fonts/Proxima-Nova-Thin.otf');
+  src: url('../fonts/Proxima-Nova-Thin.otf'),
+  url('../fonts/Proxima-Nova-Thin.eot'),
+  url('../fonts/Proxima-Nova-Thin.ttf') format('truetype'),
+  url('../fonts/Proxima-Nova-Thin.eot?iefix') format('embedded-opentype'),
+  url('../fonts/Proxima-Nova-Thin.woff') format('woff'),
+  url('../fonts/Proxima-Nova-Thin.woff2') format('woff2'),
+  url('../fonts/Proxima-Nova-Thin.svg#webfont') format('svg');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('../../fonts/Proxima-Nova-Light.otf');
+  src: url('../fonts/Proxima-Nova-Light.otf'),
+  url('../fonts/Proxima-Nova-Light.eot'),
+  url('../fonts/Proxima-Nova-Light.ttf') format('truetype'),
+  url('../fonts/Proxima-Nova-Light.eot?iefix') format('embedded-opentype'),
+  url('../fonts/Proxima-Nova-Light.woff') format('woff'),
+  url('../fonts/Proxima-Nova-Light.woff2') format('woff2'),
+  url('../fonts/Proxima-Nova-Light.svg#webfont') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('../../fonts/Proxima-Nova-Bold.otf');
+  src: url('../fonts/Proxima-Nova-Bold.otf'),
+  url('../fonts/Proxima-Nova-Bold.eot'),
+  url('../fonts/Proxima-Nova-Bold.ttf') format('truetype'),
+  url('../fonts/Proxima-Nova-Bold.eot?iefix') format('embedded-opentype'),
+  url('../fonts/Proxima-Nova-Bold.woff') format('woff'),
+  url('../fonts/Proxima-Nova-Bold.woff2') format('woff2'),
+  url('../fonts/Proxima-Nova-Bold.svg#webfont') format('svg');
   font-weight: bold;
   font-style: normal;
 }
-
-//@font-face {
-//  font-family: 'Circe';
-//  src: url('../fonts/Circle/Circe-ExtraBold.eot');
-//  src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
-//  url('../fonts/Circle/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
-//  url('../fonts/Circle/Circe-ExtraBold.woff') format('woff'),
-//  url('../fonts/Circle/Circe-ExtraBold.ttf') format('truetype');
-//  font-weight: 800;
-//  font-style: normal;
-//}

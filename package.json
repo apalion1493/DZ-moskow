@@ -17,6 +17,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.3",
+    "gsap": "^3.0.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -31,6 +32,7 @@
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.3",
+    "scrollmagic": "^2.0.7",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
