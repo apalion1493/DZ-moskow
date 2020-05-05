@@ -11,10 +11,11 @@
 </head>
 <body>
 
-
-
 <main id="main" class="main tandem-page">
     <section id="tandem-first-screen" class="section tandem-first-screen tandem-first-screen_section">
+        <video class="tandem-first-screen__video" poster="assets/img/tandem/first-screen.jpg" autoplay muted="muted">
+            <source src="assets/img/media/tandem_+10sec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
         <header id="header" class="header section">
             <div class="container">
                 <div class="row">
@@ -43,20 +44,17 @@
                                     <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">ЦЕНЫ</a>
+                                    <a class="header__nav-link" href="#">СЕРТИФИКАТЫ</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">ВИРТУАЛЬНЫЙ ТУР</a>
+                                    <a class="header__nav-link" href="#">ОБУЧЕНИЕ AFF</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">АЭРОДРОМЫ</a>
-                                </li>
-                                <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">О НАС</a>
+                                    <a class="header__nav-link" href="#">О КЛУБЕ</a>
                                 </li>
                             </ul>
 
-                            <div id="burger" class="burger">
+                            <div id="burger" class="burger d-none">
                                 <span class="burger__line burger__line-1"></span>
                                 <span class="burger__line burger__line-2"></span>
                                 <span class="burger__line burger__line-3"></span>
@@ -101,38 +99,46 @@
             <div class="row">
                 <div class="col-6">
                     <div class="attraction__wrapper">
-                        <h2 class="h2 attraction__title">Атракцион</h2>
-                        <span class="attraction__subTitle">который вы не забудете завтра</span>
+                        <h3 class="h3 attraction__title">ТВОЕ ЛУЧШЕЕ ПРИКЛЮЧЕНИЕ</h3>
+                        <span class="attraction__subTitle">Тебя ждет</span>
                         <ul class="attraction__list">
                             <li class="attraction__item">
                                 <div class="media">
-                                    <img src="assets/img/vector-icon/plane-icon.svg" class="" alt="...">
+                                    <div class="attraction__item-img">
+                                        <img src="assets/img/new-vector-icon/helmet-parachutist.svg" class="" alt="...">
+                                    </div>
                                     <div class="media-body">
-                                        Вы взлетаете на высоту <span>4 000</span> км на <br> самолете L-140 "Star Trek"
+                                        Инструктаж <span>15 минут</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="attraction__item">
                                 <div class="media">
-                                    <img src="assets/img/vector-icon/skydiving.svg" class="" alt="...">
+                                    <div class="attraction__item-img">
+                                        <img src="assets/img/new-vector-icon/plane-green.svg" class="" alt="...">
+                                    </div>
                                     <div class="media-body">
-                                        Вы летите со скоростью свободного падения, а <br> это <span>200 км/час</span>
+                                        Подъем на высоту <span>4 км</span> на самолете  L-410 "Star Trek"
                                     </div>
                                 </div>
                             </li>
                             <li class="attraction__item">
                                 <div class="media">
-                                    <img src="assets/img/vector-icon/skydiver-icon.svg" class="" alt="...">
+                                    <div class="attraction__item-img">
+                                        <img src="assets/img/new-vector-icon/base-jumping.svg" class="" alt="...">
+                                    </div>
                                     <div class="media-body">
-                                        <span>5 минут</span> полета под куполом. У вас будет <br> достаточно времени все расмотреть
+                                        <span>60 секунд</span> свободного падения со скоростью <span>200 км/ч</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="attraction__item">
                                 <div class="media">
-                                    <img src="assets/img/vector-icon/city-icon.svg" class="" alt="...">
+                                    <div class="attraction__item-img">
+                                        <img src="assets/img/new-vector-icon/parachute-man.svg" class="" alt="...">
+                                    </div>
                                     <div class="media-body">
-                                        Vы рядом с <span>Москва Сити</span>, поэтому при прыжке <br> будет отличный вид
+                                        <span>5 минут снижения</span> под куполом и мягкое приземление
                                     </div>
                                 </div>
                             </li>
@@ -143,13 +149,11 @@
             <span id="attraction__img-plane" class="attraction__img attraction__img-plane"></span>
             <span id="attraction__img-humans" class="attraction__img attraction__img-humans"></span>
         </div>
-
     </section>
     <section id="earliest-date" class="section earliest-date earliest-date_section">
         <div class="container">
             <div class="earliest-date__header">
-                <h2 class="h2 earliest-date__title">Ближайшая дата</h2>
-                <span class="earliest-date__subTitle">когда это можно сделать</span>
+                <h2 class="h2 earliest-date__title">БЛИЖАЙШАЯ ДАТА ПРЫЖКА</h2>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -158,15 +162,15 @@
                             <ul class="earliest-date__column-description-list">
                                 <li class="earliest-date__column-description-item">
                                     <div class="media">
-                                        <img src="assets/img/vector-icon/rain-icon.svg" class="" alt="...">
+                                        <img src="assets/img/new-vector-icon/rain-icon.svg" class="" alt="...">
                                         <div class="media-body">
-                                            Прыжок зависит от погоды, выделяйте весь день
+                                            На прыжки влияют погода и специфика авиационной деятельности, поэтому планируй выделить на это событие весь день
                                         </div>
                                     </div>
                                 </li>
                                 <li class="earliest-date__column-description-item">
                                     <div class="media">
-                                        <img src="assets/img/vector-icon/ecommerce-icon.svg" class="" alt="...">
+                                        <img src="assets/img/new-vector-icon/ecommerce.svg" class="" alt="...">
                                         <div class="media-body">
                                             Заказывая на сайте, вы экономите. Цена дешевле, а удовольствие тоже!
                                         </div>
@@ -175,7 +179,7 @@
                             </ul>
                         </div>
                         <div class="earliest-date__column earliest-date__column-calc">
-                            <ul class="earliest-date__column-calc-list" >
+                            <ul class="earliest-date__column-calc-list">
                                 <li class="earliest-date__column-calc-item">
                                     <div class="earliest-date__column-calc-block">
                                         <span class="earliest-date__column-calc-block-data">28 марта</span>
@@ -219,7 +223,7 @@
                                 <div class="jump-price__main">
                                     <img src="assets/img/tandem/price-container-img.jpg" alt="">
                                     <div class="jump-price__main-container">
-                                        <span class="jump-price__main-title">Прыжок с парашютом в тандеме </span>
+                                        <span class="jump-price__main-title">Прыжок с парашютом в тандеме с инструктором</span>
                                         <span class="jump-price__price">12 500 ₽</span>
                                         <ul class="jump-price__main-list">
                                             <li class="jump-price__main-item">
@@ -280,10 +284,18 @@
                             <img class="shares-company__img-1" src="assets/img/tandem/shares-company-1.png" alt="">
                         </span>
                         <div class="shares-company__container-body">
-                            <p class="shares-company__container-body-title">Получи скидку за приведенного друга</p>
-                            <div class="shares-company__container-body-text">
-                                <span>25%</span>
-                                <p>Скидка на <br> прыжок</p>
+                            <p class="shares-company__container-body-title text-secondary">скидка 25%</p>
+                            <p class="shares-company__container-body-subtitle">Возьми с собой друзей! Будет не только весело и круто, но и выгодно</p>
+                            <div class="shares-company__container-body-details">
+                                <i></i>
+                                <p class="mb-0">25% на стоимость прыжка в тандеме для друзей. Скидка действует на каждого второго участника.</p>
+                            </div>
+                            <p class="shares-company__container-body-info">Подробности по телефону</p>
+                            <div class="shares-company__container-body-links">
+                                <a href="tel:+79180000035" class="shares-company__container-body-links-phone">+7 (918) 000-00-35</a>
+                                <a href="#" class="icon-telegram-color shares-company__container-body-links-icon"></a>
+                                <a href="#" class="icon-viber-color shares-company__container-body-links-icon"></a>
+                                <a href="#" class="icon-whatsapp-color shares-company__container-body-links-icon"></a>
                             </div>
                         </div>
                     </div>
@@ -294,11 +306,17 @@
                              <img class="shares-company__img-2" src="assets/img/tandem/shares-company-2.png" alt="">
                         </span>
                         <div class="shares-company__container-body">
-                            <p class="shares-company__container-body-title">Сделай репост о нас</p>
-                            <div class="shares-company__container-body-text">
-                                <p>и получи съемку камерой Handycam в подарок!</p>
+                            <p class="shares-company__container-body-title">Получи бесплатную видеосъемку</p>
+                            <p class="shares-company__container-body-slogan">За репост и отзыв!</p>
+                            <span class="shares-company__container-body-text">Поделиться:</span>
+                            <div class="shares-company__container-body-repost">
+                                <div class="shares-company__container-body-repost-icon">
+                                    <a href="#" class="icon-instagram-color"></a>
+                                </div>
+                                <div class="shares-company__container-body-repost-icon">
+                                    <a href="#" class="icon-vk-color"></a>
+                                </div>
                             </div>
-                            <button class="btn btn-outline-secondary shares-company__container-btn">Смотри что получишь</button>
                         </div>
                     </div>
                 </div>
@@ -308,8 +326,8 @@
     <section id="make-gift" class="section make-gift make-gift_section">
         <div class="container">
             <div class="make-gift__header">
-                <h3 class="h3 make-gift__title">Так же вы можете сделать подарок</h3>
-                <p class="make-gift__subTitle">Сертификат на прыжок - отличный подарок. <br>Свежо. Весело. Очень круто.</p>
+                <h2 class="h2 make-gift__title">ДАРИ ЭМОЦИИ</h2>
+                <p class="make-gift__subTitle">Сертификат на прыжок - отличный подарок.<br>Свежо. Весело. Очень круто.</p>
             </div>
             <div class="row">
                 <div class="col-6">
@@ -347,7 +365,7 @@
                             </div>
                         </div>
                         <div class="make-gift__card-block">
-                            <span class="make-gift__card-title">Прыжок в тандеме <br> с фото/видеосьемкой </span>
+                            <span class="make-gift__card-title">ПРЫЖОК В ТАНДЕМЕ С <br> ВИДЕОСЪЕМКОЙ</span>
                             <button class="btn btn-outline-secondary make-gift__card-btn">Сделать подарок</button>
                         </div>
                     </div>
@@ -358,116 +376,187 @@
     <section id=tandem-questions"" class="section tandem-questions tandem-questions_section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <span class="tandem-questions__title">Зачем снимать видео?</span>
-                    <ul class="tandem-questions__list">
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                                <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/gopro-svg-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    Если это первый прыжок, то мы вам рекомендуем его записать.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                                <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/happy-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    Посмотрит на себя со стороны, запечетлев весь букет эмоций.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                               <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/skydiving-bottom-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    Вас снимит оператор, который прыгнет вместе с вами, чтобы споймать каждый момент.
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <span class="tandem-questions__title">Кому можно прыгать?</span>
-                    <ul class="tandem-questions__list">
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                                <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/smartwatch-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    У вас не должно быть заболеваний сердца и нервной системы.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                                <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/scale-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    Максимальный вес для прыжков 110 кг.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="tandem-questions__item">
-                            <div class="media">
-                               <span class="media__wrapper-img">
-                                    <img src="assets/img/vector-icon/teenager-icon.svg" class="" alt="...">
-                                </span>
-                                <div class="media-body">
-                                    Прыгать можно с 14 лет, при условии что есть письменное соглашение родителей.
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="positive-reviews" class="section positive-reviews positive-reviews_section">
-        <div class="container">
-            <h2 class="h2 positive-reviews__title">Они попробовали и им понравилось</h2>
-            <div class="row">
                 <div class="col-12">
-                    <div class="positive-reviews__container">
-                        <div class="positive-reviews__block">
-                            <div class="positive-reviews__wrapper">
-                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <div class="positive-reviews__body">
-                                    <span class="positive-reviews__name">Надежда Петровна</span>
-                                    <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
+                    <h2 class="h2 tandem-questions__title">Ответы на частые вопросы</h2>
+                </div>
+                <div class="col-6">
+                    <ul class="tandem-questions__list">
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>ИЗ КАКИХ САМОЛЁТОВ ВЫПОЛНЯЮТСЯ ПРЫЖКИ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
                                 </div>
                             </div>
-                            <div class="positive-reviews__wrapper">
-                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <div class="positive-reviews__body">
-                                    <span class="positive-reviews__name">Надежда Петровна</span>
-                                    <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>ЕСТЬ ЛИ ОГРАНИЧЕНИЯ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
                                 </div>
                             </div>
-                            <div class="positive-reviews__wrapper">
-                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <div class="positive-reviews__body">
-                                    <span class="positive-reviews__name">Надежда Петровна</span>
-                                    <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>НУЖНО ЛИ ПРЕДОСТАВИТЬ КАКИЕ-ЛИБО СПРАВКИ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>НУЖНО ЛИ ЗАРАНЕЕ ПРИЕЗЖАТЬ НА АЭРОДРОМ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>СКОЛЬКО ПО ВРЕМЕНИ ЭТО ЗАЙМЕТ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample5">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="tandem-questions__list">
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>ЭТО БЕЗОПАСНО?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample6">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>МОЖНО ЛИ ЗАСНЯТЬ ПРЫЖОК НА КАМЕРУ САМОСТОЯТЕЛЬНО?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample7">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>НУЖНО ЛИ ЗАРАНЕЕ ПРИЕЗЖАТЬ НА АЭРОДРОМ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample8">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>ЧТО С СОБОЙ ВЗЯТЬ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample9">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tandem-questions__item">
+                            <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="collapse-block__icon">
+                                    <i></i>
+                                </div>
+                                <span>КОГДА ПРЫГАЕТЕ?</span>
+                            </a>
+                            <div class="collapse" id="collapseExample10">
+                                <div class="card card-body">
+                                    Осуществляем прыжки из самолётов L-410 “StarTrek”, Cessna SM-92T “Turbofinist”, АН-28.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+<!--    <section id="positive-reviews" class="section positive-reviews positive-reviews_section">-->
+<!--        <div class="container">-->
+<!--            <h2 class="h2 positive-reviews__title">Они попробовали и им понравилось</h2>-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="positive-reviews__container">-->
+<!--                        <div class="positive-reviews__block">-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <section id="video-jumps" class="section video-jumps video-jumps_section">
         <div class="container-fluid">
             <h2 class="h2 video-jumps__title">Видео прыжков</h2>
@@ -475,28 +564,28 @@
                 <div class="col-12">
                     <div class="video-jumps__list">
                         <div class="video-jumps__item">
-                            <div class="video-jumps__item-block">
-<!--                                <video src=""></video>-->
-                                <img class="video-jumps__item-block-img" src="assets/img/tandem/video-jumps-img-1.png" alt="">
-                                <div class="videoBtn videoBtn_video-jumps"></div>
-                            </div>
-<!--                            <iframe class="video-jumps__iframe" width="560" height="315" src="https://www.youtube.com/embed/SXW5eAjPD2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                            <div class="videoBtn videoBtn_video-jumps"></div>
+                            <video class="w-100 h-100 video-jumps__item-video" poster="assets/img/tandem/video-jumps-img-1.png">
+                                <source src="assets/img/media/aff_+10sec.mp4" type='video/mp4'>
+                            </video>
                         </div>
                         <div class="video-jumps__item">
-                            <div class="video-jumps__item-block">
-                                <!--                                <video src=""></video>-->
-                                <img class="video-jumps__item-block-img" src="assets/img/tandem/video-jumps-img-1.png" alt="">
-                                <div class="videoBtn videoBtn_video-jumps"></div>
-                            </div>
-<!--                            <iframe class="video-jumps__iframe" width="560" height="315" src="https://www.youtube.com/embed/SXW5eAjPD2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                            <div class="videoBtn videoBtn_video-jumps"></div>
+                            <video class="w-100 h-100 video-jumps__item-video" poster="assets/img/tandem/video-jumps-img-1.png">
+                                <source src="assets/img/media/aff_+10sec.mp4" type='video/mp4'>
+                            </video>
                         </div>
                         <div class="video-jumps__item">
-                            <div class="video-jumps__item-block">
-                                <!--                                <video src=""></video>-->
-                                <img class="video-jumps__item-block-img" src="assets/img/tandem/video-jumps-img-1.png" alt="">
-                                <div class="videoBtn videoBtn_video-jumps"></div>
-                            </div>
-<!--                            <iframe class="video-jumps__iframe" width="560" height="315" src="https://www.youtube.com/embed/SXW5eAjPD2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                            <div class="videoBtn videoBtn_video-jumps"></div>
+                            <video class="w-100 h-100 video-jumps__item-video" poster="assets/img/tandem/video-jumps-img-1.png">
+                                <source src="assets/img/media/aff_+10sec.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                        <div class="video-jumps__item">
+                            <div class="videoBtn videoBtn_video-jumps"></div>
+                            <video class="w-100 h-100 video-jumps__item-video" poster="assets/img/tandem/video-jumps-img-1.png">
+                                <source src="assets/img/media/aff_+10sec.mp4" type='video/mp4'>
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -570,9 +659,74 @@
             <h2 class="h2 our-team__title">Наша команда</h2>
             <div class="row">
                 <div class="col-12">
-                    <div class="our-team__list">
+                    <div class="our-team__list slider-button">
                         <div class="our-team__item">
-
+                            <div class="slider-option-1 slider-option-1_our-team">
+                                <div class="slider-option-1__img">
+                                    <img src="assets/img/tandem/comand-1.png" alt="">
+                                </div>
+                                <div class="slider-option-1__content">
+                                    <span class="slider-option-1__content-title">Евгений Степанов</span>
+                                    <div class="slider-option-1__content-body">
+                                        <div class="slider-option-1__content-body-container">
+                                            <span>28 лет</span>
+                                            <span>1500+ прыжков.</span>
+                                        </div>
+                                        <p>Имеет международную лицензию USPA, позволяющую совершать прыжки в тандеме по всему миру. В межсезонье повышает свои навыки, работая на аэродроме в Японии.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our-team__item">
+                            <div class="slider-option-1 slider-option-1_our-team">
+                                <div class="slider-option-1__img">
+                                    <img src="assets/img/tandem/comand-1.png" alt="">
+                                </div>
+                                <div class="slider-option-1__content">
+                                    <span class="slider-option-1__content-title">Евгений Степанов</span>
+                                    <div class="slider-option-1__content-body">
+                                        <div class="slider-option-1__content-body-container">
+                                            <span>28 лет</span>
+                                            <span>1500+ прыжков.</span>
+                                        </div>
+                                        <p>Имеет международную лицензию USPA, позволяющую совершать прыжки в тандеме по всему миру. В межсезонье повышает свои навыки, работая на аэродроме в Японии.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our-team__item">
+                            <div class="slider-option-1 slider-option-1_our-team">
+                                <div class="slider-option-1__img">
+                                    <img src="assets/img/tandem/comand-1.png" alt="">
+                                </div>
+                                <div class="slider-option-1__content">
+                                    <span class="slider-option-1__content-title">Евгений Степанов</span>
+                                    <div class="slider-option-1__content-body">
+                                        <div class="slider-option-1__content-body-container">
+                                            <span>28 лет</span>
+                                            <span>1500+ прыжков.</span>
+                                        </div>
+                                        <p>Имеет международную лицензию USPA, позволяющую совершать прыжки в тандеме по всему миру. В межсезонье повышает свои навыки, работая на аэродроме в Японии.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our-team__item">
+                            <div class="slider-option-1 slider-option-1_our-team">
+                                <div class="slider-option-1__img">
+                                    <img src="assets/img/tandem/comand-1.png" alt="">
+                                </div>
+                                <div class="slider-option-1__content">
+                                    <span class="slider-option-1__content-title">Евгений Степанов</span>
+                                    <div class="slider-option-1__content-body">
+                                        <div class="slider-option-1__content-body-container">
+                                            <span>28 лет</span>
+                                            <span>1500+ прыжков.</span>
+                                        </div>
+                                        <p>Имеет международную лицензию USPA, позволяющую совершать прыжки в тандеме по всему миру. В межсезонье повышает свои навыки, работая на аэродроме в Японии.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -585,7 +739,76 @@
             <p class="training-program__subtitle">AFF курс– это программа ускоренного обучения прыжкам с парашютом. В настоящий момент она является самым быстрым и в то же время безопасным способом научиться прыгать самостоятельно. </p>
             <div class="row">
                 <div class="col-12">
+                    <div class="training-program__list slider-button">
+                        <div class="training-program__item">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="training-program__item-img">
+                                        <div class="training-program__item-img-block"></div>
+                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="training-program__item-container">
+                                        <p class="training-program__item-container-text">Курс состоит из 7 прыжковых уровней, на протяжении которых рядом с тобой будет находиться инструктор координирующий твои действия в воздухе и на приземлении при помощи рации.</p>
+                                        <span class="training-program__item-container-insert">Время прохождения курса (при прыжковой погоде)  - 4 дня</span>
+                                        <div class="training-program__item-container-block">
+                                            <button type="button" class="slick-prev prev">Previous</button>
+                                            <button type="button" class="slick-next next">Next</button>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                        </div>
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="training-program__item">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="training-program__item-img">
+                                        <div class="training-program__item-img-block">
+                                            <span>1</span>
+                                            <p>этап</p>
+                                        </div>
+                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="training-program__item-container">
+                                        <p class="training-program__item-container-text">На этом этапе студент сначала проходит наземную подготовку и занятия на тренажерах. Далее осуществляется первый прыжок в тандеме, а затем самостоятельные прыжки в сопровождении 2-х инструкторов AFF. Успешным завершением I этапа является умение студента контролировать приборы, сохранять стабильную позу в свободном падении, раскрывать парашют на заданной высоте, безопасно приземляться.</p>
+                                        <div class="training-program__item-container-block">
+                                            <button type="button" class="slick-prev prev">Previous</button>
+                                            <button type="button" class="slick-next next">Next</button>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="training-program__item">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="training-program__item-img">
+                                        <div class="training-program__item-img-block">
+                                            <span>2</span>
+                                            <p>этап</p>
+                                        </div>
+                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="training-program__item-container">
+                                        <p class="training-program__item-container-text">Прыжки выполняются с одним инструктором. Студент осваивает контролируемые развороты вправо/влево, движение вперед, развороты по спирали на 360 градусов в обе стороны, контроль положения тела во всех плоскостях. Учится самостоятельному отделению от летательного аппарата без контакта с инструктором, осваивает заднее сальто и приземление в радиусе 25 м от точки. Успешным завершением II этапа является грамотная самостоятельная подготовка снаряжения к прыжку, знание правил поведения на аэродроме и во взлете, умение предотвращать беспорядочное падение и стабилизироваться до нейтрального положения, приземление в нужной точке.</p>
+                                        <div class="training-program__item-container-block">
+                                            <button type="button" class="slick-prev prev">Previous</button>
+                                            <button type="button" class="slick-next next">Next</button>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -600,8 +823,16 @@
                             <span class="find-us__contact-textB mb-3">Наш адрес:</span>
                             <address class="find-us__contact-address mb-4">Ростовская обл., Ольгинская, 10-й пер., 1А,</address>
                             <span class="find-us__contact-textB mb-4">Звоните нам также по телефонам:</span>
-                            <a class="find-us__contact-textB find-us__contact-link" href="tel:74955327406">+7 (495) 532 74 06, </a>
-                            <a class="find-us__contact-textB find-us__contact-link mb-4" href="tel:89654099505">8 (965) 409 95 05 </a>
+                            <ul class="find-us__contact-list">
+                                <li class="find-us__contact-list-item">
+                                    <a class="find-us__contact-textB find-us__contact-link" href="tel:74955327406">+7 (495) 532 74 06, </a>
+                                    <a href="#" class="icon-telegram-color find-us__contact-list-item-icon ml-2 pl-1"></a>
+                                    <a href="#" class="icon-viber-color find-us__contact-list-item-icon ml-2 pl-1"></a>
+                                </li>
+                                <li class="find-us__contact-list-item">
+                                    <a class="find-us__contact-textB find-us__contact-link mb-4" href="tel:89654099505">8 (965) 409 95 05 </a>
+                                </li>
+                            </ul>
                             <span class="find-us__contact-textB mb-2">Email</span>
                             <a class="find-us__contact-textB find-us__contact-link" href="mailto:info@dzk.ru">info@dzk.ru</a>
                         </div>
@@ -740,16 +971,27 @@
 <script>
 
     $('.earliest-date__column-calc-list').slick({
-        infinite: true,
+        infinite: false,
         speed: 500,
         fade: true,
         cssEase: 'linear',
         dots: false,
     });
 
-    $('.positive-reviews__block').slick({
+    $('.our-team__list').slick({
+        infinite: true,
+        dots: true,
+        fade: true,
+        cssEase: 'linear',
+    });
+
+    $('.training-program__list').slick({
         infinite: true,
         dots: false,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
     });
 
     $('.video-jumps__list').slick({
@@ -762,9 +1004,15 @@
     });
 
     $('.videoBtn_video-jumps').click(function () {
-        $(this).parent().parent().addClass('start-video');
+        $(this).addClass('d-none');
+        $(this).parent().children('video').attr('controls',true).get(0).play();
 
-    })
+    });
+
+    $('.video-jumps__item-video').click(function () {
+        $(this).attr('controls',true);
+        $(this).parent().children('.videoBtn_video-jumps').addClass('d-none');
+    });
 
 </script>
 </body>

@@ -5,45 +5,30 @@
 }
 
 .tandem-questions__title {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 3.25rem;
   text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  margin-bottom: 41px;
-  display: block;
+  margin-bottom: 47px;
 }
 
 .tandem-questions__list {
-  padding-left: 40px;
+  padding-left: 0;
   list-style-type: none;
-  max-width: 405px;
 }
 
 .tandem-questions__item {
   margin-bottom: 28px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 40px 20px 16px;
 
-  .media__wrapper-img {
-    width: 55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #FFFFFF;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 43px;
-  }
-
-  .media {
-    align-items: center;
-  }
-
-  .media-body {
+  .card-body {
+    border: none;
+    box-shadow: none;
+    padding-left: 58px;
     font-size: 1rem;
     line-height: 19px;
-    color: #555555;
+    color: #777777;
   }
 
   &:last-child {

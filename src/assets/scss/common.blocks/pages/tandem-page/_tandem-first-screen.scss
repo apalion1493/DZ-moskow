@@ -1,10 +1,20 @@
 .tandem-first-screen {
-  background: url("../img/tandem/first-screen.jpg") no-repeat center;
-  background-size: cover;
+  //background: url("../img/tandem/first-screen.jpg") no-repeat top center;
+  //background-size: cover;
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+
+.tandem-first-screen__video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .tandem-first-screen__block {
@@ -27,7 +37,7 @@
 }
 
 .tandem-first-screen__location {
-  margin-top: 6.43em;
+  margin-top: 105px;
   display: flex;
   align-items: center;
 }

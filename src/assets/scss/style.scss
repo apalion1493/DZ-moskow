@@ -4,6 +4,9 @@
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 @import "library.styles/fancyBox/jquery.fancybox.css";
 
+//VARIABLE
+@import "common.blocks/variable";
+
 //TEXT
 @import "common.blocks/text";
 
@@ -14,8 +17,8 @@
 
 
 //PAGES
-@import "common.blocks/pages/jump-booking/jump-booking";
 @import "common.blocks/pages/tandem-page/common";
+@import "common.blocks/pages/jump-booking/jump-booking";
 @import "common.blocks/pages/tandem-page/tandem-first-screen";
 @import "common.blocks/pages/tandem-page/attraction";
 @import "common.blocks/pages/tandem-page/earliest-date";
@@ -46,6 +49,9 @@
 @import "common.blocks/elements/status-order-string/status-order-string";
 @import "common.blocks/elements/jump-time-block/jump-time-block";
 @import "common.blocks/elements/container-calc/container-calc";
+@import "common.blocks/elements/collapse-block/collapse-block";
+@import "common.blocks/elements/slider-option-1/slider-option-1";
+@import "common.blocks/elements/slider-button/slider-button";
 
 //main styles
 @import "common.blocks/common";

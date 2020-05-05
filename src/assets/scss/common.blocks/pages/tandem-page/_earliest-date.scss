@@ -6,18 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 31px;
 }
 
 .earliest-date__title {
   margin-bottom: 0;
-}
-
-.earliest-date__subTitle {
-  font-size: 1.5rem;
-  line-height: normal;
-  text-align: center;
-  color: #333333;
 }
 
 .earliest-date__wrapper {
@@ -73,6 +66,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .slick-next, .slick-prev {
+    background: #FFFFFF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      background: url("../img/new-vector-icon/slider-green-arrow.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 12px;
+      height: 18px;
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .slick-arrow.slick-disabled {
+    &:before {
+      opacity: .5;
+    }
+  }
+
+  .slick-prev {
+    left: -55px;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+  .slick-next {
+    right: -55px;
+  }
 }
 
 .earliest-date__column-calc-item {

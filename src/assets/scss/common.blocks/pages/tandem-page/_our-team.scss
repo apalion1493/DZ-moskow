@@ -5,5 +5,59 @@
 
 .our-team__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.our-team__list {
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: 0 !important;
+
+  .slick-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .slick-next {
+    right: 78px;
+  }
+
+  .slick-prev {
+    left: 78px;
+  }
+
+  .slick-arrow {
+    z-index: 1;
+  }
+
+  .slick-dots {
+    bottom: 100px;
+    z-index: 1;
+    text-align: left;
+    width: auto;
+    left: 45%;
+    transform: translateX(-50%);
+
+    li {
+      width: 15px;
+      height: 15px;
+      background: #FFFFFF;
+      border: 1px solid #6ACA1E;
+      border-radius: 50%;
+
+      button:before {
+        display: none;
+      }
+
+      &.slick-active {
+        background: #6ACA1E;
+      }
+    }
+  }
+}
+
+.our-team__item {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
 }
