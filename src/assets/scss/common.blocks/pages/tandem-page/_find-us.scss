@@ -95,3 +95,27 @@
     height: 16px;
   }
 }
+
+@media (max-width: 767.98px) {
+  .find-us__contact-textB {
+    font-size: 1rem;
+    line-height: 19px;
+  }
+
+  .find-us__contact-list-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .find-us__contact-body {
+    padding: 36px 31px 24px 26px;
+  }
+
+  .find-us__contact {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Прыжок с парашютом в тандеме с инструктором</title>
     <meta name="keywords" content=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Appended styles for site -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -13,13 +14,15 @@
 
 <main id="main" class="main tandem-page">
     <section id="tandem-first-screen" class="section tandem-first-screen tandem-first-screen_section">
-        <video class="tandem-first-screen__video" poster="assets/img/tandem/first-screen.jpg" autoplay muted="muted">
-            <source src="assets/img/media/tandem_+10sec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        </video>
+        <div class="tandem-first-screen__container">
+            <video class="tandem-first-screen__video" poster="assets/img/tandem/first-screen.jpg"  muted="muted">
+                <source src="assets/img/media/tandem_+10sec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+        </div>
         <header id="header" class="header section">
-            <div class="container">
+            <div class="container position-relative">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-9">
                         <div class="header__wrapper">
                             <a class="main-logo header__logo" href="#"></a>
                             <div class="header__feedback">
@@ -37,9 +40,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-3">
                         <div class="header__nav">
-                            <ul class="header__nav-list">
+                            <ul class="header__nav-list header__nav-list-dt">
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
                                 </li>
@@ -52,9 +55,13 @@
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#">О КЛУБЕ</a>
                                 </li>
+
+                                <li class="header__nav-list-mob">
+                                    <a href="tel:+79381555550">+7 938-1-55555-0</a>
+                                </li>
                             </ul>
 
-                            <div id="burger" class="burger d-none">
+                            <div id="burger" class="burger header__nav-burger">
                                 <span class="burger__line burger__line-1"></span>
                                 <span class="burger__line burger__line-2"></span>
                                 <span class="burger__line burger__line-3"></span>
@@ -62,11 +69,29 @@
                         </div>
                     </div>
                 </div>
+                <ul id="header__nav-list-mob" class="header__nav-list header__nav-list-mob">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">СЕРТИФИКАТЫ</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">ОБУЧЕНИЕ AFF</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">О КЛУБЕ</a>
+                    </li>
+
+                    <li class="header__nav-list-mob-tel">
+                        <a href="tel:+79381555550">+7 938-1-55555-0</a>
+                    </li>
+                </ul>
             </div>
         </header>
-        <div class="container">
+        <div class="container position-relative">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="tandem-first-screen__block">
                         <h1 class="display-3 tandem-first-screen__title">Прыжок с парашютом </h1>
                         <span class="tandem-first-screen__subtitle">в тандеме с инструктором</span>
@@ -83,202 +108,222 @@
                     </div>
                 </div>
             </div>
+            <span class="background-icon-1 position-absolute tandem-first-screen__bg-icon tandem-first-screen__bg-icon-1"></span>
+            <span class="background-icon-2 position-absolute tandem-first-screen__bg-icon tandem-first-screen__bg-icon-2"></span>
         </div>
-        <div class="tandem-first-screen__pop-up">
+        <div class="tandem-first-screen__pop-up wow fadeInRight">
             <span class="tandem-first-screen__pop-up-img"></span>
             <div class="tandem-first-screen__pop-up-block">
                 <span class="tandem-first-screen__pop-up-text">Обучение по <br> программе AFF</span>
                 <a class="tandem-first-screen__pop-up-link" href="#">Подробнее</a>
             </div>
         </div>
-<!--<div class="videoBtn videoBtn_tandem-first-screen"></div>-->
-    </section>
-    <section id="attraction-section" class="section attraction attraction_section">
-        <div id="trigger1"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-6">
-                    <div class="attraction__wrapper">
-                        <h3 class="h3 attraction__title">ТВОЕ ЛУЧШЕЕ ПРИКЛЮЧЕНИЕ</h3>
-                        <span class="attraction__subTitle">Тебя ждет</span>
-                        <ul class="attraction__list">
-                            <li class="attraction__item">
-                                <div class="media">
-                                    <div class="attraction__item-img">
-                                        <img src="assets/img/new-vector-icon/helmet-parachutist.svg" class="" alt="...">
-                                    </div>
-                                    <div class="media-body">
-                                        Инструктаж <span>15 минут</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="attraction__item">
-                                <div class="media">
-                                    <div class="attraction__item-img">
-                                        <img src="assets/img/new-vector-icon/plane-green.svg" class="" alt="...">
-                                    </div>
-                                    <div class="media-body">
-                                        Подъем на высоту <span>4 км</span> на самолете  L-410 "Star Trek"
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="attraction__item">
-                                <div class="media">
-                                    <div class="attraction__item-img">
-                                        <img src="assets/img/new-vector-icon/base-jumping.svg" class="" alt="...">
-                                    </div>
-                                    <div class="media-body">
-                                        <span>60 секунд</span> свободного падения со скоростью <span>200 км/ч</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="attraction__item">
-                                <div class="media">
-                                    <div class="attraction__item-img">
-                                        <img src="assets/img/new-vector-icon/parachute-man.svg" class="" alt="...">
-                                    </div>
-                                    <div class="media-body">
-                                        <span>5 минут снижения</span> под куполом и мягкое приземление
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <span id="attraction__img-plane" class="attraction__img attraction__img-plane"></span>
-            <span id="attraction__img-humans" class="attraction__img attraction__img-humans"></span>
+        <div class="videoBtn videoBtn_tandem-first-screen" data-toggle="modal" data-target="#exampleModalCenter">
+            <i></i>
+            <span>PLAY</span>
         </div>
     </section>
-    <section id="earliest-date" class="section earliest-date earliest-date_section">
-        <div class="container">
-            <div class="earliest-date__header">
-                <h2 class="h2 earliest-date__title">БЛИЖАЙШАЯ ДАТА ПРЫЖКА</h2>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="earliest-date__wrapper">
-                        <div class="earliest-date__column earliest-date__column-description">
-                            <ul class="earliest-date__column-description-list">
-                                <li class="earliest-date__column-description-item">
+    <div class="background-container-tandem">
+        <section id="attraction-section" class="section attraction attraction_section">
+            <div id="trigger1"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="attraction__wrapper">
+                            <h3 class="h3 attraction__title">ТВОЕ ЛУЧШЕЕ ПРИКЛЮЧЕНИЕ</h3>
+                            <span class="attraction__subTitle">Тебя ждет</span>
+                            <ul class="attraction__list">
+                                <li class="attraction__item">
                                     <div class="media">
-                                        <img src="assets/img/new-vector-icon/rain-icon.svg" class="" alt="...">
+                                        <div class="attraction__item-img">
+                                            <img src="assets/img/new-vector-icon/helmet-parachutist.svg" class="" alt="...">
+                                        </div>
                                         <div class="media-body">
-                                            На прыжки влияют погода и специфика авиационной деятельности, поэтому планируй выделить на это событие весь день
+                                            Инструктаж <span>15 минут</span>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="earliest-date__column-description-item">
+                                <li class="attraction__item">
                                     <div class="media">
-                                        <img src="assets/img/new-vector-icon/ecommerce.svg" class="" alt="...">
+                                        <div class="attraction__item-img">
+                                            <img src="assets/img/new-vector-icon/plane-green.svg" class="" alt="...">
+                                        </div>
                                         <div class="media-body">
-                                            Заказывая на сайте, вы экономите. Цена дешевле, а удовольствие тоже!
+                                            Подъем на высоту <span>4 км</span> на самолете  L-410 "Star Trek"
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="attraction__item">
+                                    <div class="media">
+                                        <div class="attraction__item-img">
+                                            <img src="assets/img/new-vector-icon/base-jumping.svg" class="" alt="...">
+                                        </div>
+                                        <div class="media-body">
+                                            <span>60 секунд</span> свободного падения со скоростью <span>200 км/ч</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="attraction__item">
+                                    <div class="media">
+                                        <div class="attraction__item-img">
+                                            <img src="assets/img/new-vector-icon/parachute-man.svg" class="" alt="...">
+                                        </div>
+                                        <div class="media-body">
+                                            <span>5 минут снижения</span> под куполом и мягкое приземление
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="earliest-date__column earliest-date__column-calc">
-                            <ul class="earliest-date__column-calc-list">
-                                <li class="earliest-date__column-calc-item">
-                                    <div class="earliest-date__column-calc-block">
-                                        <span class="earliest-date__column-calc-block-data">28 марта</span>
-                                        <p class="earliest-date__column-calc-block-week">пятница</p>
-                                        <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
-                                    </div>
-                                </li>
-                                <li class="earliest-date__column-calc-item">
-                                    <div class="earliest-date__column-calc-block">
-                                        <span class="earliest-date__column-calc-block-data">29 марта</span>
-                                        <p class="earliest-date__column-calc-block-week">суббота</p>
-                                        <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
-                                    </div>
-                                </li>
-                                <li class="earliest-date__column-calc-item">
-                                    <div class="earliest-date__column-calc-block">
-                                        <span class="earliest-date__column-calc-block-data">30 марта</span>
-                                        <p class="earliest-date__column-calc-block-week">воскресенье</p>
-                                        <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="earliest-date__column earliest-date__column-btnGroup">
-                            <button class="btn btn-secondary earliest-date__column-btn">Прыгнуть</button>
-                            <button class="btn btn-outline-secondary earliest-date__column-btn">Весь календерь</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="attraction__img-mobil">
+                            <img src="assets/img/tandem/attraction-img-mob.png" alt="">
                         </div>
                     </div>
                 </div>
+                <span id="attraction__img-plane" class="attraction__img attraction__img-plane"></span>
+                <span id="attraction__img-humans" class="attraction__img attraction__img-humans"></span>
+                <span class="background-icon-3 position-absolute attraction__bg-icon attraction__bg-icon-3"></span>
+                <span class="background-icon-4 position-absolute attraction__bg-icon attraction__bg-icon-4"></span>
+                <span class="background-icon-5 position-absolute attraction__bg-icon attraction__bg-icon-5"></span>
             </div>
-        </div>
-    </section>
-    <section id="jump-price" class="section jump-price jump-price_section">
-        <div class="container">
-            <h2 class="h2 jump-price__title">Сколько стоит прыгнуть?</h2>
-            <div class="row">
-                <div class="col-12">
-                    <div class="jump-price__wrapper">
-                        <div class="row">
-                            <div class="col-7">
-                                <div class="jump-price__main">
-                                    <img src="assets/img/tandem/price-container-img.jpg" alt="">
-                                    <div class="jump-price__main-container">
-                                        <span class="jump-price__main-title">Прыжок с парашютом в тандеме с инструктором</span>
-                                        <span class="jump-price__price">12 500 ₽</span>
-                                        <ul class="jump-price__main-list">
-                                            <li class="jump-price__main-item">
-                                                <p>- Инструктаж</p>
-                                            </li>
-                                            <li class="jump-price__main-item">
-                                                <p>- Прыжек с высоты 4 километра</p>
-                                            </li>
-                                            <li class="jump-price__main-item">
-                                                <p>- 60 секунд свободного падения</p>
-                                            </li>
-                                            <li class="jump-price__main-item">
-                                                <p>- 5 минут полота под куполом</p>
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-secondary jump-price__main-btn">Прыгнуть</button>
-                                    </div>
-                                </div>
+        </section>
+        <section id="earliest-date" class="section earliest-date earliest-date_section">
+            <div class="container position-relative">
+                <div class="earliest-date__header">
+                    <h2 class="h2 earliest-date__title">БЛИЖАЙШАЯ ДАТА ПРЫЖКА</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="earliest-date__wrapper">
+                            <div class="earliest-date__column earliest-date__column-description">
+                                <ul class="earliest-date__column-description-list">
+                                    <li class="earliest-date__column-description-item">
+                                        <div class="media">
+                                            <img src="assets/img/new-vector-icon/rain-icon.svg" class="" alt="...">
+                                            <div class="media-body">
+                                                На прыжки влияют погода и специфика авиационной деятельности, поэтому планируй выделить на это событие весь день
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="earliest-date__column-description-item">
+                                        <div class="media">
+                                            <img src="assets/img/new-vector-icon/ecommerce.svg" class="" alt="...">
+                                            <div class="media-body">
+                                                Заказывая на сайте, вы экономите. Цена дешевле, а удовольствие тоже!
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-5">
-                                <div class="jump-price__additionally">
-                                    <div class="jump-price__additionally-block">
-                                        <div class="jump-price__additionally-block-icon">
-                                            <i class="inst-svg-icon"></i>
+                            <div class="earliest-date__column earliest-date__column-calc">
+                                <ul class="earliest-date__column-calc-list">
+                                    <li class="earliest-date__column-calc-item">
+                                        <div class="earliest-date__column-calc-block">
+                                            <span class="earliest-date__column-calc-block-data">28 марта</span>
+                                            <p class="earliest-date__column-calc-block-week">пятница</p>
+                                            <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
                                         </div>
-                                        <div class="jump-price__additionally-block-body">
-                                            <span class="jump-price__additionally-block-title">+ Операторская съемка</span>
-                                            <span class="jump-price__additionally-block-price">3 500 ₽</span>
-                                            <p class="jump-price__additionally-block-text">Оператор сопровождает вас на всех этапах прыжка: на земле, в самолете, в воздухе</p>
-                                            <button class="btn btn-outline-secondary jump-price__additionally-btn">Заказать</button>
+                                    </li>
+                                    <li class="earliest-date__column-calc-item">
+                                        <div class="earliest-date__column-calc-block">
+                                            <span class="earliest-date__column-calc-block-data">29 марта</span>
+                                            <p class="earliest-date__column-calc-block-week">суббота</p>
+                                            <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
                                         </div>
-                                    </div>
-                                    <div class="jump-price__additionally-block">
-                                        <div class="jump-price__additionally-block-icon">
-                                            <i class="inst-svg-icon"></i>
+                                    </li>
+                                    <li class="earliest-date__column-calc-item">
+                                        <div class="earliest-date__column-calc-block">
+                                            <span class="earliest-date__column-calc-block-data">30 марта</span>
+                                            <p class="earliest-date__column-calc-block-week">воскресенье</p>
+                                            <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
                                         </div>
-                                        <div class="jump-price__additionally-block-body">
-                                            <span class="jump-price__additionally-block-title">+ Съемка камерой Handycam</span>
-                                            <span class="jump-price__additionally-block-price">2 500 ₽</span>
-                                            <p class="jump-price__additionally-block-text">Съемка камерой GoPro, расположенной на руке инструктора.</p>
-                                            <button class="btn btn-outline-secondary jump-price__additionally-btn">Заказать</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="earliest-date__column earliest-date__column-btnGroup">
+                                <button class="btn btn-secondary earliest-date__column-btn">Прыгнуть</button>
+                                <button class="btn btn-outline-secondary earliest-date__column-btn">Весь календерь</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <span class="background-icon-6 position-absolute earliest-date__bg-icon earliest-date__bg-icon-6"></span>
+                <span class="background-icon-7 position-absolute earliest-date__bg-icon earliest-date__bg-icon-7"></span>
+                <span class="background-icon-22 position-absolute earliest-date__bg-icon earliest-date__bg-icon-22"></span>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="jump-price" class="section jump-price jump-price_section">
+            <div class="container position-relative">
+                <h2 class="h2 jump-price__title">Сколько стоит прыгнуть?</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jump-price__wrapper">
+                            <div class="row">
+                                <div class="col-xl-7">
+                                    <div class="jump-price__main">
+                                        <img src="assets/img/tandem/price-container-img.jpg" alt="">
+                                        <div class="jump-price__main-container">
+                                            <span class="jump-price__main-title">Прыжок с парашютом в тандеме с инструктором</span>
+                                            <span class="jump-price__price">12 500 ₽</span>
+                                            <ul class="jump-price__main-list">
+                                                <li class="jump-price__main-item">
+                                                    <p>- Инструктаж</p>
+                                                </li>
+                                                <li class="jump-price__main-item">
+                                                    <p>- Прыжек с высоты 4 километра</p>
+                                                </li>
+                                                <li class="jump-price__main-item">
+                                                    <p>- 60 секунд свободного падения</p>
+                                                </li>
+                                                <li class="jump-price__main-item">
+                                                    <p>- 5 минут полота под куполом</p>
+                                                </li>
+                                            </ul>
+                                            <button class="btn btn-secondary jump-price__main-btn">Прыгнуть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5">
+                                    <div class="jump-price__additionally">
+                                        <div class="jump-price__additionally-block">
+                                            <div class="jump-price__additionally-block-icon">
+                                                <i class="inst-svg-icon"></i>
+                                            </div>
+                                            <div class="jump-price__additionally-block-body">
+                                                <span class="jump-price__additionally-block-title">+ Операторская съемка</span>
+                                                <span class="jump-price__additionally-block-price">3 500 ₽</span>
+                                                <p class="jump-price__additionally-block-text">Оператор сопровождает вас на всех этапах прыжка: на земле, в самолете, в воздухе</p>
+                                                <button class="btn btn-outline-secondary jump-price__additionally-btn">Заказать</button>
+                                            </div>
+                                        </div>
+                                        <div class="jump-price__additionally-block">
+                                            <div class="jump-price__additionally-block-icon">
+                                                <i class="inst-svg-icon"></i>
+                                            </div>
+                                            <div class="jump-price__additionally-block-body">
+                                                <span class="jump-price__additionally-block-title">+ Съемка камерой Handycam</span>
+                                                <span class="jump-price__additionally-block-price">2 500 ₽</span>
+                                                <p class="jump-price__additionally-block-text">Съемка камерой GoPro, расположенной на руке инструктора.</p>
+                                                <button class="btn btn-outline-secondary jump-price__additionally-btn">Заказать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="background-icon-15 position-absolute jump-price__bg-icon jump-price__bg-icon-15"></span>
+            </div>
+        </section>
+    </div>
     <section id="shares-company" class="section shares-company shares-company_section">
-        <div class="container">
+        <div class="container position-relative">
+            <h2 class="h2 mb-3 text-center">Акции</h2>
             <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6 mb-5 mb-xl-0">
                     <div class="shares-company__container">
                         <span class="shares-company__container-imgWrapper shares-company__container-imgWrapper-green">
                             <img class="shares-company__img-1" src="assets/img/tandem/shares-company-1.png" alt="">
@@ -300,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6">
                     <div class="shares-company__container">
                         <span class="shares-company__container-imgWrapper shares-company__container-imgWrapper-red">
                              <img class="shares-company__img-2" src="assets/img/tandem/shares-company-2.png" alt="">
@@ -321,6 +366,9 @@
                     </div>
                 </div>
             </div>
+            <span class="background-icon-6 position-absolute shares-company__bg-icon shares-company__bg-icon-6"></span>
+            <span class="background-icon-5 position-absolute shares-company__bg-icon shares-company__bg-icon-5"></span>
+            <span class="background-icon-16 position-absolute shares-company__bg-icon shares-company__bg-icon-16"></span>
         </div>
     </section>
     <section id="make-gift" class="section make-gift make-gift_section">
@@ -330,7 +378,7 @@
                 <p class="make-gift__subTitle">Сертификат на прыжок - отличный подарок.<br>Свежо. Весело. Очень круто.</p>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0">
                     <div class="make-gift__card">
                         <div class="make-gift__card-block">
                             <div class="make-gift__card-info">
@@ -350,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="make-gift__card">
                         <div class="make-gift__card-block">
                             <div class="make-gift__card-info">
@@ -374,12 +422,12 @@
         </div>
     </section>
     <section id=tandem-questions"" class="section tandem-questions tandem-questions_section">
-        <div class="container">
+        <div class="container position-relative">
             <div class="row">
                 <div class="col-12">
                     <h2 class="h2 tandem-questions__title">Ответы на частые вопросы</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <ul class="tandem-questions__list">
                         <li class="tandem-questions__item">
                             <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -448,7 +496,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <ul class="tandem-questions__list">
                         <li class="tandem-questions__item">
                             <a class="collapse-block collapsed" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -518,51 +566,26 @@
                     </ul>
                 </div>
             </div>
+            <span class="background-icon-8 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-8"></span>
+            <span class="background-icon-9 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-9"></span>
+            <span class="background-icon-6 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-6"></span>
+            <span class="background-icon-17 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-17"></span>
+            <span class="background-icon-18 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-18"></span>
+            <span class="background-icon-10 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-10"></span>
+            <span class="background-icon-18 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-18-2"></span>
+            <span class="background-icon-9 position-absolute tandem-questions__bg-icon tandem-questions__bg-icon-9-2"></span>
         </div>
     </section>
-<!--    <section id="positive-reviews" class="section positive-reviews positive-reviews_section">-->
-<!--        <div class="container">-->
-<!--            <h2 class="h2 positive-reviews__title">Они попробовали и им понравилось</h2>-->
-<!--            <div class="row">-->
-<!--                <div class="col-12">-->
-<!--                    <div class="positive-reviews__container">-->
-<!--                        <div class="positive-reviews__block">-->
-<!--                            <div class="positive-reviews__wrapper">-->
-<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
-<!--                                <div class="positive-reviews__body">-->
-<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
-<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
-<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="positive-reviews__wrapper">-->
-<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
-<!--                                <div class="positive-reviews__body">-->
-<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
-<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
-<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="positive-reviews__wrapper">-->
-<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
-<!--                                <div class="positive-reviews__body">-->
-<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
-<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
-<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
     <section id="video-jumps" class="section video-jumps video-jumps_section">
-        <div class="container-fluid">
-            <h2 class="h2 video-jumps__title">Видео прыжков</h2>
+        <div class="container-fluid ">
+            <div class="container position-relative">
+                <h2 class="h2 video-jumps__title">Видео прыжков</h2>
+                <span class="background-icon-12 position-absolute video-jumps__bg-icon video-jumps__bg-icon-12"></span>
+                <span class="background-icon-11 position-absolute video-jumps__bg-icon video-jumps__bg-icon-11"></span>
+            </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="video-jumps__list">
+                    <div class="video-jumps__list slider-button">
                         <div class="video-jumps__item">
                             <div class="videoBtn videoBtn_video-jumps"></div>
                             <video class="w-100 h-100 video-jumps__item-video" poster="assets/img/tandem/video-jumps-img-1.png">
@@ -593,7 +616,7 @@
         </div>
     </section>
     <section id="photo-jumping-instagram" class="section photo-jumping-instagram photo-jumping-instagram_section">
-        <div class="container">
+        <div class="container position-relative">
             <h2 class="h2 photo-jumping-instagram__title">Фото прыжков, в инстаграмм</h2>
             <span class="photo-jumping-instagram__subtitle">#DZKskydivING</span>
             <div class="row">
@@ -652,10 +675,14 @@
                     </ul>
                 </div>
             </div>
+            <span class="background-icon-6 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-6"></span>
+            <span class="background-icon-19 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-19"></span>
+            <span class="background-icon-13 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-13"></span>
+            <span class="background-icon-13 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-13-2"></span>
         </div>
     </section>
     <section id="our-team" class="section our-team our-team_section">
-        <div class="container">
+        <div class="container position-relative">
             <h2 class="h2 our-team__title">Наша команда</h2>
             <div class="row">
                 <div class="col-12">
@@ -731,10 +758,12 @@
                     </div>
                 </div>
             </div>
+            <span class="background-icon-6 position-absolute our-team__bg-icon our-team__bg-icon-6"></span>
+            <span class="background-icon-20 position-absolute our-team__bg-icon our-team__bg-icon-20"></span>
         </div>
     </section>
     <section id="training-program" class="section training-program training-program_section">
-        <div class="container">
+        <div class="container position-relative">
             <h2 class="h2 training-program__title">Программа обучения AFF в 7 шагов</h2>
             <p class="training-program__subtitle">AFF курс– это программа ускоренного обучения прыжкам с парашютом. В настоящий момент она является самым быстрым и в то же время безопасным способом научиться прыгать самостоятельно. </p>
             <div class="row">
@@ -742,13 +771,13 @@
                     <div class="training-program__list slider-button">
                         <div class="training-program__item">
                             <div class="row">
-                                <div class="col-5">
+                                <div class="col-xl-5 col-lg-4">
                                     <div class="training-program__item-img">
                                         <div class="training-program__item-img-block"></div>
-                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-1.png" alt="">
+                                        <span class="training-program__item-image d-block ml-auto" style="background-image: url(assets/img/tandem/img-training-1.png)"></span>
                                     </div>
                                 </div>
-                                <div class="col-7">
+                                <div class="col-xl-7 col-lg-8">
                                     <div class="training-program__item-container">
                                         <p class="training-program__item-container-text">Курс состоит из 7 прыжковых уровней, на протяжении которых рядом с тобой будет находиться инструктор координирующий твои действия в воздухе и на приземлении при помощи рации.</p>
                                         <span class="training-program__item-container-insert">Время прохождения курса (при прыжковой погоде)  - 4 дня</span>
@@ -764,16 +793,16 @@
                         </div>
                         <div class="training-program__item">
                             <div class="row">
-                                <div class="col-5">
+                                <div class="col-xl-5 col-lg-4">
                                     <div class="training-program__item-img">
                                         <div class="training-program__item-img-block">
                                             <span>1</span>
                                             <p>этап</p>
                                         </div>
-                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-2.png" alt="">
+                                        <span class="training-program__item-image d-block ml-auto" style="background-image: url(assets/img/tandem/img-training-2.png)"></span>
                                     </div>
                                 </div>
-                                <div class="col-7">
+                                <div class="col-xl-7 col-lg-8">
                                     <div class="training-program__item-container">
                                         <p class="training-program__item-container-text">На этом этапе студент сначала проходит наземную подготовку и занятия на тренажерах. Далее осуществляется первый прыжок в тандеме, а затем самостоятельные прыжки в сопровождении 2-х инструкторов AFF. Успешным завершением I этапа является умение студента контролировать приборы, сохранять стабильную позу в свободном падении, раскрывать парашют на заданной высоте, безопасно приземляться.</p>
                                         <div class="training-program__item-container-block">
@@ -787,16 +816,16 @@
                         </div>
                         <div class="training-program__item">
                             <div class="row">
-                                <div class="col-5">
+                                <div class="col-xl-5 col-lg-4">
                                     <div class="training-program__item-img">
                                         <div class="training-program__item-img-block">
                                             <span>2</span>
                                             <p>этап</p>
                                         </div>
-                                        <img class="d-block ml-auto" src="assets/img/tandem/img-training-1.png" alt="">
+                                        <span class="training-program__item-image d-block ml-auto" style="background-image: url(assets/img/tandem/img-training-1.png)"></span>
                                     </div>
                                 </div>
-                                <div class="col-7">
+                                <div class="col-xl-7 col-lg-8">
                                     <div class="training-program__item-container">
                                         <p class="training-program__item-container-text">Прыжки выполняются с одним инструктором. Студент осваивает контролируемые развороты вправо/влево, движение вперед, развороты по спирали на 360 градусов в обе стороны, контроль положения тела во всех плоскостях. Учится самостоятельному отделению от летательного аппарата без контакта с инструктором, осваивает заднее сальто и приземление в радиусе 25 м от точки. Успешным завершением II этапа является грамотная самостоятельная подготовка снаряжения к прыжку, знание правил поведения на аэродроме и во взлете, умение предотвращать беспорядочное падение и стабилизироваться до нейтрального положения, приземление в нужной точке.</p>
                                         <div class="training-program__item-container-block">
@@ -811,13 +840,16 @@
                     </div>
                 </div>
             </div>
+            <span class="background-icon-14 position-absolute training-program__bg-icon training-program__bg-icon-14"></span>
+            <span class="background-icon-21 position-absolute training-program__bg-icon training-program__bg-icon-21"></span>
+            <span class="background-icon-13 position-absolute training-program__bg-icon training-program__bg-icon-13"></span>
         </div>
     </section>
     <section id="find-us" class="section find-us find-us_section">
         <iframe class="find-us__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b88d39f0a9a144d1ff3f2bbb8c2997bdb8c5dc7fd3f2269dce6f0871d5aa63a&amp;source=constructor" width="1280" height="720" frameborder="0"></iframe>
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-lg-5 col-md-6">
                     <div class="find-us__contact">
                         <div class="find-us__contact-body">
                             <span class="find-us__contact-textB mb-3">Наш адрес:</span>
@@ -849,7 +881,7 @@
 <footer id="footer" class="footer">
     <div class="container pb-5">
         <div class="row">
-            <div class="col-5">
+            <div class="col-lg-5 col-md-7">
                 <div class="footer__first-container">
                     <div class="footer__schedule">
                         <span class="footer__title">График работы</span>
@@ -857,7 +889,7 @@
                         <span class="footer__text ">ежедневно с <br> 10:00-20:00 <br><br></span>
                         <span class="footer__text">Лётные дни: Пт-Вс.</span>
                     </div>
-                    <div>
+                    <div class="footer__services">
                         <span class="footer__title">Услуги</span>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -876,7 +908,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-5">
                 <div class="footer__second-container">
                     <div class="footer__second-container-block">
                         <span class="footer__title">Меню</span>
@@ -911,7 +943,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="footer__logo-container">
                     <a class="footer__logo-icon main-logo" href="#"></a>
                     <p class="footer__logo-copy">Copyright © 2020 DZK</p>
@@ -922,7 +954,7 @@
     <div class="footer__bottom-block">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7">
                     <div class="footer__info">
                         <div class="footer__info-wrapper">
                             <span class="footer__info-text">ИНН/КПП: 6230047043/622501001</span>
@@ -932,7 +964,7 @@
                             Ибредское, с. Сасыкино</p>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <ul class="footer__socialNetwork footer__socialNetwork-list">
                         <li class="footer__socialNetwork-item">
                             <a class="footer__socialNetwork-link icon-facebook" href="#"></a>
@@ -956,17 +988,66 @@
     </div>
 </footer>
 
-<script src="assets/js/libs/jquery/jquery.min.js"></script>
-<script src="assets/js/libs/bootstrap/bootstrap.min.js"></script>
-<script src="assets/js/libs/slick-carousel/slick.min.js"></script>
-<script src="assets/js/libs/fancybox/jquery.fancybox.min.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/highlight.pack.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/js/examples.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/modernizr.custom.min.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe style="height: 500px" class="w-100" src="https://www.youtube.com/embed/6_QKEIUYti0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--    <section id="positive-reviews" class="section positive-reviews positive-reviews_section">-->
+<!--        <div class="container">-->
+<!--            <h2 class="h2 positive-reviews__title">Они попробовали и им понравилось</h2>-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="positive-reviews__container">-->
+<!--                        <div class="positive-reviews__block">-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="positive-reviews__wrapper">-->
+<!--                                <img class="positive-reviews__image" src="assets/img/tandem/inst-image-1.png" alt="">-->
+<!--                                <div class="positive-reviews__body">-->
+<!--                                    <span class="positive-reviews__name">Надежда Петровна</span>-->
+<!--                                    <span class="positive-reviews__view">Прыжек в тандеме</span>-->
+<!--                                    <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--<script src="assets/js/libs/jquery/jquery.min.js"></script>-->
+<!--<script src="assets/js/libs/bootstrap/bootstrap.min.js"></script>-->
+<!--<script src="assets/js/libs/slick-carousel/slick.min.js"></script>-->
+<!--<script src="assets/js/libs/fancybox/jquery.fancybox.min.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/highlight.pack.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/js/examples.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/modernizr.custom.min.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>-->
+<!--<script src="assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>-->
 <script src="assets/js/libs.min.js"></script>
 <script>
 
@@ -983,6 +1064,14 @@
         dots: true,
         fade: true,
         cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    dots: false,
+                }
+            }
+        ]
     });
 
     $('.training-program__list').slick({
@@ -1013,6 +1102,8 @@
         $(this).attr('controls',true);
         $(this).parent().children('.videoBtn_video-jumps').addClass('d-none');
     });
+
+    new WOW().init();
 
 </script>
 </body>

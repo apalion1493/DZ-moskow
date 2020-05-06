@@ -12,3 +12,10 @@ h2, .h2 {
   text-transform: uppercase;
   color: #222222;
 }
+
+@media (max-width: 767.98px) {
+  h2, .h2 {
+    font-size: 1.75rem;
+    line-height: normal;
+  }
+}

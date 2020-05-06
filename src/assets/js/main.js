@@ -1,7 +1,9 @@
 let burger = document.getElementById('burger');
+let mobMenu = document.getElementById('header__nav-list-mob');
 
 burger.addEventListener('click', function () {
     burger.classList.toggle('active');
+    mobMenu.classList.toggle('active');
 });
 
 var controller = new ScrollMagic.Controller();

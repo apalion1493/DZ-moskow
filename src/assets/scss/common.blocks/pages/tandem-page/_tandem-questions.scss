@@ -1,7 +1,7 @@
 .tandem-questions {
   background: #F3F3F3;
   padding-top: 83px;
-  padding-bottom: 76px;
+  padding-bottom: 100px;
 }
 
 .tandem-questions__title {
@@ -33,5 +33,72 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.tandem-questions__bg-icon {
+  z-index: 1;
+}
+
+.tandem-questions__bg-icon-8.background-icon-8 {
+  top: -30px;
+  right: 180px;
+}
+
+.tandem-questions__bg-icon-9 {
+  top: 0;
+  right: -20px;
+}
+
+.tandem-questions__bg-icon-6.background-icon-6 {
+  top: 35px;
+  left: -70px;
+  width: 53px;
+  height: 73px;
+}
+
+.tandem-questions__bg-icon-17 {
+  top: -97px;
+  right: -70px;
+}
+
+.tandem-questions__bg-icon-18 {
+  right: -50px;
+  bottom: 100px;
+}
+
+.tandem-questions__bg-icon-10 {
+  bottom: -40px;
+  right: 300px;
+}
+
+.tandem-questions__bg-icon-18-2 {
+  bottom: -70px;
+  left: 230px;
+}
+
+.tandem-questions__bg-icon-9-2 {
+  left: 100px;
+  bottom: -137px;
+}
+
+@media (max-width: 767.98px) {
+  .tandem-questions__bg-icon {
+    display: none!important;
+  }
+
+  .tandem-questions {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+
+  .tandem-questions__item {
+    padding-right: 15px;
+  }
+
+  .tandem-questions__item .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }

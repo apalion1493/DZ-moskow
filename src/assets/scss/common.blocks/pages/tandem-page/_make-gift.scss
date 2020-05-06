@@ -107,3 +107,53 @@
   box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
   margin-top: auto;
 }
+
+@media (max-width: 1199.98px) {
+  .make-gift__card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .make-gift__card-block:last-child {
+    flex-direction: column;
+  }
+
+  .make-gift__card-title {
+    margin-bottom: 14px;
+    line-height: 22px;
+    margin-top: 26px;
+  }
+
+  .make-gift__card-info-text {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+
+  .make-gift__card-info-code {
+    font-size: 24px;
+  }
+
+  .make-gift__card-logo-icon {
+    max-width: 135px;
+    height: 70px;
+  }
+
+  .make-gift__card-logo-text {
+    font-size: 18px;
+  }
+
+  .make-gift__card {
+    min-height: 220px;
+  }
+
+  .make-gift {
+    padding-bottom: 43px;
+  }
+
+  .make-gift__subTitle {
+    font-size: 14px;
+    line-height: normal;
+  }
+}

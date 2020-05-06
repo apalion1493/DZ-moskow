@@ -3,6 +3,7 @@
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 @import "library.styles/fancyBox/jquery.fancybox.css";
+@import "node_modules/animate.css/animate";
 
 //VARIABLE
 @import "common.blocks/variable";
@@ -32,6 +33,7 @@
 @import "common.blocks/pages/tandem-page/our-team";
 @import "common.blocks/pages/tandem-page/training-program";
 @import "common.blocks/pages/tandem-page/find-us";
+@import "common.blocks/pages/tandem-page/background-container-tandem";
 
 //BLOCKS
 @import "common.blocks/blocks/header/header";

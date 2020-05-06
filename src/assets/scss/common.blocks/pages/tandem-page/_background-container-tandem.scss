@@ -1,0 +1,41 @@
+.background-container-tandem {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -190px;
+    transform: translateX(-50%);
+    left: 44%;
+    background: url("../img/background/background-1.png") no-repeat center;
+    background-size: 100% auto;
+    width: 200%;
+    max-width: 2191px;
+    height: 1071px;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 15%;
+    transform: translateX(-50%);
+    left: 50%;
+    background: url("../img/background/background-2.png") no-repeat center;
+    background-size: 100% auto;
+    width: 200%;
+    max-width: 2191px;
+    height: 500px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .background-container-tandem:after {
+    bottom: 28%;
+  }
+}
+

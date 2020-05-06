@@ -7,6 +7,10 @@ html, body {
   font-size: 16px;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .main-logo {
   background: url("../img/header-logo.svg") no-repeat center;
   background-size: 100% auto;
@@ -146,6 +150,182 @@ html, body {
   display: block;
 }
 
+.background-icon-1 {
+  background: url("../img/background/background-icon-1.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 55px;
+  height: 75px;
+  display: block;
+}
+
+.background-icon-2 {
+  background: url("../img/background/background-icon-2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 55px;
+  height: 75px;
+  display: block;
+}
+
+.background-icon-3 {
+  background: url("../img/background/background-icon-3.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 65px;
+  height: 65px;
+  display: block;
+}
+
+.background-icon-4 {
+  background: url("../img/background/background-icon-4.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 55px;
+  height: 55px;
+  display: block;
+}
+
+.background-icon-5 {
+  background: url("../img/background/background-icon-5.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 61px;
+  height: 45px;
+  display: block;
+}
+
+.background-icon-6 {
+  background: url("../img/background/background-icon-6.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 45px;
+  height: 61px;
+  display: block;
+}
+
+.background-icon-7 {
+  background: url("../img/background/background-icon-7.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 95px;
+  height: 95px;
+  display: block;
+}
+
+.background-icon-8 {
+  background: url("../img/background/background-icon-8.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.background-icon-9 {
+  background: url("../img/background/background-icon-9.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 74px;
+  height: 74px;
+  display: block;
+}
+
+.background-icon-10 {
+  background: url("../img/background/background-icon-10.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 28px;
+  display: block;
+}
+
+.background-icon-11 {
+  background: url("../img/background/background-icon-11.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 31px;
+  height: 31px;
+  display: block;
+}
+
+.background-icon-12 {
+  background: url("../img/background/background-icon-12.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 30px;
+  display: block;
+}
+
+.background-icon-13 {
+  background: url("../img/background/background-icon-13.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.background-icon-14 {
+  background: url("../img/background/background-icon-14.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 83px;
+  height: 83px;
+  display: block;
+}
+
+.background-icon-15 {
+  background: url("../img/background/background-icon-15.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 34px;
+  height: 46px;
+  display: block;
+}
+
+.background-icon-16 {
+  background: url("../img/background/background-icon-16.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.background-icon-17 {
+  background: url("../img/background/background-icon-17.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 43px;
+  height: 31px;
+  display: block;
+}
+
+.background-icon-18 {
+  background: url("../img/background/background-icon-18.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 39px;
+  height: 54px;
+  display: block;
+}
+
+.background-icon-19 {
+  background: url("../img/background/background-icon-19.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 31px;
+  height: 43px;
+  display: block;
+}
+
+.background-icon-20 {
+  background: url("../img/background/background-icon-20.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 63px;
+  height: 86px;
+  display: block;
+}
+
+.background-icon-21 {
+  background: url("../img/background/background-icon-21.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 73px;
+  height: 54px;
+  display: block;
+}
+
+.background-icon-22 {
+  background: url("../img/background/background-icon-22.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
 .button-minus,
 .button-plus {
   font-weight: 800;
@@ -180,6 +360,44 @@ html, body {
   background: url("../img/videoBtn.svg") no-repeat center;
   background-size: 100% auto;
   cursor: pointer;
+  border-radius: 50%;
+}
+
+.videoBtn_tandem-first-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .69);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+
+  span {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+  }
+
+  i {
+    background: url("../img/new-vector-icon/play-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+
+  &:hover {
+    background: #fff;
+    transition: 0.3s;
+  }
 }
 
 .inst-svg-icon {
@@ -194,8 +412,38 @@ html, body {
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+  }
+}
+
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1224px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .videoBtn_tandem-first-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .main-logo {
+    min-width: 120px;
+    width: 120px;
+  }
+
+  .videoBtn {
+    width: 50px;
+    height: 50px;
   }
 }

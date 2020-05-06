@@ -1,5 +1,11 @@
 .jump-price_section {
   padding-top: 72px;
+  padding-bottom: 64px;
+
+  .row {
+    z-index: 2;
+    position: relative;
+  }
 }
 
 .jump-price__title {
@@ -130,4 +136,133 @@
   width: 205px;
   height: 55px;
   box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
+}
+
+.jump-price__bg-icon {
+  z-index: 1;
+}
+
+.jump-price__bg-icon-15 {
+  bottom: 5px;
+  right: 200px;
+}
+
+@media (max-width: 1199.98px) {
+  .jump-price__additionally {
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .jump-price__additionally-block {
+    max-width: 385px;
+  }
+
+  .jump-price__additionally-block-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jump-price__additionally-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .jump-price__additionally {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .jump-price__additionally-block-icon {
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%, 0);
+    height: 55px;
+    width: 123px;
+  }
+
+  .jump-price__additionally-block-body {
+    height: 100%;
+  }
+
+  .jump-price__additionally-btn {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jump-price__main {
+    flex-direction: column;
+  }
+
+  .jump-price__main-container {
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
+
+  .jump-price__main-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+
+  .jump-price__price {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 26px;
+  }
+
+  .jump-price__main-list {
+    margin-bottom: 26px;
+  }
+
+  .jump-price__main-btn {
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+  }
+
+  .jump-price__additionally {
+    flex-direction: column;
+  }
+
+  .jump-price__additionally-block {
+    max-width: 100%;
+    margin-bottom: 61px;
+    box-shadow: none;
+    border: 1px solid #F4F4F4;
+    padding-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .jump-price__additionally-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .jump-price__additionally-block-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .jump-price__additionally-block-price {
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+  }
+
+  .jump-price__bg-icon {
+    display: none !important;
+  }
+
+  .jump-price_section {
+    padding-top: 64px;
+  }
 }

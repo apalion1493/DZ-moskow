@@ -40,3 +40,72 @@
 .photo-jumping-instagram__img {
   width: 100%;
 }
+
+.photo-jumping-instagram__bg-icon {
+  z-index: 10;
+}
+
+.photo-jumping-instagram__bg-icon-6 {
+  top: 10px;
+  left: 27px;
+}
+
+.photo-jumping-instagram__bg-icon-19 {
+  top: 30px;
+  right: 100px;
+}
+
+.photo-jumping-instagram__bg-icon-13 {
+  right: -52px;
+  top: 330px;
+}
+
+.photo-jumping-instagram__bg-icon-13-2.background-icon-13 {
+  width: 31px;
+  height: 31px;
+  top: 315px;
+  right: 72px;
+}
+
+@media (max-width: 1219.98px) {
+  .photo-jumping-instagram__item {
+    max-width: 285px;
+  }
+
+  .photo-jumping-instagram__list {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .photo-jumping-instagram__item {
+    max-width: 303px;
+  }
+
+  .photo-jumping-instagram__list {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .photo-jumping-instagram__item {
+    max-width: 100%;
+    width: 50%;
+    min-width: 48%;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .photo-jumping-instagram__item {
+    min-width: 45%;
+  }
+
+  .photo-jumping-instagram__bg-icon {
+    display: none !important;
+  }
+
+  .photo-jumping-instagram {
+    padding-bottom: 30px;
+  }
+}
