@@ -15,9 +15,10 @@
 <main id="main" class="main tandem-page">
     <section id="tandem-first-screen" class="section tandem-first-screen tandem-first-screen_section">
         <div class="tandem-first-screen__container">
-            <video class="tandem-first-screen__video" poster="assets/img/tandem/first-screen.jpg"  muted="muted">
+            <video class="tandem-first-screen__video" poster="assets/img/tandem/first-screen.jpg" autoplay muted="muted">
                 <source src="assets/img/media/tandem_+10sec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
+            <span class="tandem-first-screen__image" style="background-image: url(assets/img/tandem/head-tandem-img-mob.png)"></span>
         </div>
         <header id="header" class="header section">
             <div class="container position-relative">
@@ -584,7 +585,7 @@
                 <span class="background-icon-11 position-absolute video-jumps__bg-icon video-jumps__bg-icon-11"></span>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 px-0">
                     <div class="video-jumps__list slider-button">
                         <div class="video-jumps__item">
                             <div class="videoBtn videoBtn_video-jumps"></div>
@@ -784,7 +785,10 @@
                                         <div class="training-program__item-container-block">
                                             <button type="button" class="slick-prev prev">Previous</button>
                                             <button type="button" class="slick-next next">Next</button>
-                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">
+                                                <span>Записаться на обучение</span>
+                                                <span>Записаться</span>
+                                            </a>
                                         </div>
 
                                     </div>
@@ -808,7 +812,10 @@
                                         <div class="training-program__item-container-block">
                                             <button type="button" class="slick-prev prev">Previous</button>
                                             <button type="button" class="slick-next next">Next</button>
-                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">
+                                                <span>Записаться на обучение</span>
+                                                <span>Записаться</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -831,7 +838,10 @@
                                         <div class="training-program__item-container-block">
                                             <button type="button" class="slick-prev prev">Previous</button>
                                             <button type="button" class="slick-next next">Next</button>
-                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">Записаться на обучение</a>
+                                            <a href="#" class="btn btn-outline-secondary training-program__btn training-program__btn-ml">
+                                                <span>Записаться на обучение</span>
+                                                <span>Записаться</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1081,6 +1091,7 @@
         cssEase: 'linear',
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
+        adaptiveHeight: true,
     });
 
     $('.video-jumps__list').slick({

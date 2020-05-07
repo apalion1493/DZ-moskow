@@ -100,6 +100,14 @@
 .training-program__btn {
   box-shadow: 0 10px 15px rgba(216, 58, 58, 0.3);
   max-width: 227px;
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span:last-child {
+    display: none;
+  }
 }
 
 .training-program__btn-ml {
@@ -139,6 +147,7 @@
   line-height: 22px;
   color: #555555;
   margin-bottom: 31px;
+  //font-family: 'Roboto', sans-serif !important;
 }
 
 .training-program__item-container-insert {
@@ -251,5 +260,32 @@
 
   .training-program__bg-icon {
     display: none !important;
+  }
+
+  .slider-button .training-program__item-container .slick-next,
+  .slider-button .training-program__item-container .slick-prev {
+    width: 38px;
+    height: 38px;
+  }
+
+  .training-program__item-container {
+    padding-top: 33px;
+  }
+
+  .training-program__btn {
+    height: 41px;
+    width: 160px;
+
+    span:first-child {
+      display: none;
+    }
+
+    span:last-child {
+      display: block;
+    }
+  }
+
+  .training-program__title {
+    font-size: 24px;
   }
 }

@@ -14,10 +14,10 @@ var tween2 = TweenMax.to("#attraction__img-humans", 0.5, {top: '100px', transfor
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 500, offset: 0})
     .setTween(tween1)
     // .setTween("#attraction__img-plane", {scale: 0.7})
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 500, offset: 0})
     .setTween(tween2)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
