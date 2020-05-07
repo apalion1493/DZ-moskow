@@ -147,6 +147,10 @@
   right: 200px;
 }
 
+.jump-price__main-img-mb {
+  display: none;
+}
+
 @media (max-width: 1199.98px) {
   .jump-price__additionally {
     flex-direction: row;
@@ -264,5 +268,14 @@
 
   .jump-price_section {
     padding-top: 64px;
+  }
+
+  .jump-price__main-img-mb {
+    display: block;
+    width: 100%;
+  }
+
+  .jump-price__main-img-dt {
+    display: none;
   }
 }
