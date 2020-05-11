@@ -27,7 +27,6 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #222222;
-  margin-bottom: 30px;
   display: block;
 }
 
@@ -83,4 +82,45 @@
   color: #222222;
   display: block;
   margin-bottom: 0;
+}
+
+.status-order__container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.status-order__container-btnMob {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .status-order {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .status-order__container-btnMob {
+    display: block;
+  }
+
+  .status-order__img {
+    display: none;
+  }
+
+  .status-order {
+    background: #E8FEEB;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    height: auto;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }

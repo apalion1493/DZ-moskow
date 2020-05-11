@@ -1,0 +1,54 @@
+.aff-first-screen {
+  .videoBtn_tandem-first-screen {
+    top: 57%;
+  }
+}
+
+.aff-first-screen__block {
+  padding-top: 122px;
+  padding-bottom: 168px;
+}
+
+.aff-first-screen__title {
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 305px;
+}
+
+.aff-first-screen__subTitle {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #CECECE;
+  display: block;
+}
+
+.aff-first-screen__bg-icon {
+  z-index: 1;
+}
+
+.aff-first-screen__bg-icon-26 {
+  top: 66px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767.98px) {
+  .aff-first-screen__title {
+    font-size: 34px;
+    margin-bottom: 150px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .aff-first-screen__subTitle {
+    font-size: 28px;
+  }
+}

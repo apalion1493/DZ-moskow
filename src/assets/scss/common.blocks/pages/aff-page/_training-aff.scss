@@ -1,0 +1,190 @@
+.training-aff {
+  padding-bottom: 71px;
+}
+
+.training-aff__title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.training-aff__subTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 162.8%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 33px;
+  display: block;
+}
+
+.training-aff__container {
+  background: #FFFFFF;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  min-height: 584px;
+  position: relative;
+  z-index: 2;
+}
+
+.training-aff__container-img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-width: 41%;
+  width: 41%;
+  height: 584px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: block;
+}
+
+.training-aff__container-body {
+  padding: 47px 38px 20px 25px;
+}
+
+.training-aff__container-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 25px;
+}
+
+.training-aff__container-row-1 {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 53px;
+}
+
+.training-aff__container-priceBlock {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  border-left: 4px solid #6ACA1E;
+}
+
+.training-aff__container-priceBlock-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.training-aff__container-priceBlock-num {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #6ACA1E;
+}
+
+.training-aff__container-priceBlock-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  max-width: 132px;
+  width: 132px;
+}
+
+.training-aff__container-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.training-aff__container-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.training-aff__container-block-img {
+  min-height: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.training-aff__container-block-title {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #777777;
+}
+
+.training-aff__bg-icon {
+  z-index: 1;
+}
+
+.training-aff__bg-icon-26 {
+  top: 110px;
+  right: -10px;
+}
+
+@media (max-width: 1199.98px) {
+  .training-aff__container-block-title {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .training-aff__container {
+    flex-direction: column;
+  }
+
+  .training-aff__container-img {
+    width: 100%;
+    height: 300px;
+    background-position: center -120px;
+  }
+
+  .training-aff__container-body {
+    padding: 40px 25px 20px 25px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .training-aff__container-row-2 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .training-aff__container-block {
+    max-width: 110px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .training-aff__subTitle {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .training-aff__container-img {
+    background-position: center center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .training-aff__container-block {
+    max-width: 50%;
+  }
+
+  .training-aff__container-row-1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .training-aff__container-priceBlock-icons {
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+}

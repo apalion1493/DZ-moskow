@@ -1,0 +1,43 @@
+.branch-block {
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.branch-block__body {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branch-block__title {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #555555;
+}
+
+.branch-block__img {
+  background: #F2F2F2;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 224px;
+}
+
+.branch-block__img-block {
+  background: #FFFFFF;
+  width: 121px;
+  height: 121px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199.98px) {
+
+}

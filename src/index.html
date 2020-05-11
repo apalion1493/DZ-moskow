@@ -12,9 +12,9 @@
 <body>
 
 <header id="header" class="header section">
-    <div class="container">
+    <div class="container position-relative">
         <div class="row">
-            <div class="col-6">
+            <div class="col-xl-6 col-9">
                 <div class="header__wrapper">
                     <a class="main-logo header__logo" href="#"></a>
                     <div class="header__feedback">
@@ -32,27 +32,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-xl-6 col-3">
                 <div class="header__nav">
-                    <ul class="header__nav-list">
+                    <ul class="header__nav-list header__nav-list-dt">
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">ЦЕНЫ</a>
+                            <a class="header__nav-link" href="#">СЕРТИФИКАТЫ</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">ВИРТУАЛЬНЫЙ ТУР</a>
+                            <a class="header__nav-link" href="#">ОБУЧЕНИЕ AFF</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">АЭРОДРОМЫ</a>
+                            <a class="header__nav-link" href="#">О КЛУБЕ</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">О НАС</a>
+
+                        <li class="header__nav-list-mob">
+                            <a href="tel:+79381555550">+7 938-1-55555-0</a>
                         </li>
                     </ul>
 
-                    <div id="burger" class="burger">
+                    <div id="burger" class="burger header__nav-burger">
                         <span class="burger__line burger__line-1"></span>
                         <span class="burger__line burger__line-2"></span>
                         <span class="burger__line burger__line-3"></span>
@@ -60,6 +61,24 @@
                 </div>
             </div>
         </div>
+        <ul id="header__nav-list-mob" class="header__nav-list header__nav-list-mob">
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">ПРЫЖКИ С ПАРАШЮТОМ</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">СЕРТИФИКАТЫ</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">ОБУЧЕНИЕ AFF</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">О КЛУБЕ</a>
+            </li>
+
+            <li class="header__nav-list-mob-tel">
+                <a href="tel:+79381555550">+7 938-1-55555-0</a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -67,7 +86,7 @@
     <section id="jump-booking" class="section jump-booking">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-xl-9 col-lg-8">
                     <div class="jump-booking__wrapper">
                         <h2 class="h2 jump-booking__h2">Бронирование прыжка</h2>
                         <div class="row jump-booking__step pb-5">
@@ -76,7 +95,7 @@
                                     <span class="jump-booking__step-title">01. дата и время</span>
                                 </div>
                             </div>
-                            <div class="col-7">
+                            <div class="col-xl-7">
                                 <div class="vdpComponent datePickExample calendar">
                                     <div class="vdpOuterWrap">
                                         <div class="vdpInnerWrap">
@@ -516,7 +535,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-5 pl-0">
+                            <div class="col-xl-5 mt-4 pt-3 pt-md-0 mt-md-5 mt-xl-0 pl-xl-0">
                                 <div class="jump-time jump-time-section">
                                     <span class="jump-time__title">Время прыжка</span>
                                     <div class="jump-time__container">
@@ -558,7 +577,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row jump-booking__step pb-5 inactive">
+                        <div class="row jump-booking__step pb-5 ">
                             <div class="col-12">
                                 <div class="jump-booking__step-header">
                                     <span class="jump-booking__step-title">02. Количество человек и доп. услуги</span>
@@ -567,7 +586,7 @@
                             <div class="col-12">
                                 <h4 class="h4 jump-booking__h4">Количество человек</h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <div>
                                     <div class="quantity-regulator">
                                         <div class="quantity-regulator__left-block">
@@ -586,11 +605,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6"></div>
+                            <div class="col-xl-6"></div>
                             <div class="col-12 mt-5">
                                 <h4 class="h4 jump-booking__h4">Дополнительные услуги</h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <div>
                                     <div class="service-block active">
                                         <div class="service-block__img">
@@ -625,7 +644,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 mt-5 mt-xl-0">
                                 <div>
                                     <div class="service-block">
                                         <div class="service-block__img">
@@ -665,14 +684,14 @@
                                     <button class="btn btn-secondary btn-orange jump-booking__step-btn">Далее</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!--inactive-->
                         <div class="row jump-booking__step pb-5">
                             <div class="col-12">
                                 <div class="jump-booking__step-header">
                                     <span class="jump-booking__step-title">03. Сертификаты и оплата</span>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <div>
                                     <h4 class="h4 jump-booking__h4">Номер сертификата</h4>
                                     <div class="number-entry-unit">
@@ -693,7 +712,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 mt-5 mt-xl-0">
                                 <div>
                                     <h4 class="h4 jump-booking__h4">Промокод</h4>
                                     <div class="number-entry-unit">
@@ -714,8 +733,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-6 mt-5">
+                            <div class="col-xl-6 mt-5">
                                 <div class="number-entry-unit success">
                                     <div class="number-entry-unit__img">
                                         <i class="card-icon"></i>
@@ -733,7 +751,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 mt-5">
+                            <div class="col-xl-6 mt-5">
                                 <div class="number-entry-unit error">
                                     <div class="number-entry-unit__img">
                                         <i class="card-icon"></i>
@@ -751,7 +769,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 mt-5">
+                            <div class="col-xl-6 mt-5">
                                 <div class="number-entry-unit success">
                                     <div class="number-entry-unit__img">
                                         <i class="coupon-icon"></i>
@@ -769,7 +787,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 mt-5">
+                            <div class="col-xl-6 mt-5">
                                 <div class="number-entry-unit error">
                                     <div class="number-entry-unit__img">
                                         <i class="coupon-icon"></i>
@@ -824,6 +842,10 @@
                                                 <input class="personal-data-input" type="email" placeholder="Email">
                                                 <input class="personal-data-input" type="text" placeholder="Телефон">
                                             </div>
+                                            <div class="personal-data__checkBox ml-0 mb-4 pb-3">
+                                                <input id="checkbox-21" type="checkbox">
+                                                <label for="checkbox-21">Я ознакомлен и согласен с обработкой моих личных данных</label>
+                                            </div>
 
                                             <button class="btn btn-secondary btn-orange jump-booking__step-btn">
                                                 Оплатить
@@ -841,7 +863,11 @@
     <div id="status-order" class="status-order">
         <div class="status-order__img"></div>
         <div class="status-order__container">
-            <span class="status-order__title">Статус заказа</span>
+            <div class="status-order__container-header">
+                <span class="status-order__title">Статус заказа</span>
+                <button class="status-order__container-btnMob">></button>
+            </div>
+
             <div class="status-order__list">
                 <div class="status-order-string status-order__item">
                     <span class="status-order-string__title">Дата прыжка</span>
@@ -870,7 +896,7 @@
 <footer id="footer" class="footer">
     <div class="container pb-5">
         <div class="row">
-            <div class="col-5">
+            <div class="col-lg-5 col-md-7">
                 <div class="footer__first-container">
                     <div class="footer__schedule">
                         <span class="footer__title">График работы</span>
@@ -878,7 +904,7 @@
                         <span class="footer__text ">ежедневно с <br> 10:00-20:00 <br><br></span>
                         <span class="footer__text">Лётные дни: Пт-Вс.</span>
                     </div>
-                    <div>
+                    <div class="footer__services">
                         <span class="footer__title">Услуги</span>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -897,7 +923,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-5">
                 <div class="footer__second-container">
                     <div class="footer__second-container-block">
                         <span class="footer__title">Меню</span>
@@ -932,7 +958,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="footer__logo-container">
                     <a class="footer__logo-icon main-logo" href="#"></a>
                     <p class="footer__logo-copy">Copyright © 2020 DZK</p>
@@ -943,7 +969,7 @@
     <div class="footer__bottom-block">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7">
                     <div class="footer__info">
                         <div class="footer__info-wrapper">
                             <span class="footer__info-text">ИНН/КПП: 6230047043/622501001</span>
@@ -953,7 +979,7 @@
                             Ибредское, с. Сасыкино</p>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <ul class="footer__socialNetwork footer__socialNetwork-list">
                         <li class="footer__socialNetwork-item">
                             <a class="footer__socialNetwork-link icon-facebook" href="#"></a>

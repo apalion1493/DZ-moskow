@@ -1,0 +1,105 @@
+.training-course {
+  padding-bottom: 110px;
+}
+
+.training-course__title {
+  text-align: center;
+}
+
+.training-course__subTitle {
+  display: block;
+  margin-bottom: 48px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 162.8%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.training-course__block {
+  background: #FFFFFF;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  min-height: 387px;
+  height: 100%;
+}
+
+.training-course__block-feedback {
+  padding: 34px 20px 25px 50px;
+  background: #E9F9DD;
+}
+
+.training-course__block-feedback-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.training-course__block-feedback-container {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.training-course__block-feedback-container-img {
+  min-width: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.training-course__block-feedback-container-title {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.training-course__block-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.training-course__block-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  margin-bottom: 22px;
+  max-width: 352px;
+}
+
+.training-course__block-feedback-container-num {
+  font-size: 18px;
+  line-height: 22px;
+  color: #222222;
+
+  &:hover {
+    color: #222222;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .training-course__block-feedback {
+    padding: 20px;
+  }
+
+  .training-course__block-title {
+    font-size: 20px;
+  }
+
+  .training-course__block-feedback-container-num {
+    vertical-align: middle;
+  }
+
+  .training-course__block-feedback-container-body {
+    display: flex;
+    flex-direction: column;
+  }
+}

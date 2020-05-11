@@ -1,0 +1,25 @@
+.aff-page-branch {
+  padding-bottom: 63px;
+
+  .branch-block {
+    position: relative;
+    top: -28px;
+    z-index: 1000;
+  }
+}
+
+.aff-page-branch__link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .aff-page-branch {
+    padding-top: 40px;
+  }
+
+  .aff-page-branch .branch-block {
+    top: 0;
+  }
+}

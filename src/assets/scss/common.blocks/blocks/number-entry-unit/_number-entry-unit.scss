@@ -92,7 +92,7 @@
 
     }
   }
-  
+
   .number-entry-unit__group {
     button {
       display: none;
@@ -126,5 +126,52 @@
       background-repeat: no-repeat;
 
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .number-entry-unit__img {
+    min-width: 56px;
+    width: 56px;
+  }
+
+  .number-entry-unit__main {
+    padding-left: 22px;
+  }
+
+  .number-entry-unit__input input {
+    height: 35px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .number-entry-unit__input-text {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .number-entry-unit__group {
+    button {
+      max-width: 107px;
+      height: 37px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .number-entry-unit__group-discount {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .number-entry-unit.success .number-entry-unit__input input,
+  .number-entry-unit.error .number-entry-unit__input input {
+    background-image: none;
+  }
+
+  .number-entry-unit__group {
+    min-width: 99px;
   }
 }

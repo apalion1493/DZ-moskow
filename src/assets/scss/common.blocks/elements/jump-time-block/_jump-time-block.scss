@@ -126,3 +126,40 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .jump-time-block__item {
+    font-size: 14px;
+  }
+
+  .jump-time-block__time {
+    font-size: 16px;
+  }
+
+  .jump-time-block__places i {
+    width: 22px;
+    min-width: 22px;
+    height: 22px;
+  }
+
+  .jump-time-block__places i:before {
+    width: 12px;
+    height: 9px;
+  }
+
+  .jump-time-block.inactive .jump-time-block__places i:before {
+    width: 11px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 345px) {
+  .jump-time-block__time {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+
+  .jump-time-block__type {
+    flex: 4;
+  }
+}

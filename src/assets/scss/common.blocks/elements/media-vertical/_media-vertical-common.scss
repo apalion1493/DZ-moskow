@@ -1,0 +1,20 @@
+.media-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-vertical__imgBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-vertical__icon {
+  display: block;
+}
+
+.media-vertical__title {
+  text-align: center;
+  max-width: 183px;
+}

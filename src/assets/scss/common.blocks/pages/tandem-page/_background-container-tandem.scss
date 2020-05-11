@@ -32,6 +32,12 @@
   }
 }
 
+.background-container-tandem_homePage {
+  &:after {
+    bottom: -85px;
+  }
+}
+
 @media (max-width: 767.98px) {
 
   .background-container-tandem:after {

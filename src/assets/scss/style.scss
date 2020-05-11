@@ -35,6 +35,36 @@
 @import "common.blocks/pages/tandem-page/find-us";
 @import "common.blocks/pages/tandem-page/background-container-tandem";
 
+
+
+@import "common.blocks/pages/home/first-screen_home";
+@import "common.blocks/pages/home/home-section-info";
+@import "common.blocks/pages/home/home-page-more-info";
+
+
+@import "common.blocks/pages/sertificat-page/gift-someone";
+@import "common.blocks/pages/sertificat-page/sertificat-page-content";
+@import "common.blocks/pages/sertificat-page/important-point-section";
+@import "common.blocks/pages/sertificat-page/sertificat-page-review";
+@import "common.blocks/pages/sertificat-page/first-screen_sertificat";
+
+
+@import "common.blocks/pages/aff-page/aff-first-screen";
+@import "common.blocks/pages/aff-page/aff-page-branch";
+@import "common.blocks/pages/aff-page/training-aff";
+@import "common.blocks/pages/aff-page/course-program-aff";
+@import "common.blocks/pages/aff-page/that-get";
+@import "common.blocks/pages/aff-page/virtual-walk";
+
+
+@import "common.blocks/pages/about/common";
+@import "common.blocks/pages/about/uniqueness-program";
+@import "common.blocks/pages/about/about-page_first-screen";
+@import "common.blocks/pages/about/training-course";
+
+
+
+
 //BLOCKS
 @import "common.blocks/blocks/header/header";
 @import "common.blocks/blocks/footer/footer";
@@ -54,6 +84,17 @@
 @import "common.blocks/elements/collapse-block/collapse-block";
 @import "common.blocks/elements/slider-option-1/slider-option-1";
 @import "common.blocks/elements/slider-button/slider-button";
+@import "common.blocks/elements/media-vertical/media-vertical-common";
+@import "common.blocks/elements/media-vertical/media-vertical_gift-someone";
+@import "common.blocks/elements/media-vertical/media-vertical_point";
+@import "common.blocks/elements/card-info/card-info-1";
+@import "common.blocks/elements/card-info/card-info-2";
+@import "common.blocks/elements/card-info/card-info-3";
+@import "common.blocks/elements/card-info/common";
+@import "common.blocks/elements/sertificat-block/sertificat-block";
+@import "common.blocks/elements/block-textColor/block-textColor";
+@import "common.blocks/elements/branch-block/branch-block";
+@import "common.blocks/elements/level-stage/level-stage";
 
 //main styles
 @import "common.blocks/common";

@@ -35,3 +35,20 @@
     color: #333333;
   }
 }
+
+@media (max-width: 767.98px) {
+  .container-calc__form {
+    box-shadow: none;
+    width: 53px;
+    background: initial;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .container-calc {
+    padding-left: 27px;
+    margin-right: 10px;
+  }
+}

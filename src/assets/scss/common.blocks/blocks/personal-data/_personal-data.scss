@@ -44,7 +44,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 582px;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 
   .personal-data-input {
     width: 100%;
@@ -56,4 +56,27 @@
     }
   }
 
+}
+
+@media (max-width: 767.98px) {
+  .personal-data__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .personal-data__checkBox {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .personal-data-input {
+    height: 35px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .personal-data.personal-data__old .personal-data-input {
+    margin-bottom: 50px;
+  }
 }

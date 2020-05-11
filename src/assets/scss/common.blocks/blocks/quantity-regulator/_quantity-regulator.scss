@@ -33,3 +33,23 @@
   line-height: 22px;
   color: #333333;
 }
+
+@media (max-width: 767.98px) {
+  .quantity-regulator__left-block {
+    width: 56px;
+    min-width: 56px;
+  }
+
+  .quantity-regulator__total {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .quantity-regulator {
+    min-height: 84px;
+  }
+
+  .quantity-regulator__body {
+    padding-right: 10px;
+  }
+}

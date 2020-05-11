@@ -18,10 +18,8 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   min-height: 346px;
-
-  .slick-list {
-    //overflow: inherit;
-  }
+  margin-left: 25px;
+  margin-right: 25px;
 
   &:before {
     content: '';
@@ -72,5 +70,158 @@
 }
 
 .positive-reviews__body {
-  padding: 49px 100px 118px 47px;
+  padding: 49px 100px 20px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.positive-reviews__container {
+  margin-left: -25px;
+  margin-right: -25px;
+  .slick-list {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+
+    button {
+      background: #FFFFFF;
+      border: 1px solid #6ACA1E;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .slick-active {
+      button {
+        background: #6ACA1E;
+      }
+    }
+  }
+
+  &.slider-button {
+    .slick-next {
+      right: 50px;
+    }
+
+    .slick-prev {
+      left: 50px;
+    }
+
+    .slick-arrow {
+      z-index: 10;
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+.positive-reviews__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  display: block;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.positive-reviews__view {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  font-family: 'Roboto', sans-serif !important;
+  display: block;
+  margin-bottom: 34px;
+}
+
+.positive-reviews__description {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.slick-slide .positive-reviews__image-mob {
+  display: none;
+}
+
+.positive-reviews__image-mob {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .positive-reviews__block {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    .positive-reviews__image-dp {
+      display: none;
+    }
+
+    .positive-reviews__image-mob {
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: initial;
+      border-radius: 5px;
+      width: 100%;
+      min-height: auto;
+    }
+  }
+
+  .positive-reviews__body {
+    padding: 23px 45px 40px 45px;
+  }
+
+  .positive-reviews__container.slider-button {
+    .slick-arrow {
+      width: 38px;
+      height: 38px;
+    }
+
+    .slick-prev {
+      left: 5px;
+    }
+
+    .slick-next {
+      right: 5px;
+    }
+  }
+
+  .positive-reviews__container .slick-dots {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .positive-reviews__container.slider-button .slick-next {
+    right: 15px;
+  }
+
+  .positive-reviews__container.slider-button .slick-prev {
+    left: 15px;
+  }
 }

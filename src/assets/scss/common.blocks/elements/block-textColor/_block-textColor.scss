@@ -1,0 +1,41 @@
+.block-textColor {
+  position: relative;
+
+  h1 {
+    z-index: 3;
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 71px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .block-textColor__color1 {
+    color: #FF2C1F;
+    opacity: 0.4;
+    z-index: 2;
+    left: calc(50% + 4px);
+  }
+
+  .block-textColor__color2 {
+    color: #2D9AFF;
+    opacity: 0.4;
+    z-index: 1;
+    left: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .block-textColor span {
+    font-size: 36px;
+  }
+}
