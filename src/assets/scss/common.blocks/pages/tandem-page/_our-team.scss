@@ -69,11 +69,13 @@
 .our-team__bg-icon-6 {
   top: -70px;
   right: 280px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .our-team__bg-icon-20 {
   top: -5px;
   left: -30px;
+  animation: arrowBottom 5s infinite ease-in-out;
 }
 
 @media (max-width: 991.98px) {

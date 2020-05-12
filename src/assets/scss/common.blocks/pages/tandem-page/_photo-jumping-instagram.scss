@@ -48,16 +48,19 @@
 .photo-jumping-instagram__bg-icon-6 {
   top: 10px;
   left: 27px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .photo-jumping-instagram__bg-icon-19 {
   top: 30px;
   right: 100px;
+  animation: arrowBottom 5s infinite ease-in-out;
 }
 
 .photo-jumping-instagram__bg-icon-13 {
   right: -52px;
   top: 330px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .photo-jumping-instagram__bg-icon-13-2.background-icon-13 {
@@ -65,6 +68,7 @@
   height: 31px;
   top: 315px;
   right: 72px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 1219.98px) {

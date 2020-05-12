@@ -1,0 +1,125 @@
+@keyframes videoBtn {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(1.2);
+  }
+
+  66% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes arrowBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(10px);
+  }
+
+  66% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(-10px);
+  }
+
+  66% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-10px);
+  }
+
+  66% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrowRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(10px);
+  }
+
+  66% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrowRightBottom {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(10px, 10px);
+  }
+
+  66% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circleBig {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(1.2);
+  }
+
+  66% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

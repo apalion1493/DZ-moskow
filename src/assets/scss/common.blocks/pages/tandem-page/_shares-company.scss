@@ -163,6 +163,7 @@
   top: 140px;
   width: 45px;
   height: 61px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .shares-company__bg-icon-5.background-icon-5 {
@@ -170,11 +171,13 @@
   height: 29px;
   bottom: -80px;
   left: 100px;
+  animation: arrowRight 5s infinite ease-in-out;
 }
 
 .shares-company__bg-icon-16 {
   left: 40px;
   bottom: 20px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 767.98px) {

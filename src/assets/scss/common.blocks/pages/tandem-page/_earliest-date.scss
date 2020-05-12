@@ -183,17 +183,20 @@
 .earliest-date__bg-icon-6 {
   left: 170px;
   bottom: -30px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .earliest-date__bg-icon-7 {
   right: 100px;
   bottom: -105px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .earliest-date__bg-icon-22 {
   top: 60px;
   left: 38%;
-  transform: translateX(-50%);
+  //transform: translateX(-50%);
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 1199.98px) {

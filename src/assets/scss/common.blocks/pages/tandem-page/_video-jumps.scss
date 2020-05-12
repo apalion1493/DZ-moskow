@@ -106,11 +106,13 @@
 .video-jumps__bg-icon-12 {
   top: 22px;
   right: 100px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .video-jumps__bg-icon-11 {
   left: -100px;
   top: 110px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 1400px) {

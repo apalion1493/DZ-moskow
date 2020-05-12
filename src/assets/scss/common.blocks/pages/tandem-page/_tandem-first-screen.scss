@@ -162,11 +162,13 @@
 .tandem-first-screen__bg-icon-1 {
   right: -20px;
   top: 100px;
+  animation: arrowBottom 5s infinite ease-in-out;
 }
 
 .tandem-first-screen__bg-icon-2 {
   left: -20px;
   bottom: 150px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .tandem-first-screen__image {

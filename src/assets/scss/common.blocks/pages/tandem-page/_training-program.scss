@@ -176,11 +176,13 @@
 .training-program__bg-icon-14 {
   bottom: 80px;
   left: -35px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .training-program__bg-icon-21 {
   right: 30px;
   bottom: -30px;
+  animation: arrowRight 5s infinite ease-in-out;
 }
 
 .training-program__bg-icon-13.background-icon-13 {
@@ -188,6 +190,7 @@
   top: 70px;
   width: 31px;
   height: 31px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 1199.98px) {

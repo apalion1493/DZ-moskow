@@ -43,11 +43,13 @@
 .tandem-questions__bg-icon-8.background-icon-8 {
   top: -30px;
   right: 180px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-9 {
   top: 0;
   right: -20px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-6.background-icon-6 {
@@ -55,31 +57,37 @@
   left: -70px;
   width: 53px;
   height: 73px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-17 {
   top: -97px;
   right: -70px;
+  animation: arrowLeft 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-18 {
   right: -50px;
   bottom: 100px;
+  animation: arrowBottom 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-10 {
   bottom: -40px;
   right: 300px;
+  animation: arrowTop 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-18-2 {
   bottom: -70px;
   left: 230px;
+  animation: arrowBottom 5s infinite ease-in-out;
 }
 
 .tandem-questions__bg-icon-9-2 {
   left: 100px;
   bottom: -137px;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 767.98px) {

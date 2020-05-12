@@ -417,6 +417,7 @@ html, body {
   transform: translate(-50%, -50%);
   transition: 0.3s;
   opacity: 1;
+  animation: videoBtn 3s infinite linear;
 
   span {
     font-weight: 600;

@@ -89,9 +89,9 @@
 }
 
 .attraction__bg-icon-3 {
-  top: -20px;
-  left: 50%;
-  transform: translateX(-120%);
+  top: 10px;
+  left: 43%;
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .attraction__bg-icon-4.background-icon-4 {
@@ -99,11 +99,13 @@
   right: -20px;
   width: 65px;
   height: 65px;
+  animation: arrowRightBottom 5s infinite ease-in-out;
 }
 
 .attraction__bg-icon-5 {
   bottom: -110px;
   left: -55px;
+  animation: arrowLeft 5s infinite ease-in-out;
 }
 
 .attraction__wrapper {
