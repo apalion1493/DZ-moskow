@@ -2,3 +2,37 @@
   padding-top: 54px;
   background: #F3F3F3;
 }
+
+.sertificat-page-content__bg-icon {
+  z-index: 1;
+}
+
+.sertificat-page-content__bg-icon-49 {
+  animation: arrowTop 5s infinite ease-in-out;
+  top: 0;
+  left: -70px;
+}
+
+.sertificat-page-content__bg-icon-50 {
+  top: -40px;
+  right: 0;
+  animation: circleBig 5s infinite ease-in-out;
+}
+
+.sertificat-page-content__bg-icon-51 {
+  bottom: 250px;
+  right: -60px;
+  animation: arrowBottom 5s infinite ease-in-out;
+}
+
+.sertificat-page-content__bg-icon-52 {
+  bottom: 10px;
+  right: 20%;
+  animation: arrowBottom 5s infinite ease-in-out;
+}
+
+.sertificat-page-content__bg-icon-53 {
+  bottom: 20px;
+  left: -50px;
+  animation: arrowLeft 5s infinite ease-in-out;
+}

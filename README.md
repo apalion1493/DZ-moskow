@@ -1,8 +1,6 @@
 # DZ-moskow
 https://apalion1493.github.io/DZ-moskow/build/tandem.html
 
-https://apalion1493.github.io/DZ-moskow/build/About.html
-
 https://apalion1493.github.io/DZ-moskow/build/aff.html
 
 https://apalion1493.github.io/DZ-moskow/build/home.html

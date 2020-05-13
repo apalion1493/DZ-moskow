@@ -14,3 +14,19 @@
   margin-bottom: 57px;
   display: block;
 }
+
+.important-point-section__bg-icon {
+  position: relative;
+}
+
+.important-point-section__bg-icon-54 {
+  bottom: -100px;
+  right: -50px;
+  animation: arrowTop 5s infinite ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+  .important-point-section {
+    padding-bottom: 20px;
+  }
+}

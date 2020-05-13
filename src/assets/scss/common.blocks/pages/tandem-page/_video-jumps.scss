@@ -115,6 +115,10 @@
   animation: circleBig 5s infinite ease-in-out;
 }
 
+.video-jumps__item-video {
+  height: 429px;
+}
+
 @media (max-width: 1400px) {
   .video-jumps__list:before,
   .video-jumps__list:after {
@@ -167,5 +171,9 @@
   .video-jumps__list.slider-button .slick-arrow {
     width: 38px;
     height: 38px;
+  }
+
+  .video-jumps__item-video {
+    height: 100%;
   }
 }
