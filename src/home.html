@@ -15,8 +15,8 @@
 <main id="main" class="main home-page">
     <section class="section first-screen_home tandem-first-screen tandem-first-screen_section">
         <div class="tandem-first-screen__container">
-            <video class="tandem-first-screen__video" poster="assets/img/home-first-img.png" loop muted="muted">
-                <source src="assets/img/media/tandem_+10sec.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <video class="tandem-first-screen__video" poster="assets/img/home-first-img.png" loop autoplay muted="muted">
+                <source src="assets/img/media/tandem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
             <span class="tandem-first-screen__image" style="background-image: url(assets/img/home-first-img.png)"></span>
         </div>
@@ -183,48 +183,70 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="container">
-                <h2 class="h2 text-center">Отзывы наших клиентов</h2>
+        <section id="photo-jumping-instagram" class="section photo-jumping-instagram photo-jumping-instagram_section">
+            <div class="container position-relative">
+                <h2 class="h2 photo-jumping-instagram__title">Фото прыжков, в инстаграмм</h2>
+                <span class="photo-jumping-instagram__subtitle">#DZKskydivING</span>
                 <div class="row">
                     <div class="col-12">
-                        <div class="positive-reviews__container slider-button">
-                            <div class="positive-reviews__block">
-                                <img class="positive-reviews__image positive-reviews__image-dp" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <img class="positive-reviews__image positive-reviews__image-mob" src="assets/img/tandem/inst-image-mob.png" alt="">
-                                <div class="positive-reviews__wrapper">
-                                    <div class="positive-reviews__body">
-                                        <span class="positive-reviews__name">Надежда Петровна</span>
-                                        <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                        <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="positive-reviews__block">
-                                <img class="positive-reviews__image positive-reviews__image-dp" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <img class="positive-reviews__image positive-reviews__image-mob" src="assets/img/tandem/inst-image-mob.png" alt="">
-                                <div class="positive-reviews__wrapper">
-                                    <div class="positive-reviews__body">
-                                        <span class="positive-reviews__name">Надежда Петровна</span>
-                                        <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                        <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="positive-reviews__block">
-                                <img class="positive-reviews__image positive-reviews__image-dp" src="assets/img/tandem/inst-image-1.png" alt="">
-                                <img class="positive-reviews__image positive-reviews__image-mob" src="assets/img/tandem/inst-image-mob.png" alt="">
-                                <div class="positive-reviews__wrapper">
-                                    <div class="positive-reviews__body">
-                                        <span class="positive-reviews__name">Надежда Петровна</span>
-                                        <span class="positive-reviews__view">Прыжек в тандеме</span>
-                                        <p class="positive-reviews__description">Просто опыт на всю жизнь. В начале сомневалось, но это был подарок от мужа, поэтому решилась и нежалею, теперь хочу прыгнуть без инструктора. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="photo-jumping-instagram__list">
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-1.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-2.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-3.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-3.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-4.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-5.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-6.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-6.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-7.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-7.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-8.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-8.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-9.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-9.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="photo-jumping-instagram__item">
+                                <a data-fancybox="gallery" href="assets/img/tandem/photo-jumping-instagram-10.jpg">
+                                    <img class="photo-jumping-instagram__img" src="assets/img/tandem/photo-jumping-instagram-10.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <span class="background-icon-6 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-6"></span>
+                <span class="background-icon-19 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-19"></span>
+                <span class="background-icon-13 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-13"></span>
+                <span class="background-icon-13 position-absolute photo-jumping-instagram__bg-icon photo-jumping-instagram__bg-icon-13-2"></span>
             </div>
         </section>
     </div>
@@ -236,19 +258,20 @@
                     <div class="find-us__contact">
                         <div class="find-us__contact-body">
                             <span class="find-us__contact-textB mb-3">Наш адрес:</span>
-                            <address class="find-us__contact-address mb-4">Ростовская обл., Ольгинская, 10-й пер., 1А,</address>
+                            <address class="find-us__contact-address mb-4">Аэродром Мячково (Московская область) - Верхнее Мячково, Московская обл., 140123</address>
                             <ul class="find-us__contact-list">
                                 <li class="find-us__contact-list-item">
                                     <a class="find-us__contact-textB find-us__contact-link" href="tel:74955327406">+7 (495) 532 74 06, </a>
-                                    <a href="#" class="icon-telegram-color find-us__contact-list-item-icon ml-2 pl-1"></a>
-                                    <a href="#" class="icon-viber-color find-us__contact-list-item-icon ml-2 pl-1"></a>
+                                    <a href="#" target="_blank" class="icon-telegram-color find-us__contact-list-item-icon ml-2 pl-1"></a>
+                                    <a href="#" target="_blank" class="icon-viber-color find-us__contact-list-item-icon ml-2 pl-1"></a>
+                                    <a href="https://www.instagram.com/krutitcy/" target="_blank" class="icon-instagram-color find-us__contact-list-item-icon ml-2 pl-1"></a>
                                 </li>
                                 <li class="find-us__contact-list-item">
                                     <a class="find-us__contact-textB find-us__contact-link mb-4" href="tel:89654099505">8 (965) 409 95 05 </a>
                                 </li>
                             </ul>
                             <span class="find-us__contact-textB mb-2">Email</span>
-                            <a class="find-us__contact-textB find-us__contact-link" href="mailto:info@dzk.ru">info@dzk.ru</a>
+                            <a class="find-us__contact-textB find-us__contact-link" href="mailto:krutitcy@gmail.com">krutitcy@gmail.com</a>
                         </div>
                         <div class="find-us__contact-footer">
                             <button class="btn find-us__contact-btn">Построить маршрут</button>
@@ -374,7 +397,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <iframe style="height: 500px" class="w-100" src="https://www.youtube.com/embed/6_QKEIUYti0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="w-100" height="500" src="https://www.youtube.com/embed/K8uLNanmP1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -384,35 +407,27 @@
 
 <script src="assets/js/libs.min.js"></script>
 <script>
-    $('.positive-reviews__container').slick({
-        infinite: true,
-        dots: true,
-        fade: true,
-        cssEase: 'linear',
-        appendDots: $('.positive-reviews__body'),
-        // responsive: [
-        //     {
-        //         breakpoint: 1199,
-        //         settings: {
-        //             dots: false,
-        //         }
-        //     }
-        // ]
-    });
-
-    let activeClass = 'slick-active',
-        ariaAttribute = 'aria-hidden';
-    $( '.positive-reviews__container' )
-        .on( 'init', function() {
-            $( '.slick-dots li:first-of-type' ).addClass( activeClass ).attr( ariaAttribute, false );
-        } )
-        .on( 'afterChange', function( event, slick, currentSlide ) {
-            $.each(slick.$dots, (i, el) => {
-                $(el).find('li').eq(currentSlide).addClass('slick-active').find('button');
-            })
-        });
-
-    $( '.positive-reviews__container' ).slick();
+    // $('.positive-reviews__container').slick({
+    //     infinite: true,
+    //     dots: true,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     appendDots: $('.positive-reviews__body'),
+    // });
+    //
+    // let activeClass = 'slick-active',
+    //     ariaAttribute = 'aria-hidden';
+    // $( '.positive-reviews__container' )
+    //     .on( 'init', function() {
+    //         $( '.slick-dots li:first-of-type' ).addClass( activeClass ).attr( ariaAttribute, false );
+    //     } )
+    //     .on( 'afterChange', function( event, slick, currentSlide ) {
+    //         $.each(slick.$dots, (i, el) => {
+    //             $(el).find('li').eq(currentSlide).addClass('slick-active').find('button');
+    //         })
+    //     });
+    //
+    // $( '.positive-reviews__container' ).slick();
 </script>
 </body>
 </html>

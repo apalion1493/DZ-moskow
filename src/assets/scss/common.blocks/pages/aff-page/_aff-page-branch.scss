@@ -14,12 +14,44 @@
   }
 }
 
+.aff-page-branch_dt {
+  height: 0;
+  position: absolute;
+  bottom: -55px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .aff-page-branch_mob {
+    display: none;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .aff-page-branch {
-    padding-top: 40px;
+    padding-top: 0;
+  }
+
+  .aff-page-branch_dt {
+    bottom: -35px;
   }
 
   .aff-page-branch .branch-block {
     top: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .aff-page-branch_dt {
+    display: none;
+  }
+
+  .aff-page-branch {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
   }
 }

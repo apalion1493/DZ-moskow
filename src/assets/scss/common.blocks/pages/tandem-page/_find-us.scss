@@ -76,7 +76,7 @@
   font-size: 1rem;
   line-height: 19px;
   color: #555555;
-  max-width: 222px;
+  max-width: 270px;
 }
 
 .find-us__contact-list {
@@ -90,6 +90,7 @@
 }
 
 .find-us__contact-list-item-icon {
+  max-width: 20px;
   &.icon-telegram-color {
     width: 16px;
     height: 16px;

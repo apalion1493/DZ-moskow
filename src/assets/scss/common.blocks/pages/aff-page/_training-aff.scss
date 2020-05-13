@@ -1,5 +1,6 @@
 .training-aff {
   padding-bottom: 71px;
+  padding-top: 340px;
 }
 
 .training-aff__title {
@@ -125,12 +126,17 @@
 .training-aff__bg-icon-26 {
   top: 110px;
   right: -10px;
+  animation: arrowRightBottom 5s infinite ease-in-out;
 }
 
 @media (max-width: 1199.98px) {
   .training-aff__container-block-title {
     font-size: 14px;
     line-height: normal;
+  }
+
+  .training-aff {
+    padding-top: 720px;
   }
 }
 
@@ -149,6 +155,9 @@
     padding: 40px 25px 20px 25px;
   }
 
+  .training-aff {
+    padding-top: 810px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -170,6 +179,10 @@
 
   .training-aff__container-img {
     background-position: center center;
+  }
+
+  .training-aff {
+    padding-top: 0;
   }
 }
 

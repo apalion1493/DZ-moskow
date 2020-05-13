@@ -106,6 +106,24 @@
   }
 }
 
+@keyframes arrowLeftBottom {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(-10px, 10px);
+  }
+
+  66% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 @keyframes circleBig {
   0% {
     transform: scale(1);

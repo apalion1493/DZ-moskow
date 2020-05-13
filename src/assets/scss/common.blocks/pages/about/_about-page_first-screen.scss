@@ -56,13 +56,13 @@
 .about-page_first-screen__bg-icon-23 {
   bottom: 120px;
   left: 62%;
-  transform: translateX(-50%);
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 .about-page_first-screen__bg-icon-24 {
   bottom: 150px;
   left: 82%;
-  transform: translateX(-50%);
+  animation: circleBig 5s infinite ease-in-out;
 }
 
 @media (max-width: 767.98px) {
