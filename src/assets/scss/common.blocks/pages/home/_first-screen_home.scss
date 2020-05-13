@@ -10,14 +10,33 @@
     margin-top: 285px;
     text-align: center;
     display: block;
+    text-shadow: -4px -2px 0 rgba(124, 198, 240, .5), 4px 3px 0 rgba(238, 124, 240, .5);
   }
 }
 
 .first-screen_home {
 
   .videoBtn_home-first-screen {
-    top: 55%;
+    top: 50%;
   }
+}
+
+.first-screen_home__bg-icon-28 {
+  bottom: 350px;
+  left: 30%;
+  animation: circleBig 5s infinite ease-in-out;
+}
+
+.first-screen_home__bg-icon-29 {
+  bottom: 220px;
+  right: 16%;
+  animation: circleBig 5s infinite ease-in-out;
+}
+
+.first-screen_home__bg-icon-30 {
+  animation: circleBig 5s infinite ease-in-out;
+  top: 75px;
+  left: 37%;
 }
 
 @media (max-width: 767.98px) {

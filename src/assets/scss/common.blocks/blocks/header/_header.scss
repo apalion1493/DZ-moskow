@@ -3,6 +3,19 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   padding-top: 30px;
   padding-bottom: 31px;
+  transition: top 1s;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .header__logo {
@@ -120,6 +133,21 @@
   .header {
     box-shadow: none;
     background: initial;
+
+    &.fixed {
+      background: #FFFFFF;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      transition: 1s;
+
+      .header__nav-link {
+        color: #333333;
+        font-weight: 600;
+      }
+
+      .header__feedback-phone {
+        color: #333333;
+      }
+    }
 
     .header__feedback-phone {
       color: #ffffff;

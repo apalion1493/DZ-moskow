@@ -366,6 +366,78 @@ html, body {
   display: block;
 }
 
+.background-icon-28 {
+  background: url("../img/background/background-icon-28.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 31px;
+  height: 31px;
+  display: block;
+}
+
+.background-icon-29 {
+  background: url("../img/background/background-icon-29.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.background-icon-30 {
+  background: url("../img/background/background-icon-30.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 39px;
+  height: 39px;
+  display: block;
+}
+
+.background-icon-31 {
+  background: url("../img/background/background-icon-31.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 49px;
+  height: 49px;
+  display: block;
+}
+
+.background-icon-32 {
+  background: url("../img/background/background-icon-32.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 44px;
+  height: 61px;
+  display: block;
+}
+
+.background-icon-33 {
+  background: url("../img/background/background-icon-33.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 42px;
+  height: 58px;
+  display: block;
+}
+
+.background-icon-34 {
+  background: url("../img/background/background-icon-34.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 32px;
+  height: 44px;
+  display: block;
+}
+
+.background-icon-35 {
+  background: url("../img/background/background-icon-35.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 44px;
+  height: 32px;
+  display: block;
+}
+
+.background-icon-36 {
+  background: url("../img/background/background-icon-36.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 39px;
+  height: 29px;
+  display: block;
+}
+
 .button-minus,
 .button-plus {
   font-weight: 800;
@@ -410,14 +482,21 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(255, 255, 255, .69);
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 47%;
   transition: 0.3s;
   opacity: 1;
-  animation: videoBtn 3s infinite linear;
+  background: initial;
+
+  .videoBtn__bg {
+    position: absolute;
+    background: rgba(255, 255, 255, .69);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: videoBtn 3s infinite linear;
+  }
 
   span {
     font-weight: 600;
@@ -425,6 +504,8 @@ html, body {
     line-height: 17px;
     text-align: center;
     color: #000000;
+    position: relative;
+    z-index: 1;
   }
 
   i {
@@ -435,6 +516,7 @@ html, body {
     display: block;
     position: relative;
     top: 10px;
+    z-index: 1;
   }
 
   &:hover {
