@@ -115,11 +115,17 @@
   }
 }
 
+
+
 @media (min-width: 992px) {
   .course-program-aff__container-content-header {
     .collapse-block__icon {
       display: none;
     }
+  }
+
+  .course-program-aff__container-content-mob {
+    display: none;
   }
 }
 
@@ -135,6 +141,10 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
+  }
+
+  .course-program-aff__container-content-dp {
+    display: none;
   }
 }
 
