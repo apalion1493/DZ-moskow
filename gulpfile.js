@@ -50,6 +50,7 @@ function scripts() {
         'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
         'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
         'node_modules/wowjs/dist/wow.min.js',
+        'node_modules/stickyfilljs/dist/stickyfill.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))

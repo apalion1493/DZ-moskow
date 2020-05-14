@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<header id="header" class="header section">
+<header id="header" class="header header_reservation section">
     <div class="container position-relative">
         <div class="row">
             <div class="col-xl-6 col-9">
@@ -79,7 +79,7 @@
     </div>
 </header>
 
-<main id="main" class="main">
+<main id="main" class="main main_index">
     <section id="jump-booking" class="section jump-booking">
         <div class="container">
             <div class="row">
@@ -574,7 +574,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row jump-booking__step pb-5 ">
+                        <div class="row jump-booking__step pb-5 inactive">
                             <div class="col-12">
                                 <div class="jump-booking__step-header">
                                     <span class="jump-booking__step-title">02. Количество человек и доп. услуги</span>
@@ -682,7 +682,7 @@
                                 </div>
                             </div>
                         </div> <!--inactive-->
-                        <div class="row jump-booking__step pb-5">
+                        <div class="row jump-booking__step pb-5 inactive">
                             <div class="col-12">
                                 <div class="jump-booking__step-header">
                                     <span class="jump-booking__step-title">03. Сертификаты и оплата</span>
@@ -857,40 +857,51 @@
             </div>
         </div>
     </section>
-    <div id="status-order" class="status-order">
-        <div class="status-order__img"></div>
-        <div class="status-order__container">
-            <div class="status-order__container-header">
-                <span class="status-order__title">Статус заказа</span>
-                <button class="status-order__container-btnMob">></button>
-            </div>
-
-            <div class="status-order__list">
-                <div class="status-order-string status-order__item">
-                    <span class="status-order-string__title">Дата прыжка</span>
-                    <p class="status-order-string__value">11.03.2020</p>
+    <div id="status-order" class="status-order sidebar">
+        <div id="aside1">
+            <div class="status-order__block">
+                <div class="status-order__img"></div>
+                <div class="status-order__container">
+                    <div class="status-order__container-header">
+                        <div class="status-order__container-header-block">
+                            <span class="status-order__title">Статус заказа</span>
+                            <div class="status-order__footer">
+                                <span class="status-order__footer-title">Итого</span>
+                                <p class="status-order__footer-price">12 500 ₽</p>
+                            </div>
+                        </div>
+                        <button class="status-order__container-btnMob" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></button>
+                    </div>
+                    <div class="collapse show" id="collapseExample">
+                        <div class="status-order__list">
+                            <div class="status-order-string status-order__item">
+                                <span class="status-order-string__title">Дата прыжка</span>
+                                <p class="status-order-string__value">11.03.2020</p>
+                            </div>
+                            <div class="status-order-string status-order__item">
+                                <span class="status-order-string__title">Время прыжка</span>
+                                <p class="status-order-string__value">11:30</p>
+                            </div>
+                            <div class="status-order-string status-order__item">
+                                <span class="status-order-string__title">Количество прыгающих</span>
+                                <p class="status-order-string__value">1</p>
+                            </div>
+                            <div class="status-order-string status-order__item">
+                                <span class="status-order-string__title">Стоимость прыжка</span>
+                                <p class="status-order-string__value">12 500 ₽ </p>
+                            </div>
+                        </div>
+                        <div class="status-order__footer">
+                            <span class="status-order__footer-title">Итого</span>
+                            <p class="status-order__footer-price">12 500 ₽</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="status-order-string status-order__item">
-                    <span class="status-order-string__title">Время прыжка</span>
-                    <p class="status-order-string__value">11:30</p>
-                </div>
-                <div class="status-order-string status-order__item">
-                    <span class="status-order-string__title">Количество прыгающих</span>
-                    <p class="status-order-string__value">1</p>
-                </div>
-                <div class="status-order-string status-order__item">
-                    <span class="status-order-string__title">Стоимость прыжка</span>
-                    <p class="status-order-string__value">12 500 ₽ </p>
-                </div>
-            </div>
-            <div class="status-order__footer">
-                <span class="status-order__footer-title">Итого</span>
-                <p class="status-order__footer-price">12 500 ₽</p>
             </div>
         </div>
     </div>
 </main>
-<footer id="footer" class="footer">
+<footer id="footer" class="footer elem">
     <div class="container pb-5">
         <div class="row">
             <div class="col-lg-5 col-md-7">

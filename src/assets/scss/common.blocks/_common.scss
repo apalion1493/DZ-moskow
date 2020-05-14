@@ -947,6 +947,25 @@ html, body {
   display: block;
 }
 
+
+
+/////
+.main_index {
+  &.active {
+    padding-top: 118px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}
+/////
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 900px;
@@ -964,6 +983,12 @@ html, body {
 @media (max-width: 991.98px) {
   .videoBtn_tandem-first-screen {
     display: none;
+  }
+
+  .main_index {
+    &.active {
+      padding-top: 0;
+    }
   }
 }
 
