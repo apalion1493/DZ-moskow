@@ -15,6 +15,19 @@
   }
 }
 
+.status-order__wrapper {
+
+  & >div {
+    width: 100% !important;
+    max-width: 400px;
+  }
+
+  .sticky {
+    width: 25% !important;
+    max-width: 400px;
+  }
+}
+
 .status-order__img {
   background: url("../img/status-order__img.jpg") no-repeat center;
   background-size: cover;
@@ -263,5 +276,9 @@
   .status-order__footer-title,
   .status-order__footer-price {
     font-size: 16px;
+  }
+
+  .status-order__wrapper>div {
+    max-width: 100%;
   }
 }
