@@ -34,21 +34,15 @@ function styles() {
 }
 
 function scripts() {
-
     return gulp.src([
-        // 'src/assets/js/libs/float-sidebar/**/*.js',
-        // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
-        'src/assets/js/libs/jquery/jquery.min.js',
-        'src/assets/js/libs/bootstrap/bootstrap.min.js',
-        'src/assets/js/libs/slick-carousel/slick.min.js',
-        'src/assets/js/libs/fancybox/jquery.fancybox.min.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/highlight.pack.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/js/examples.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/modernizr.custom.min.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/js/lib/greensock/TweenMax.min.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
-        'src/assets/js/libs/janpaepke-ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/gsap/dist/gsap.js',
+        'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+        'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+        'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
         'node_modules/wowjs/dist/wow.min.js',
         'node_modules/stickyfilljs/dist/stickyfill.js',
         'src/assets/js/main.js'
