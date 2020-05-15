@@ -134,7 +134,7 @@
     height: 176px;
 
     img {
-      max-width: 282px;
+      max-width: 265px;
       left: 50%;
     }
   }
@@ -167,4 +167,9 @@
   .slider-option-1__content-body-container {
     margin-bottom: 20px;
   }
+
+  .slider-option-1__img img {
+    max-width: 220px;
+  }
+
 }
