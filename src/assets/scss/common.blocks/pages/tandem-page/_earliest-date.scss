@@ -66,8 +66,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
-  .slick-next, .slick-prev {
+  .earliest-date__column-arrowBtn {
     background: #FFFFFF;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     width: 43px;
@@ -76,6 +77,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    border: none;
 
     &:before {
       content: '';
@@ -88,22 +91,16 @@
     }
   }
 
-  .slick-arrow.slick-disabled {
-    &:before {
-      opacity: .5;
-    }
-  }
-
-  .slick-prev {
-    left: -55px;
+  .earliest-date__column-arrowBtn-left {
+    left: -57px;
 
     &:before {
       transform: rotate(180deg);
     }
   }
 
-  .slick-next {
-    right: -55px;
+  .earliest-date__column-arrowBtn-right {
+    right: -57px;
   }
 }
 
@@ -272,5 +269,16 @@
 
   .earliest-date__column-description-item img {
     margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .earliest-date__column-calc-list .earliest-date__column-arrowBtn-left {
+    left: -30px;
+  }
+
+  .earliest-date__column-calc-list .earliest-date__column-arrowBtn-right {
+    right: -30px;
   }
 }

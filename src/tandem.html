@@ -217,29 +217,17 @@
                                 </ul>
                             </div>
                             <div class="earliest-date__column earliest-date__column-calc">
-                                <ul class="earliest-date__column-calc-list">
-                                    <li class="earliest-date__column-calc-item">
+                                <div class="earliest-date__column-calc-list">
+                                    <button class="earliest-date__column-arrowBtn earliest-date__column-arrowBtn-left"></button>
+                                    <div class="earliest-date__column-calc-item">
                                         <div class="earliest-date__column-calc-block">
                                             <span class="earliest-date__column-calc-block-data">28 марта</span>
                                             <p class="earliest-date__column-calc-block-week">пятница</p>
                                             <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
                                         </div>
-                                    </li>
-                                    <li class="earliest-date__column-calc-item">
-                                        <div class="earliest-date__column-calc-block">
-                                            <span class="earliest-date__column-calc-block-data">29 марта</span>
-                                            <p class="earliest-date__column-calc-block-week">суббота</p>
-                                            <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
-                                        </div>
-                                    </li>
-                                    <li class="earliest-date__column-calc-item">
-                                        <div class="earliest-date__column-calc-block">
-                                            <span class="earliest-date__column-calc-block-data">30 марта</span>
-                                            <p class="earliest-date__column-calc-block-week">воскресенье</p>
-                                            <span class="earliest-date__column-calc-block-time">с 12:00 до 18:00</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <button class="earliest-date__column-arrowBtn earliest-date__column-arrowBtn-right"></button>
+                                </div>
                             </div>
                             <div class="earliest-date__column earliest-date__column-btnGroup">
                                 <button class="btn btn-secondary earliest-date__column-btn">Забронировать</button>
@@ -994,15 +982,6 @@
 
 <script src="assets/js/libs.min.js"></script>
 <script>
-
-    $('.earliest-date__column-calc-list').slick({
-        infinite: false,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        dots: false,
-        slidesToShow: 1,
-    });
 
     $('.our-team__list').slick({
         infinite: true,
