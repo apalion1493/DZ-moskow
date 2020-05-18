@@ -80,6 +80,10 @@
     position: absolute;
     border: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &:before {
       content: '';
       background: url("../img/new-vector-icon/slider-green-arrow.svg") no-repeat center;
@@ -88,6 +92,12 @@
       height: 18px;
       display: block;
       opacity: 1;
+    }
+
+    &.inactive {
+      &:before {
+        opacity: .5;
+      }
     }
   }
 
