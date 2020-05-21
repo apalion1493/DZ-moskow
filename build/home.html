@@ -251,7 +251,9 @@
         </section>
     </div>
     <section id="find-us" class="section find-us find-us_section">
-        <iframe class="find-us__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac58b9a628d167fd99439c451fdc42d81acffe84d12179162dc4c3832e1e5103e&amp;source=constructor" width="1280" height="643" frameborder="0"></iframe>
+        <div id="wrapMap">
+            <iframe class="find-us__map" style="pointer-events: none" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac58b9a628d167fd99439c451fdc42d81acffe84d12179162dc4c3832e1e5103e&amp;source=constructor" width="1280" height="643" frameborder="0"></iframe>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-5 col-md-6">
@@ -403,31 +405,7 @@
     </div>
 </div>
 
-
-
 <script src="assets/js/libs.min.js"></script>
-<script>
-    // $('.positive-reviews__container').slick({
-    //     infinite: true,
-    //     dots: true,
-    //     fade: true,
-    //     cssEase: 'linear',
-    //     appendDots: $('.positive-reviews__body'),
-    // });
-    //
-    // let activeClass = 'slick-active',
-    //     ariaAttribute = 'aria-hidden';
-    // $( '.positive-reviews__container' )
-    //     .on( 'init', function() {
-    //         $( '.slick-dots li:first-of-type' ).addClass( activeClass ).attr( ariaAttribute, false );
-    //     } )
-    //     .on( 'afterChange', function( event, slick, currentSlide ) {
-    //         $.each(slick.$dots, (i, el) => {
-    //             $(el).find('li').eq(currentSlide).addClass('slick-active').find('button');
-    //         })
-    //     });
-    //
-    // $( '.positive-reviews__container' ).slick();
-</script>
+
 </body>
 </html>

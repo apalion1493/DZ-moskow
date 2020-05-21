@@ -42,3 +42,30 @@ $(window).scroll(function(){
 $('.status-order__container-btnMob').click(function () {
     $(this).parent().toggleClass('active')
 });
+
+
+$(document).ready(function(){
+    var youtube_src = $(".modal iframe").attr("src");
+    $('.modal').on('show.bs.modal', function () {
+        $(".modal iframe").attr("src", youtube_src + "?autoplay=1");
+    });
+    $(".modal").on('hidden.bs.modal', function (e) {
+        $(".modal iframe").attr("src", null);
+    });
+});
+
+var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';
+mapTitle.textContent = 'Для активации карты нажмите по ней';
+wrapMap.appendChild(mapTitle);
+wrapMap.onclick = function() {
+    this.children[0].removeAttribute('style');
+    mapTitle.parentElement.removeChild(mapTitle);
+};
+wrapMap.onmousemove = function(event) {
+    mapTitle.style.display = 'block';
+    if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
+    if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+};
+wrapMap.onmouseleave = function() {
+    mapTitle.style.display = 'none';
+};
