@@ -966,6 +966,11 @@ html, body {
 }
 /////
 
+.icon-currency {
+  font-family: 'Proxima Nova', 'Roboto', 'Times New Roman', sans-serif !important;
+  font-style: normal;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 900px;
