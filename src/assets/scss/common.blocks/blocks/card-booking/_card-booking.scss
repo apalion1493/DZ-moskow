@@ -1,0 +1,401 @@
+.card-booking {
+  background: #FFFFFF;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: 240px;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &.active .card-booking__general {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
+.card-booking__general {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-booking__general-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.card-booking__general-limitation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  z-index: 2;
+}
+
+.card-booking__general-open {
+  background: url("../img/card-booking/card-booking-open.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.card-booking-close {
+  background: url("../img/card-booking/card-booking-close.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 18px;
+  height: 18px;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1) rotate(90deg);
+  }
+}
+
+.card-booking__lightbulb {
+  background: url("../img/card-booking/card-booking__lightbulb.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 29px;
+  display: block;
+}
+
+.card-booking__rise {
+  background: url("../img/card-booking/card-booking__rise.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 29px;
+  display: block;
+}
+
+.card-booking__jump-plane {
+  background: url("../img/card-booking/card-booking__jump-plane.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 29px;
+  display: block;
+}
+
+.card-booking__free-fall {
+  background: url("../img/card-booking/card-booking__free-fall.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 27px;
+  height: 25px;
+  display: block;
+}
+
+.card-booking__with-parachute {
+  background: url("../img/card-booking/card-booking__with-parachute.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.card-booking__landing {
+  background: url("../img/card-booking/card-booking__landing.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.card-booking__additional {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-booking__additional-optional {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.card-booking__additional-optional-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+}
+
+.card-booking__listFacts {
+  background: #6ACA1F;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 13px 15px 5px;
+  margin-bottom: 9px;
+}
+
+.card-booking__listFacts-item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-booking__listFacts-item-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  color: #000000;
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
+.card-booking__additional-services {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 13px;
+
+  b {
+    text-transform: uppercase;
+  }
+}
+
+.card-booking__additional-services-label {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #000000;
+  user-select: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark {
+      background: initial;
+    }
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background: url("../img/card-booking/plus-icon.svg") no-repeat center;
+    background-size: 100% auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      width: 5px;
+      height: 9px;
+      border: solid #6ACA1F;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      display: none;
+    }
+  }
+}
+
+.card-booking__additional-gift {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 25px;
+  margin-bottom: 5px;
+  margin-top: auto;
+}
+
+.card-booking__additional-gift-text {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 11px;
+  color: #6ACA1F;
+  margin-bottom: 0;
+}
+
+.card-booking__additional-gift-icon {
+  background: url("../img/card-booking/buy.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-booking__additional-main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+
+.card-booking__additional-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.card-booking__additional-main-title {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.card-booking__additional-main-price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #6ACA1F;
+  margin-bottom: 9px;
+}
+
+.card-booking__additional-main-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-booking__additional-main-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 10px;
+    color: #000000;
+    margin-bottom: 0;
+    padding-left: 7px;
+  }
+}
+
+.card-booking__sale-icon {
+  background: url("../img/card-booking/sale-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 17px;
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.card-booking__jump-icon {
+  background: url("../img/card-booking/jump-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 18px;
+  width: 18px;
+  height: 17px;
+  display: block;
+}
+
+.card-booking__world-icon {
+  background: url("../img/card-booking/world-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 17px;
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.card-booking__gift-icon {
+  background: url("../img/card-booking/gift-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 17px;
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.card-booking__house-icon {
+  background: url("../img/card-booking/house-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 19px;
+  width: 19px;
+  height: 17px;
+  display: block;
+}
+
+.card-booking__additional-main-button {
+  background: #6ACA1F;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  height: 46px;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.card-booking__check-box {
+  background: url("../img/card-booking/card-booking__check-box.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 23px;
+  display: block;
+}

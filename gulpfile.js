@@ -3,7 +3,6 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const ejs = require('gulp-ejs');
-// const uglify = require('gulp-uglify');
 const terser = require('gulp-terser');
 const rigger = require("gulp-rigger");
 const del = require('del');

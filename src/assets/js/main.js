@@ -1,5 +1,19 @@
-let burger = document.getElementById('burger');
-let mobMenu = document.getElementById('header__nav-list-mob');
+const burger = document.getElementById('burger');
+const mobMenu = document.getElementById('header__nav-list-mob');
+const openButtonCard = document.querySelectorAll('.card-booking__general-open');
+const closeButtonCard = document.querySelectorAll('.card-booking-close');
+
+for (let elem of openButtonCard) {
+    elem.addEventListener('click', function () {
+        elem.parentElement.parentElement.classList.add('active');
+    });
+}
+
+for (let elem of closeButtonCard) {
+    elem.addEventListener('click', function () {
+        elem.parentElement.parentElement.parentElement.parentElement.classList.remove('active');
+    })
+}
 
 burger.addEventListener('click', function () {
     burger.classList.toggle('active');
@@ -53,6 +67,8 @@ $(document).ready(function(){
         $(".modal iframe").attr("src", null);
     });
 });
+
+
 
 var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';
 mapTitle.textContent = 'Для активации карты нажмите по ней';
