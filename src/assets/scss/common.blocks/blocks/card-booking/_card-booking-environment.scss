@@ -1,0 +1,26 @@
+.card-booking-environment {
+  margin-bottom: 17px;
+  justify-content: center;
+}
+
+.card-booking-environment__tab {
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: initial;
+    color: #6ACA1F;
+  }
+
+  .nav-pills .nav-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C4C4C4;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-booking-environment__tab .nav-pills .nav-link {
+    font-size: 16px;
+  }
+}

@@ -9,6 +9,12 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  * {
+    font-family: 'Exo 2', sans-serif !important;
+  }
 
   &.active .card-booking__general {
     top: -100%;
@@ -181,65 +187,40 @@
   flex-direction: column;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 
   b {
     text-transform: uppercase;
   }
 }
 
-.card-booking__additional-services-label {
-  display: block;
-  position: relative;
-  padding-left: 20px;
+.card-booking__additional-services-item {
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 4px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 9px;
-  line-height: 11px;
-  color: #000000;
-  user-select: none;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-
-    &:checked ~ .checkmark {
-      background: initial;
-    }
-
-    &:checked ~ .checkmark:after {
-      display: block;
-    }
+  p {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 0;
   }
 
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
+  i {
     height: 10px;
     width: 10px;
+    min-width: 10px;
     background: url("../img/card-booking/plus-icon.svg") no-repeat center;
     background-size: 100% auto;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 3px;
-      width: 5px;
-      height: 9px;
-      border: solid #6ACA1F;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-      display: none;
-    }
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    padding-top: 1px;
   }
 }
 
@@ -300,7 +281,13 @@
   line-height: 29px;
   text-transform: uppercase;
   color: #6ACA1F;
-  margin-bottom: 9px;
+
+  span {
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .card-booking__additional-main-list {
@@ -372,6 +359,46 @@
   display: block;
 }
 
+.driver-icon {
+  background: url("../img/card-booking/driver-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 27px;
+  display: block;
+}
+
+.cafe-icon {
+  background: url("../img/card-booking/cafe-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 33px;
+  height: 27px;
+  display: block;
+}
+
+.bbq-icon {
+  background: url("../img/card-booking/bbq-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 27px;
+  display: block;
+}
+
+.wifi-icon {
+  background: url("../img/card-booking/wifi-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 26px;
+  height: 19px;
+  display: block;
+}
+
+.balloon-icon {
+  background: url("../img/card-booking/Balloon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+
 .card-booking__additional-main-button {
   background: #6ACA1F;
   font-weight: 600;
@@ -398,4 +425,284 @@
   width: 23px;
   height: 23px;
   display: block;
+}
+
+.studying-time {
+  background: url("../img/card-booking/studying-time.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 25px;
+  height: 27px;
+  display: block;
+}
+
+.training-icon {
+  background: url("../img/card-booking/training.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+
+.air-pipe {
+  background: url("../img/card-booking/air-pipe.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+
+.card-booking-equipment-icon {
+  background: url("../img/card-booking/equipment.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 26px;
+  height: 23px;
+  display: block;
+}
+
+.icon-24-7 {
+  background: url("../img/card-booking/24-7.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 27px;
+  height: 25px;
+  display: block;
+}
+
+.landscape {
+  background: url("../img/card-booking/landscape.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 27px;
+  display: block;
+}
+
+.card-booking__star-icon {
+  background: url("../img/card-booking/star-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 26px;
+  height: 25px;
+  display: block;
+}
+
+.card-booking__listFacts-item-wrapper {
+  min-height: 29px;
+  display: flex;
+  align-items: center;
+}
+
+.card-booking__timeContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-booking__timeContainer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-booking__timeContainer-min {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 9px;
+  text-align: center;
+  color: #6ACA1F;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.card-booking__timeContainer-price {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #6ACA1F;
+  display: inline;
+  width: max-content;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: 1px;
+}
+
+.card-booking__timeContainer-human {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+
+  span {
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+    color: #6ACA1F;
+    margin-left: 1px;
+  }
+
+  .card-booking__timeContainer-human-counter {
+    font-size: 9px;
+    line-height: 9px;
+  }
+}
+
+.card-booking__timeContainer-human-icon {
+  background: url("../img/card-booking/green-human.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 5px;
+  width: 5px;
+  height: 12px;
+  display: block;
+}
+
+.card-booking__additional-main-priceBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-bottom: 9px;
+
+  .card-booking__timeContainer-human-icon {
+    min-width: 9px;
+    height: 22px;
+  }
+
+  .card-booking__timeContainer-human {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-booking {
+    width: 50%;
+    height: 750px;
+  }
+
+  .card-booking__timeContainer-human-icon {
+    width: 9px;
+    height: 23px;
+  }
+
+  .card-booking__additional-main-priceBlock {
+    margin-bottom: 14px;
+  }
+
+  .card-booking__general,
+  .card-booking__additional-optional {
+    height: 70%;
+    min-height: 70%;
+  }
+
+  .card-booking__additional-main-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-booking__additional-main-price {
+    font-size: 28px;
+  }
+
+  .card-booking__additional-main-item p {
+    font-size: 14px;
+    line-height: normal;
+    
+    br {
+      display: none;
+    }
+  }
+
+  .card-booking__additional-main-item {
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .card-booking__general-limitation {
+    font-size: 20px;
+  }
+
+  .card-booking__general-open {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card-booking__timeContainer-human .card-booking__timeContainer-human-counter {
+    font-size: 14px;
+  }
+
+  .card-booking__additional-main-button {
+    font-size: 14px;
+  }
+
+  .card-booking__additional-main {
+    margin-bottom: auto;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .card-booking__listFacts-item-text {
+    font-size: 12px;
+    line-height: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .card-booking__additional-services-item {
+    margin-bottom: 8px;
+  }
+
+  .card-booking__additional-services-item p {
+    font-size: 16px;
+  }
+
+  .card-booking__additional-services-item i {
+    padding-top: 21px;
+  }
+
+  .card-booking__additional-gift-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .card-booking__timeContainer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .card-booking__timeContainer-block {
+    width: 33.3%;
+    margin-bottom: 12px;
+  }
+
+  .card-booking__timeContainer-min {
+    font-size: 14px;
+    line-height: 14px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .card-booking__timeContainer-price {
+    font-size: 16px;
+    line-height: normal;
+    margin-top: 6px;
+  }
+
+  .card-booking__timeContainer-human span {
+    font-size: 14px;
+  }
+
+  .card-booking__additional-main-price span {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .card-booking {
+    width: 33%;
+  }
 }

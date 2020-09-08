@@ -7,6 +7,7 @@
     <title>Прыжок с парашютом в тандеме с инструктором</title>
     <meta name="keywords" content=""/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Appended styles for site -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -16,9 +17,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="card-booking-environment pb-4">
+                <div class="card-booking-environment mt-5 pb-4">
                     <div class="card-booking-environment__tab">
-                        <ul class="nav nav-pills mb-3 card-booking-environment" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills card-booking-environment" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="pills-jump-tab" data-toggle="pill" href="#pills-jump" role="tab" aria-controls="pills-jump" aria-selected="true">Прыжки</a>
                             </li>
@@ -26,7 +27,7 @@
                                 <a class="nav-link" id="pills-fly-tab" data-toggle="pill" href="#pills-fly" role="tab" aria-controls="pills-fly" aria-selected="false">Полёты</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-service-tab" data-toggle="pill" href="#pills-service" role="tab" aria-controls="pills-service" aria-selected="false">Сервис</a>
+                                <a class="nav-link" id="pills- service-tab" data-toggle="pill" href="#pills-service" role="tab" aria-controls="pills-service" aria-selected="false">Сервис</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
@@ -45,43 +46,55 @@
                                                 </div>
                                                 <div class="card-booking__listFacts">
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__lightbulb"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__lightbulb"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Инструктаж <br> 15 минут</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Подъём на высоту 4 км</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__jump-plane"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__jump-plane"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Отделение от самолёта</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__free-fall"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__free-fall"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">60 секунд свободного падения</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__with-parachute"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__with-parachute"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">5 минут снижение под куполом</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__landing"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__landing"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Мягкое приземление</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-booking__additional-services">
-                                                    <label class="card-booking__additional-services-label"><b>3500 ₽</b> - Услуги воздушного оператора
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="card-booking__additional-services-label"><b>2500 ₽</b> - Видеосъёмка с руки инструктора
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="card-booking__additional-services-label"><b>бесплатно</b> - Видеомонтаж и флешкарта
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><b>3500 ₽</b> - Услуги воздушного оператора</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><b>2500 ₽</b> - Видеосъёмка с руки инструктора</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><b>бесплатно</b> - Видеомонтаж и флешкарта</p>
+                                                    </div>
                                                 </div>
                                                 <div class="card-booking__additional-gift">
                                                     <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
@@ -93,7 +106,10 @@
                                             <div class="card-booking__additional-main">
                                                 <div class="card-booking__additional-main-wrapper">
                                                     <p class="card-booking__additional-main-title">прыжок с парашютом</p>
-                                                    <span class="card-booking__additional-main-price">10.000 ₽</span>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">10.000 ₽</span>
+                                                    </div>
+
                                                     <ul class="card-booking__additional-main-list">
                                                         <li class="card-booking__additional-main-item">
                                                             <i class="card-booking__sale-icon"></i>
@@ -123,15 +139,21 @@
                                                 </div>
                                                 <div class="card-booking__listFacts">
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__lightbulb"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__lightbulb"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Инструктаж <br> 15 минут</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Подъём на высоту 600 м</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__check-box"></span>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__check-box"></span>
+                                                        </div>
                                                         <p class="card-booking__listFacts-item-text">Аренда снаряжения</p>
                                                     </div>
                                                 </div>
@@ -146,7 +168,10 @@
                                             <div class="card-booking__additional-main">
                                                 <div class="card-booking__additional-main-wrapper">
                                                     <p class="card-booking__additional-main-title">самостоятельный прыжок</p>
-                                                    <span class="card-booking__additional-main-price">3.500 ₽</span>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">3.500 ₽</span>
+                                                    </div>
+
                                                     <ul class="card-booking__additional-main-list">
                                                         <li class="card-booking__additional-main-item">
                                                             <i class="card-booking__sale-icon"></i>
@@ -176,71 +201,67 @@
                                                 </div>
                                                 <div class="card-booking__listFacts">
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__lightbulb"></span>
-                                                        <p class="card-booking__listFacts-item-text">Инструктаж <br> 15 минут</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время курса <br> 4-7 дней при прыжковой погоде</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
-                                                        <p class="card-booking__listFacts-item-text">Подъём на высоту 4 км</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Наземная подготовка</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__jump-plane"></span>
-                                                        <p class="card-booking__listFacts-item-text">Отделение от самолёта</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__with-parachute"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">7 прыжков с инструктором</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__free-fall"></span>
-                                                        <p class="card-booking__listFacts-item-text">60 секунд свободного падения</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon air-pipe"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">30 минут тренинга в аэротрубе</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__with-parachute"></span>
-                                                        <p class="card-booking__listFacts-item-text">5 минут снижение под куполом</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__check-box"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Укладка парашюта</p>
                                                     </div>
                                                     <div class="card-booking__listFacts-item">
-                                                        <span class="card-booking__listFacts-item-icon card-booking__landing"></span>
-                                                        <p class="card-booking__listFacts-item-text">Мягкое приземление</p>
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking-equipment-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Аренда снаряжения</p>
                                                     </div>
                                                 </div>
                                                 <div class="card-booking__additional-services">
-<!--                                                    <div class="card-booking__additional-services-item">-->
-<!--                                                        <i></i>-->
-<!--                                                        <p>Освоишь все необходимые навыки маневрирования в состоянии свободного падения.</p>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="card-booking__additional-services-item">-->
-<!--                                                        <i></i>-->
-<!--                                                        <p>Освоишь все необходимые навыки маневрирования в состоянии свободного падения.</p>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="card-booking__additional-services-item">-->
-<!--                                                        <i></i>-->
-<!--                                                        <p>Освоишь все необходимые навыки маневрирования в состоянии свободного падения.</p>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="card-booking__additional-services-item">-->
-<!--                                                        <i></i>-->
-<!--                                                        <p>Освоишь все необходимые навыки маневрирования в состоянии свободного падения.</p>-->
-<!--                                                    </div>-->
-                                                    <label class="card-booking__additional-services-label">Освоишь все необходимые навыки маневрирования в состоянии свободного падения.
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="card-booking__additional-services-label">Новейшее снаряжение
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="card-booking__additional-services-label">Сервис и комфорт в шаговой доступности
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="card-booking__additional-services-label">Познакомишься с другими скайдайверами и найдешь много новых друзей.
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Освоишь все необходимые навыки маневрирования в состоянии свободного падения.</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Новейшее снаряжение</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Сервис и комфорт в шаговой доступности</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Познакомишься с другими скайдайверами и найдешь много новых друзей.</p>
+                                                    </div>
                                                 </div>
                                             </div>
-
-
                                             <div class="card-booking__additional-main">
                                                 <div class="card-booking__additional-main-wrapper">
                                                     <p class="card-booking__additional-main-title">AFF - стань парашютистом</p>
-                                                    <span class="card-booking__additional-main-price">10.000 ₽</span>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">10.000 ₽</span>
+                                                    </div>
                                                     <ul class="card-booking__additional-main-list">
                                                         <li class="card-booking__additional-main-item">
                                                             <i class="card-booking__jump-icon"></i>
@@ -260,10 +281,586 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-fly" role="tabpanel" aria-labelledby="pills-fly-tab">
+                                <div class="card-booking-environment__slider">
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-4.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon icon-24-7"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Ежедневно и в любую погоду</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__star-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Крутые инструкторы</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking-equipment-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Всё <br> включено</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><b>Дарим скидку 20 %</b> на прыжок в тандеме предложение действует 10 дней.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__timeContainer">
+                                                    <div class="card-booking__timeContainer-block">
+                                                        <span class="card-booking__timeContainer-min"><span>5</span><br>минут</span>
+                                                        <span class="card-booking__timeContainer-price">1.800 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-booking__timeContainer-block">
+                                                        <span class="card-booking__timeContainer-min"><span>10</span><br>минут</span>
+                                                        <span class="card-booking__timeContainer-price">3.100 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-booking__timeContainer-block">
+                                                        <span class="card-booking__timeContainer-min"><span>15</span><br>минут</span>
+                                                        <span class="card-booking__timeContainer-price">4.500 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-booking__timeContainer-block">
+                                                        <span class="card-booking__timeContainer-min"><span>30</span><br>минут</span>
+                                                        <span class="card-booking__timeContainer-price">8.500 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">6</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-booking__timeContainer-block">
+                                                        <span class="card-booking__timeContainer-min"><span>60</span><br>минут</span>
+                                                        <span class="card-booking__timeContainer-price">15.000 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">12</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-gift">
+                                                    <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
+                                                    <a href="#" class="card-booking__additional-gift-icon"></a>
+                                                </div>
+                                            </div>
 
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">Полёт в аэротрубе</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price"><span>от</span> 1.800 ₽</span>
+                                                    </div>
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__gift-icon"></i>
+                                                            <p>Дарим <b>5 БЕСПЛАТНЫХ минут</b> в честь вашего дня рождения</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>20% скидка</b> на полёт в аэротрубе в будни с 11:00 до 17:00</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-5.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon landscape"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бомбические пейзажи</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время полёта 10 минут</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Тип самолета SportCruiser</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Прогулка на самолете – прекрасный вариант для людей всех возрастов. Пилотаж или управление самолетом открывает мир новых эмоций, где полет уносит вас выше облаков и знакомит с миром авиации.</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Предоставляем возможность совершить полёт по собственному маршруту. Стоимость полёта будет рассчитана после согласования выбранного маршрута с пилотом.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-gift">
+                                                    <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
+                                                    <a href="#" class="card-booking__additional-gift-icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">прогулка на самолёте</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">3.500 ₽</span>
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">1</span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на аренду бронетраспортера в течении 30 дней</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>25% скидка</b> на полет в аэротрубе в этот уикенд</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-6.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon landscape"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бомбические пейзажи</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время полёта 10 минут</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon card-booking__rise"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Тип самолета Cessna T182T</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Прогулка на самолете – прекрасный вариант для людей всех возрастов. Пилотаж или управление самолетом открывает мир новых эмоций, где полет уносит вас выше облаков и знакомит с миром авиации.</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p>Предоставляем возможность совершить полёт по собственному маршруту. Стоимость полёта будет рассчитана после согласования выбранного маршрута с пилотом.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-gift">
+                                                    <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
+                                                    <a href="#" class="card-booking__additional-gift-icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">прогулка на самолёте</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">5.000 ₽</span>
+
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">3</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на аренду бронетраспортера в течении 30 дней</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на полет в аэротрубе в этот уикенд</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-7.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon landscape"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бомбические пейзажи</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время полёта 60 минут</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon balloon-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Высота до 300 метров</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Индивидуальный полет</span> - прекрасная возможность незабываемо провести время в компании близких Вам людей. Вы можете отправиться в полет с друзьями, семьей или сделать по-настоящему романтический подарок для своей второй половинки.</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Воздушный шар на вашем празднике </span>- корпоративы, свадьбы и юбилеи, уличные праздники, рекламные мероприятия. Стоимость за 1 час работы - 18000 руб.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-gift">
+                                                    <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
+                                                    <a href="#" class="card-booking__additional-gift-icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">персональный Полёт на шаре</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">18.000 ₽</span>
+
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">6</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на аренду бронетраспортера в течении 30 дней</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на полет в аэротрубе в этот уикенд</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-7.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon landscape"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бомбические пейзажи</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время полёта 60 минут</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon balloon-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Высота до 300 метров</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Индивидуальный полет</span> - это полет на воздушном шаре с другими участниками события. Вы сможете не только ощутить невероятные эмоции от прикосновения с небом, но и познакомитесь с новыми интересными людьми.</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Воздушный шар на вашем празднике </span>- корпоративы, свадьбы и юбилеи, уличные праздники, рекламные мероприятия. Стоимость за 1 час работы - 4500 руб.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-gift">
+                                                    <span class="card-booking__additional-gift-text">На данную услугу вы можете приобрести подарочный сертификат</span>
+                                                    <a href="#" class="card-booking__additional-gift-icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">групповой Полёт на шаре</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">4.500 ₽</span>
+
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">12</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на аренду бронетраспортера в течении 30 дней</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на полет в аэротрубе в этот уикенд</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
+                                <div class="card-booking-environment__slider">
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-8.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">4+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon landscape"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бомбические пейзажи</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon studying-time"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Время полёта 60 минут</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon driver-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Надёжные водители</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Бесплатно</span> аренда GoPro</p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">Аренда бронетранспортера</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price">10.000 ₽</span>
+
+                                                        <div class="card-booking__timeContainer-human">
+                                                            <span class="card-booking__timeContainer-human-counter mr-1">до</span>
+                                                            <i class="card-booking__timeContainer-human-icon"></i>
+                                                            <span>х</span>
+                                                            <span class="card-booking__timeContainer-human-counter">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> если вы воспользовались любой другой нашей услугой</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__sale-icon"></i>
+                                                            <p><b>50% скидка</b> на полет в аэротрубе в этот уикенд</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-booking">
+                                        <div class="card-booking__general">
+                                            <img src="assets/img/card-booking/img-9.jpg" class="card-booking__general-img" alt="">
+                                            <span class="card-booking__general-limitation">0+</span>
+                                            <span class="card-booking__general-open"></span>
+                                        </div>
+                                        <div class="card-booking__additional">
+                                            <div class="card-booking__additional-optional">
+                                                <div class="card-booking__additional-optional-header">
+                                                    <span class="card-booking-close"></span>
+                                                </div>
+                                                <div class="card-booking__listFacts">
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon cafe-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Уютное кафе</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon bbq-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Зона BBQ</p>
+                                                    </div>
+                                                    <div class="card-booking__listFacts-item">
+                                                        <div class="card-booking__listFacts-item-wrapper">
+                                                            <span class="card-booking__listFacts-item-icon wifi-icon"></span>
+                                                        </div>
+                                                        <p class="card-booking__listFacts-item-text">Бесплатный <br> Wi-Fi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-booking__additional-services">
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Хостел без удобств</span> - на 6 человек, цена 600р/чел</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Хостел с удобствами</span> - на 8 человек, цена 800р/чел</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Летний домик</span> - на 2 человека, цена 1500р/дом</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Стандартный домик</span> - на 3 человека, цена 3500/дом</p>
+                                                    </div>
+                                                    <div class="card-booking__additional-services-item">
+                                                        <i></i>
+                                                        <p><span class="font-weight-bold">Коттедж</span> - на 10 человек, цена 10500р/дом</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-booking__additional-main">
+                                                <div class="card-booking__additional-main-wrapper">
+                                                    <p class="card-booking__additional-main-title">гостиничный комплекс</p>
+                                                    <div class="card-booking__additional-main-priceBlock">
+                                                        <span class="card-booking__additional-main-price"><span>от</span> 600 ₽</span>
+                                                    </div>
+                                                    <ul class="card-booking__additional-main-list">
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__house-icon"></i>
+                                                            <p><b class="text-uppercase">5 вариантов</b> размещения</p>
+                                                        </li>
+                                                        <li class="card-booking__additional-main-item">
+                                                            <i class="card-booking__house-icon"></i>
+                                                            <p>Расчетный час 12:00. Время заезда 14:00.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="card-booking__additional-main-button" href="#">ЗАБРОНИРОВАТЬ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
